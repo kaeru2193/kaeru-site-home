@@ -12,6 +12,7 @@ export const metadata = {
     default: siteName,
     template: `%s - ${siteName}`,
   },
+  metadataBase: new URL(process.env.URL ?? 'http://localhost:3000'),
   description,
   openGraph: {
     title: siteName,
