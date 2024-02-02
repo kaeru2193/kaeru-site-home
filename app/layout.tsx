@@ -1,6 +1,8 @@
 import { Header, Footer } from "./common"
 import "./global.css"
 
+export const dynamic = 'force-dynamic'
+
 const siteName= '之機堂';
 const description = 'かえるのホームページです。';
 const url = 'https://kaeru2193.net';
