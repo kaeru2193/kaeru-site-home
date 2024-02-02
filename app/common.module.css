@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    background-color: var(--kaeru-main);
+    padding: 0.5rem 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 60rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.logoLink {
+    height: 60px;
+}
+
+.title {
+    vertical-align: middle;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #ffffff;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.copyright {
+    color: var(--kaeru-text);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+    
+    .title {
+        padding-left: 0.5rem;
+    }
+}

@@ -1,0 +1,28 @@
+.example {
+    font-size: 2rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+}
+
+.textBox {
+    width: 100%;
+}
+
+.download {
+    margin: 1rem 0;
+}
+
+@font-face {
+    font-family: "phunsans";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/Phun-Sans/Phun-Sans-Rounded-Regular.woff");
+}
+
+@font-face {
+    font-family: "phunwrite";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/PhunWrite-Regular-latest.woff");
+}
+
+@font-face {
+    font-family: "blophabet";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/Blophabet.woff");
+}
