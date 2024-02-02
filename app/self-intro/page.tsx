@@ -6,7 +6,7 @@ const Page = () => {
             <h2>名義</h2>
             <ul>
                 <li>
-                    かえる / karu2193
+                    かえる / kaeru2193
                     <ul>
                         <li>最もよく使う</li>
                     </ul>
