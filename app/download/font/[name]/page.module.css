@@ -1,6 +1,16 @@
+.fontImgContainer {
+    text-align: center;
+}
+
+.fontImg {
+    height: 500px;
+    width: auto;
+    aspect-ratio: 2500/2441;
+}
+
 .example {
     font-size: 2rem;
-    height: 2.5rem;
+    min-height: 2.5rem;
     margin: 1rem 0;
 }
 
@@ -25,4 +35,9 @@
 @font-face {
     font-family: "blophabet";
     src: url("https://kaeru2193.github.io/Phun-Resources/font/Blophabet.woff");
+}
+
+@font-face {
+    font-family: "cagit";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/Cagit-regular-latest.woff");
 }

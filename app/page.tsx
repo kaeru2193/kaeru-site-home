@@ -2,7 +2,7 @@ import style from "./page.module.css"
 import { SiteLinkList } from "./link"
 
 import { NewsList } from "./news/news"
-import newsData from "./news.json"
+import { newsData } from "./news"
 
 const snsData =
     [
@@ -52,7 +52,7 @@ const Page = () => {
 
             <h2>お知らせ</h2>
             <div>
-                <NewsList data={newsData.slice(0, 3)}/>
+                <NewsList data={newsData} limit={3}/>
                 <span className={style.newsLink}><a href="/news">過去のお知らせを見る</a></span>
             </div>
 

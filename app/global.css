@@ -26,11 +26,11 @@ body {
 }
 
 a {
-    color: var(--phun-text)
+    color: var(--phun-text);
 }
 
 a:hover {
-    color: var(--accent-red)
+    color: var(--accent-red);
 }
 
 input[type="text"] {

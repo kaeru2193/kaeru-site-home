@@ -1,10 +1,11 @@
 
 import { notFound } from "next/navigation"
+import Image from "next/image"
 
 import { TestWrite } from "./input"
 import { DownloadButton } from "@/download"
 
-import fontData from "../fonts.json"
+import { fontData } from "./fontData"
 
 import style from "./page.module.css"
 
@@ -18,7 +19,8 @@ const Page = ({ params }: { params: { name: string } }) => {
     return (
         <div className="mainContainer">
             <h1>{font.name}</h1>
-            <p>{font.desc}</p>
+            {font.desc}
+            
             <h2>試し書き</h2>
             <TestWrite font={font}/>
 

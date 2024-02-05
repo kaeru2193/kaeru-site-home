@@ -1,4 +1,4 @@
-import newsData from "../news.json"
+import { newsData } from "@/news"
 
 import { NewsList } from "./news"
 
