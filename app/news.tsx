@@ -9,5 +9,10 @@ export const newsData =
         "date": "2024-02-05",
         "name": "Càgitフォントを公開しました",
         "desc": <>新たにシャレイア文字のセリフ体風フォント「<a href="/download/font/cagit">Càgit</a>」を公開しました！</>
+    },
+    {
+        "date": "2024-02-07",
+        "name": "リンク修正",
+        "desc": <>BlueSkyのハンドルを変更したため、ページ上部のリンク先を修正しました。</>
     }
 ]

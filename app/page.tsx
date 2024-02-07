@@ -12,7 +12,7 @@ const snsData =
         {id: "mis", name: "Misskey.io", url: "https://misskey.io/@kaeru2193"},
         {id: "gih", name: "Github", url: "https://github.com/kaeru2193"},
         {id: "ste", name: "Steam", url: "https://steamcommunity.com/profiles/76561199224206180/"},
-        {id: "bls", name: "Bluesky", url: "https://bsky.app/profile/kaeru2193.bsky.social"},
+        {id: "bls", name: "Bluesky", url: "https://bsky.app/profile/kaeru2193.net"},
         {id: "bmc", name: "Buy Me a Coffee", url: "https://www.buymeacoffee.com/kaeru2193"},
         {id: "plx", name: "雰言訓機", url: "https://twitter.com/PhunLanguage"},
         {id: "rdi", name: "Reddit", url: "https://www.reddit.com/user/kaeru2193"},
@@ -50,10 +50,10 @@ const Page = () => {
             <h2>館内案内</h2>
             <SiteLinkList data={siteData}/>
 
-            <h2>お知らせ</h2>
+            <h2>更新履歴</h2>
             <div>
                 <NewsList data={newsData} limit={3}/>
-                <span className={style.newsLink}><a href="/news">過去のお知らせを見る</a></span>
+                <span className={style.newsLink}><a href="/news">過去の更新履歴を見る</a></span>
             </div>
 
         </div>
