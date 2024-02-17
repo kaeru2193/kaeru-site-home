@@ -1,0 +1,163 @@
+.grid {
+    border-radius: 1rem;
+    display: grid;
+    width: fit-content;
+    margin: 15px auto;
+    grid-template-areas:
+        "dis bga bls ste"
+        "plx twi gih mig"
+        "mis bmc rdi you";
+}
+
+.item {
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    transition: 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.2s;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    color: inherit;
+}
+
+.newsLink {
+    margin: 0.5rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.x {
+    grid-area: twi;
+    background-color: #000000;
+}
+
+.you {
+    grid-area: you;
+    background-color: #ff0000;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: #5865f2;
+}
+
+.mis {
+    grid-area: mis;
+    background-color: #91bd00;
+}
+
+.gih {
+    grid-area: gih;
+    background-color: #24292e;
+}
+
+.ste {
+    grid-area: ste;
+    background-color: #00adee;
+}
+
+.bls {
+    grid-area: bls;
+    background-color: #1083fe;
+}
+
+.bmc {
+    grid-area: bmc;
+    background-color: #ffdd00;
+    color: black;
+}
+
+.plx {
+    grid-area: plx;
+    background-color: #014f41;
+}
+
+.rdi {
+    grid-area: rdi;
+    background-color: #ff5700;
+}
+
+.mig {
+    grid-area: mig;
+    background-color: #8fc31f;
+}
+
+.bga {
+    grid-area: bga;
+    background-color: #457ece;
+}
+
+@media screen and (max-width: 834px) {
+    .grid {
+        grid-template-areas:
+            "mis plx dis"
+            "bmc twi bga"
+            "rdi gih bls"
+            "you mig ste";
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .grid {
+        grid-template-areas:
+            "dis bga"
+            "bls ste"
+            "plx twi"
+            "gih mig"
+            "mis bmc"
+            "rdi you";
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .grid {
+        width: 100%;
+        grid-template-areas:
+            "dis"
+            "bga"
+            "bls"
+            "ste"
+            "plx"
+            "twi"
+            "gih"
+            "mis"
+            "mig"
+            "bmc"
+            "rdi"
+            "you";
+    }
+
+    .item {
+        height: 2.5rem;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .item:has( a[href*="discord"] ) {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .item:has( a[href*="youtube"] ) {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}

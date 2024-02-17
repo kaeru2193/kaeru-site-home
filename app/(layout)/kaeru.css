@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import "./kaeru-theme.css";
+
+body {
+    background-color: var(--background);
+}
+
+.article {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 2.5rem 1rem 2.5rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: white;
+    width: fit-content;
+}
+
+.mainContainer {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 60rem;
+}
+
+a {
+    color: var(--phun-text);
+}
+
+a:hover {
+    color: var(--accent-red);
+}
+
+input[type="text"] {
+    border: var(--kaeru-dark) 2px solid;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+
+h1 {
+    margin: 0.5rem 0 0.3rem 0;
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--phun-text);
+    border-bottom: 3px var(--phun-dark) solid;
+}
+
+h2 {
+    padding: 2px 0;
+    font-size: 1.5rem;
+    color: var(--phun-text);
+    border-bottom: 1px solid var(--phun-dark-transparent);
+}
+
+ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+ul li {
+    padding: initial;
+    margin: 0.3rem 0;
+}
+
+ul li::before {
+    display:  inline-block;
+    content:  "";
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image:  url(/list-mark.svg);
+    background-size:  contain;
+    margin-right: 0.3rem;
+    background-repeat:  no-repeat;
+    position:  relative;
+    top: 2px;
+}
+
+ul > li > ul li::before {
+    background-image:  url(/list-mark-white.svg);
+}
+
+@media screen and (max-width: 834px) {
+    .article {
+        width: 90vw;
+        padding: 1rem;
+    }
+}

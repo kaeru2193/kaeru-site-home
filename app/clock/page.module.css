@@ -1,0 +1,109 @@
+.bgContainer {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    min-width: 100%;
+    min-height: 100%;
+    aspect-ratio: 384 / 216;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 800px;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 30px auto 20px auto;
+    width: 50%;
+    font-weight: bold;
+}
+
+.clockRow {
+    display: flex;
+    margin: 0 10px;
+}
+
+.phunClockContainer {
+    font-family: "Phun-Sans";
+    writing-mode: vertical-rl;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.phunDate {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.phunTime {
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+.clockContainer {
+    position: relative;
+    margin: 20px auto;
+    width: 60vh;
+    max-width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.clockContainer * {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.earthTime {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.convert {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.calendar span {
+    display: inline-block;
+    width: 5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.convert input {
+    flex-grow: 1;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .clockRow {
+        flex-direction: column;
+    }
+}

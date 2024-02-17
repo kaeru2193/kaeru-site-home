@@ -1,7 +1,8 @@
 import { Header, Footer } from "./common"
-import "./global.css"
 
 export const dynamic = 'force-dynamic'
+
+import "./global.css"
 
 const siteName= '之機堂';
 const description = 'かえるのホームページです。';
@@ -53,11 +54,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#60c187"/>
       </head>
       <body>
-        <Header/>
-        <div className="article">
-          {children}
-        </div>
-        <Footer/>
+        {children}
       </body>
     </html>
   )

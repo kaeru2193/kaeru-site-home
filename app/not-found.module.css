@@ -1,0 +1,31 @@
+.mainContainer {
+    background-color: #60c187;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.box {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.box > p {
+    font-size: 1.2rem;
+}
+
+.box a {
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+}
+
