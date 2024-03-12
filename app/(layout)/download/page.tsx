@@ -2,7 +2,8 @@ import { SiteLinkList } from "@/link"
 
 const siteData = 
     [
-        {name: "フォント", desc: "自作フォントをダウンロードできます。", url: "download/font"}
+        {name: "フォント", desc: "自作フォントをダウンロードできます。", url: "download/font"},
+        {name: "ギャラリー", desc: "ロゴや紋章など、画像形式の制作物をダウンロードできます。", url: "download/gallery"}
     ]
 
 const Page = () => {

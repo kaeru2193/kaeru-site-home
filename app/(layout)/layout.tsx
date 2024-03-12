@@ -1,4 +1,5 @@
 import { Header, Footer } from "@/common"
+import { BreadCrumb } from "@/breadCrumb"
 
 import "./kaeru.css"
 
@@ -11,7 +12,8 @@ export default function KaeruLayout({
       <>
         <Header/>
             <div className="article">
-            {children}
+              {/*<BreadCrumb/>*/}
+              {children}
             </div>
         <Footer/>
       </>

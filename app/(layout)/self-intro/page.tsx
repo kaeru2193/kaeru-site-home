@@ -15,6 +15,7 @@ const Page = () => {
                 <li>之機 / kúa àil
                     <ul>
                         <li>雰名（このサイトの名前にもなっている）</li>
+                        <li>[kʰə˧˥.ɛl˩˧] （中古雰語での発音）</li>
                     </ul>
                 </li>
                 <li>ʻkáles-ʻcolfomas
@@ -22,7 +23,11 @@ const Page = () => {
                         <li>シャレイア名</li>
                     </ul>
                 </li>
-                
+                <li>Mońieto Fjenkaamsi
+                    <ul>
+                        <li>ラゼフ名</li>
+                    </ul>
+                </li>
             </ul>
             <h2>趣味</h2>
             <ul>

@@ -26,6 +26,7 @@ const siteData =
         {name: "雰界創作", desc: "主に取り組んでいる、人工言語「雰語」と世界観「雰界」を中心とする創作活動です。", url: "/phun"},
         {name: "人工言語", desc: "雰界創作以外の人工言語活動についてです。", url: "/conlang"},
         {name: "倉庫", desc: "各種創作物をダウンロードします。", url: "/download"},
+        {name: "ギャラリー", desc: "ロゴや紋章など、画像形式の制作物をダウンロードできます。", url: "/download/gallery"},
         {name: "がらくた箱", desc: "細かいWebツールやゲームの寄せ集めです。", url: "/various"}
     ]
 
