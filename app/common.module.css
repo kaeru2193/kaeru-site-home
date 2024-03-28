@@ -4,6 +4,37 @@
     padding: 0.5rem 0;
 }
 
+.count {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    color: var(--kaeru-text);
+    text-align: center;
+}
+
+.countNum {
+    display: inline-block;
+    font-family: "phun-num-5px", sans-serif;
+    padding: 0.5rem 0.7rem;
+    border: 2px solid var(--kaeru-text);
+    border-radius: 0.5rem; 
+}
+
+.countNum.kiriban {
+    border: none;
+    background: linear-gradient(45deg, #ff2020, #ff7f20, #c0c000, #20ff20, #2020ff, #8f20ff);
+    color: #ffffff;
+}
+
+.messageNum {
+    font-family: "phun-num-5px", sans-serif;
+    font-weight: normal;
+}
+
+.message {
+    margin: 0.7rem 0 0.5rem 0;
+    font-weight: bold;
+}
+
 .content {
     margin: 0 auto;
     width: 80vw;
@@ -27,6 +58,7 @@
 }
 
 .copyright {
+    margin: 0.7rem 0;
     color: var(--kaeru-text);
     font-size: 0.8rem;
     text-align: center;
@@ -44,4 +76,9 @@
     .title {
         padding-left: 0.5rem;
     }
+}
+
+@font-face {
+    font-family: "phun-num-5px";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/PhunNum5px.woff") format("woff");
 }

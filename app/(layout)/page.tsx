@@ -46,7 +46,7 @@ const Page = () => {
                 })}
             </div>
 
-            <p>ここはかえるのサイトです。</p>
+            <p>ここはかえる (kaeru2193)のサイトです。</p>
 
             <h2>館内案内</h2>
             <SiteLinkList data={siteData}/>

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css"
 
+import { FetchData } from "@/funcs";
+
 const Page = () => {
     const [main, setMain]: any[] = useState(<p>データ読み込み中...</p>)
 
@@ -44,23 +46,6 @@ const Page = () => {
 }
 
 export default Page
-
-async function FetchData(url: string) { 
-    try {
-        const res = await fetch(url);
-
-        if (!res.ok) {
-            throw new Error("データの取得に失敗しました");
-        }
-        
-        const data: any = await res.text();
-
-        return data
-    } catch (error) {
-        console.error(error);
-        throw error
-    }
-};
 
 const GalleryProcess = (props: any) => {
     const json: any[] = props.data
