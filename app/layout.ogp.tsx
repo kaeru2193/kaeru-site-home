@@ -5,9 +5,7 @@ import pageMap from '@/pageMap.json'
 
 export const MetaOGP = (props: any) => {
     const path = usePathname().slice(1)
-    if (path == "") {
-        return <title>{`トップページ - ${props.site}`}</title>
-    }
+    
     const title = pageMap.filter(p =>
         p.route == path
     )[0]
@@ -15,7 +13,7 @@ export const MetaOGP = (props: any) => {
     return <>
         <title>{`${htmlTitle} - ${props.site}`}</title>
         <meta property="og:url" content={props.url + path} />
-        <meta property="og:title" content={`${htmlTitle} - ${props.site}`} />
+        <meta property="og:title" content={htmlTitle} />
         <meta property="og:site_name" content={props.site} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={props.desc} />
