@@ -1,3 +1,5 @@
+import { FaDownload } from "react-icons/fa6";
+
 import Image from "next/image"
 
 import style from "./download.module.css"
@@ -6,7 +8,7 @@ export const DownloadButton = (props: any) => {
     return (
         <span className={style.button}>
             <a href={props.url} className={style.link}>
-                <Image src="/download.svg" alt="download" height={30} width={30} className={style.icon}/>
+                <FaDownload/>
                 <span>{props.name}をダウンロード</span>
             </a>
         </span>

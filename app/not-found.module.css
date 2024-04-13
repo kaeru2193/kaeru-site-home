@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.icon {
+    animation: float 2s ease-in-out infinite alternate-reverse;
+}
+
 .title {
     margin: 20px 0;
 }
@@ -29,3 +33,11 @@
     font-size: 3rem;
 }
 
+@keyframes float {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+}

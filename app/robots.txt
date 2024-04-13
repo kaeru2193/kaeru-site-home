@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://kaeru2193.net/sitemap.xml

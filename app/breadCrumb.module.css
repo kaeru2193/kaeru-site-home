@@ -1,0 +1,28 @@
+.breadCrumb {
+    background-color: var(--kaeru-light);
+    padding: 0.3rem 1rem;
+    margin: 10px 0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    vertical-align: middle;
+}
+
+.rightArrow {
+    margin: 0 0.2rem;
+    color: var(--paletext)
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+}

@@ -23,6 +23,10 @@
     width: 100%;
 }
 
+.link span {
+    margin-left: 0.3rem;
+}
+
 .link:hover {
     color: white;
 }

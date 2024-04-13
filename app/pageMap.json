@@ -1,0 +1,46 @@
+[
+  {
+    "route": "conlang",
+    "title": "人工言語"
+  },
+  {
+    "route": "download",
+    "title": "倉庫"
+  },
+  {
+    "route": "download/font",
+    "title": "フォント"
+  },
+  {
+    "route": "download/gallery",
+    "title": "ギャラリー"
+  },
+  {
+    "route": "news",
+    "title": "新着情報"
+  },
+  {
+    "route": "phun",
+    "title": "雰界創作"
+  },
+  {
+    "route": "phun/lang",
+    "title": "雰語"
+  },
+  {
+    "route": "phun/world",
+    "title": "雰界"
+  },
+  {
+    "route": "self-intro",
+    "title": "Who am I?"
+  },
+  {
+    "route": "various",
+    "title": "がらくた箱"
+  },
+  {
+    "route": "clock",
+    "title": "永球時計"
+  }
+]

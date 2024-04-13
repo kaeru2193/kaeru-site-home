@@ -1,4 +1,4 @@
-import { Header, Footer } from "./common"
+import { PageTitle } from "./layout.getTitle"
 
 export const dynamic = 'force-dynamic'
 
@@ -9,10 +9,6 @@ const description = 'かえるのホームページです。';
 const url = 'https://kaeru2193.net';
 
 export const metadata = {
-  title: {
-    default: siteName,
-    template: `%s - ${siteName}`,
-  },
   metadataBase: new URL(process.env.URL ?? 'http://localhost:3000'),
   description,
   openGraph: {
@@ -43,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <PageTitle site={siteName}/>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png"/>

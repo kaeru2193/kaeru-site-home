@@ -1,5 +1,8 @@
+"use client"
 import { Header, Footer } from "@/common"
 import { BreadCrumb } from "@/breadCrumb"
+
+import { usePathname } from "next/navigation";
 
 import "./kaeru.css"
 
@@ -8,11 +11,13 @@ export default function KaeruLayout({
   }: {
     children: React.ReactNode
   }) {
+    const isRoot = usePathname() == "/"
+
     return (
       <>
         <Header/>
             <div className="article">
-              {/*<BreadCrumb/>*/}
+              {isRoot? <></>: <BreadCrumb/>}
               {children}
             </div>
         <Footer/>
