@@ -21,7 +21,7 @@ function getFolderPaths(dir: string, folderList: string[] = []) {
 
 const folderPaths = getFolderPaths(directoryPath)
     .map(p => {
-        const route = p.split("app\\")[1].split("\\").filter(d => {
+        const route = p.split("app/")[1].split("/").filter(d => {
             return !d.match(/^\(.*\)$/)
         })
         return {
