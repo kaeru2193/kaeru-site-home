@@ -95,7 +95,7 @@ const Page = () => {
 
 const setNow = (setE: Function, setP: Function) => {
     const e = new Date()
-    const earthArr = [e.getFullYear(), e.getMonth() + 1, e.getDate(), e.getHours(), e.getMinutes(), e.getSeconds()]
+    const earthArr = [e.getUTCFullYear(), e.getUTCMonth() + 1, e.getUTCDate(), e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds()]
     setE(earthArr.join("_"))
 
     const p = new EikyuDate(EikyuDate.toEikyu(e.getTime())).getFormat()
@@ -107,7 +107,9 @@ const E2P = (earth: string, setP: Function) => {
     const defaultTime = [0, 1, 1, 0, 0, 0]
     const eSplit = earth.split("_").map(e => Number(e))
     const eArr = defaultTime.map((d, idx) => eSplit[idx]? eSplit[idx]: d)
-    const e = new Date(eArr[0], eArr[1] - 1, eArr[2], eArr[3], eArr[4], eArr[5])
+    const e = new Date()
+    e.setUTCFullYear(eArr[0], eArr[1] - 1, eArr[2])
+    e.setUTCHours(eArr[3], eArr[4], eArr[5])
 
     const p = new EikyuDate(EikyuDate.toEikyu(e.getTime())).getFormat()
     const phunArr = [p.yea, p.sea, p.poi, p.day, p.hou, p.per, p.min, p.sec]
@@ -121,7 +123,7 @@ const P2E = (phun: string, setE: Function) => {
     const p = new EikyuDate(pArr[0], pArr[1], pArr[2], pArr[3], pArr[4], pArr[5], pArr[6], pArr[7])
 
     const e = new Date(EikyuDate.toEarth(p.date))
-    const earthArr = [e.getFullYear(), e.getMonth() + 1, e.getDate(), e.getHours(), e.getMinutes(), e.getSeconds()]
+    const earthArr = [e.getUTCFullYear(), e.getUTCMonth() + 1, e.getUTCDate(), e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds()]
     setE(earthArr.join("_"))
 }
 
