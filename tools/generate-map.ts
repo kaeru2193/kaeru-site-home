@@ -33,8 +33,8 @@ const folderPaths: any[] = getFolderPaths(directoryPath)
         return !p.route.some(d => d.match(/^\[.*\]$/)) && p.route[0]
     })
     .map(p => {
-        if (p.path.split("\\").some(f => f.startsWith("_"))) {
-            console.log(p.path)
+        if (p.route.some(f => f.startsWith("_"))) {
+            console.log("excluded: " + p.path)
             return null
         }
         if (fs.existsSync(path.join(p.path, './page.tsx'))) {
