@@ -1,6 +1,6 @@
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>Who am I?</h1>
             <p>人工言語やプログラミング、その他諸々の創作をしている雑多な人です。主に人工言語「雰語」・架空世界「雰界」の制作をしています。2021年10月頃からこの界隈で活動しています。</p>
             <h2>名義</h2>
@@ -62,7 +62,7 @@ const Page = () => {
                 <li>X(Twitter): @kaeru2193</li>
                 <li>Discord: kaeru2193</li>
             </ul>
-        </div>
+        </>
     )
 }
 

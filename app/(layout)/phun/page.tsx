@@ -13,7 +13,7 @@ const externalData =
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>雰界創作</h1>
             <p>人工言語「雰語」と世界観「雰界」を中心とする創作活動です。</p>
             <h2>館内案内</h2>
@@ -21,7 +21,7 @@ const Page = () => {
 
             <h2>リンク集</h2>
             <SiteLinkList data={externalData}/>
-        </div>
+        </>
     )
 }
 

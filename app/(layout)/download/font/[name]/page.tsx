@@ -17,7 +17,7 @@ const Page = ({ params }: { params: { name: string } }) => {
     }
 
     return (
-        <div className="mainContainer">
+        <>
             <h1>{font.name}</h1>
             {font.desc}
             
@@ -29,7 +29,7 @@ const Page = ({ params }: { params: { name: string } }) => {
             <div className={style.download}>
                 <DownloadButton url={font.publish} name={font.name}/>
             </div>
-        </div>
+        </>
     )
 }
 

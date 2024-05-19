@@ -1,7 +1,7 @@
 .breadCrumb {
     background-color: var(--kaeru-light);
     padding: 0.3rem 1rem;
-    margin: 10px 0;
+    margin: 1rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     display: flex;
@@ -25,4 +25,9 @@
 
 .link {
     text-decoration: none;
+}
+
+.presentPage {
+    color: var(--phun-text-dark);
+    font-weight: bold;
 }

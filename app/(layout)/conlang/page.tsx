@@ -8,12 +8,12 @@ const siteData =
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>人工言語</h1>
             <p>雰界創作以外の人工言語活動についてです。</p>
             <h2>リンク集</h2>
             <SiteLinkList data={siteData}/>
-        </div>
+        </>
     )
 }
 

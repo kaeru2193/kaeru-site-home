@@ -8,12 +8,12 @@ const siteData =
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>雰界</h1>
             <p>雰語が用いられる架空世界です。「永球」という架空の惑星を中心に、地理や国家、天文など広い範囲の創作を行っています。</p>
             <h2>リンク集</h2>
             <SiteLinkList data={siteData}/>
-        </div>
+        </>
     )
 }
 

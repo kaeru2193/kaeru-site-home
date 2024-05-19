@@ -42,5 +42,13 @@
   {
     "route": "clock",
     "title": "永球時計"
+  },
+  {
+    "route": "tools",
+    "title": "技術棟トップ"
+  },
+  {
+    "route": "tools/phun-pron",
+    "title": "雰語を漢字転写から表音表記に変換"
   }
 ]

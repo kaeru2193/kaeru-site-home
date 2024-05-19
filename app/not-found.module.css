@@ -9,10 +9,12 @@
 
 .icon {
     animation: float 2s ease-in-out infinite alternate-reverse;
+    margin: 0 auto;
 }
 
 .title {
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .box {
@@ -23,10 +25,12 @@
 
 .box > p {
     font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 .box a {
     color: white;
+    text-decoration: underline;
 }
 
 .title {

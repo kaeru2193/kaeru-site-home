@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    background-color: #355bbd;
+    padding: 0.5rem 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.toHome {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #355bbd;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.toHome span {
+    margin-left: 5px;
+}
+
+.homeLink {
+    margin-left: auto;
+}
+
+.homeLink a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -19,9 +19,9 @@ function getFolderPaths(dir: string, folderList: string[] = []) {
     return folderList;
 }
 
-const folderPaths = getFolderPaths(directoryPath)
+const folderPaths: any[] = getFolderPaths(directoryPath)
     .map(p => {
-        const route = p.split("app/")[1].split("/").filter(d => {
+        const route = p.split("app\\")[1].split("\\").filter(d => {
             return !d.match(/^\(.*\)$/)
         })
         return {
@@ -33,16 +33,35 @@ const folderPaths = getFolderPaths(directoryPath)
         return !p.route.some(d => d.match(/^\[.*\]$/)) && p.route[0]
     })
     .map(p => {
-        const data = fs.readFileSync(path.join(p.path, './page.tsx'), "utf-8")
-        const title = data.match(/.*?<\s*h1.*?>(.+)<\s*\/\s*h1>/)
-        if (!title) {
-            throw Error(`h1タグ取得失敗: ${p}`)
+        if (p.path.split("\\").some(f => f.startsWith("_"))) {
+            console.log(p.path)
+            return null
         }
-        return {
-            route: p.route.join("/"),
-            title: title[1]
+        if (fs.existsSync(path.join(p.path, './page.tsx'))) {
+            const data = fs.readFileSync(path.join(p.path, './page.tsx'), "utf-8")
+            const title = data.match(/.*?<\s*h1.*?>(.+)<\s*\/\s*h1>/)
+            if (!title) {
+                throw Error(`h1タグ取得失敗: ${p}`)
+            }
+            return {
+                route: p.route.join("/"),
+                title: title[1]
+            }
+        } else if (fs.existsSync(path.join(p.path, './page.mdx'))) {
+            const data = fs.readFileSync(path.join(p.path, './page.mdx'), "utf-8")
+            const title = data.match(/^([\s\S]*?\n)?#(?!#)\s*(.+)\s*\n/)
+            if (!title) {
+                throw Error(`h1見出し取得失敗: ${p.path}`)
+            }
+            return {
+                route: p.route.join("/"),
+                title: title[2]
+            }
+        } else {
+            return null
+            throw Error(`page本体が存在しません: ${p.path}`)
         }
-    })
+    }).filter(p => p)
 
 fs.writeFileSync("./app/pageMap.json", JSON.stringify(folderPaths, null, 2))
 console.log("pagemap generated")

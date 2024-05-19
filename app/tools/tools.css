@@ -1,0 +1,51 @@
+body {
+    background-color: #eaf7ff;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainContainer {
+    width: 80vw;
+    flex: 1;
+    padding: 0 2rem 1rem 2rem;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 15px #355bbd50;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #355bbd;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 0.8rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #355bbd;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin-left: 1.5rem;
+}
+
+a {
+    color: #355bbd;
+    text-decoration: underline;
+}

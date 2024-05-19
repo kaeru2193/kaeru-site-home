@@ -9,12 +9,12 @@ const siteData =
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>がらくた箱</h1>
             <p>細かいWebツールやミニゲームなど。</p>
             <h2>リンク集</h2>
             <SiteLinkList data={siteData}/>
-        </div>
+        </>
     )
 }
 

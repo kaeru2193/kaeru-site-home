@@ -27,12 +27,13 @@ const siteData =
         {name: "人工言語", desc: "雰界創作以外の人工言語活動についてです。", url: "/conlang"},
         {name: "倉庫", desc: "各種創作物をダウンロードします。", url: "/download"},
         {name: "ギャラリー", desc: "ロゴや紋章など、画像形式の制作物をダウンロードできます。", url: "/download/gallery"},
-        {name: "がらくた箱", desc: "細かいWebツールやゲームの寄せ集めです。", url: "/various"}
+        {name: "技術棟", desc: "細かいWebツールが適当に放り込まれた別館です。", url: "/tools", reload: true},
+        {name: "がらくた箱", desc: "分類できない小規模な制作物へのリンク集です。", url: "/various"},
     ]
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>ようこそ！</h1>
 
             <div className={style.grid}>
@@ -57,7 +58,7 @@ const Page = () => {
                 <span className={style.newsLink}><a href="/news">過去の更新履歴を見る</a></span>
             </div>
 
-        </div>
+        </>
     )
 }
 

@@ -24,10 +24,16 @@ export const BreadCrumb = () => {
             p.route == roots[idx]
           )[0]
 
+          const link = idx != roots.length - 1
+          const linkTitle = title? title.title: d //登録されていればそれを、されていなければURLから取得して表示
+
           return (
             <span className={style.linkContainer} key={idx}>
               <FaAngleRight className={style.rightArrow}/>
-              <Link className={style.link} href={`/${roots[idx]}`}>{title? title.title: d}</Link>
+              {link
+                ? <Link className={style.link} href={`/${roots[idx]}`}>{linkTitle}</Link>
+                : <span className={style.presentPage}>{linkTitle}</span>
+              }
             </span>
           )
         })}

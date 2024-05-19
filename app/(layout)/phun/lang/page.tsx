@@ -1,4 +1,4 @@
-import { SiteLinkList } from "@/link"
+import { SiteLinkList, SiteLink } from "@/link"
 
 import style from "./page.module.css"
 
@@ -12,13 +12,13 @@ const siteData =
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>雰語</h1>
             <p className={`${style.phunText} phun`}>栄言為、現書使我然之言。</p>
             <p>かえるにより2021/1/13から制作されている、表意文字である「雰字」を用いて表記される人工言語です。</p>
             <h2>リンク集</h2>
             <SiteLinkList data={siteData}/>
-        </div>
+        </>
     )
 }
 

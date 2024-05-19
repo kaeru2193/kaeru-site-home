@@ -18,7 +18,9 @@ export default function KaeruLayout({
         <Header/>
             <div className="article">
               {isRoot? <></>: <BreadCrumb/>}
-              {children}
+              <div className="mainContainer">
+                {children}
+              </div>
             </div>
         <Footer/>
       </>

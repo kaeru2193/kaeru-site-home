@@ -9,10 +9,11 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
-    padding: 0 2.5rem 1rem 2.5rem;
+    padding-bottom: 1rem;
     border-radius: 0 0 1rem 1rem;
     background-color: white;
-    width: fit-content;
+    width: calc(80vw + 5rem);
+    max-width: 65rem;
 }
 
 .mainContainer {
@@ -23,6 +24,7 @@ body {
 
 a {
     color: var(--phun-text);
+    text-decoration: underline;
 }
 
 a:hover {
@@ -36,21 +38,35 @@ input[type="text"] {
 }
 
 h1 {
-    margin: 0.5rem 0 0.3rem 0;
-    padding: 3px 0 3px 0.5rem;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-    color: var(--phun-text);
-    border-bottom: 3px var(--phun-dark) solid;
-    text-align: center;
+    font-weight: bold;
+    margin: 1.5rem 0 0.8rem 0;
+    padding: 0 0 0.1rem 0.8rem;
+    font-size: 1.6rem;
+    border-bottom-left-radius: 0.25rem;
+    color: var(--phun-text-dark);
+    border: var(--phun-text-dark) solid;
+    border-width: 0 0 3px 10px;
+    text-align: left;
 }
 
 h2 {
+    margin: 1rem 0;
     padding: 2px 0 2px 3px;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--phun-text);
-    border-bottom: 1px solid var(--phun-dark-transparent);
+    border-bottom: 2px solid var(--phun-dark-transparent);
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--phun-text-dark);
+    margin: 1rem 0;
+}
+
+p {
+    margin: 1rem 0;
 }
 
 ul {
@@ -81,9 +97,34 @@ ul > li > ul li::before {
     background-image:  url(/list-mark-white.svg);
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px var(--kaeru-border) solid;
+    padding: 0.2rem 0.4rem;
+}
+
+th {
+    background-color: var(--kaeru-light);
+}
+
+pre {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background: #24272c;
+    color: white;
+    white-space: pre-wrap;
+}
+
+.ipa {
+    font-family: 'Charis SIL', 'Doulos SIL', 'DejaVu Sans', 'Code2000', 'Hiragino Kaku Gothic Pro', 'Matrix Unicode', 'Tahoma', 'Microsoft Sans Serif', sans-serif;
+}
+
 @media screen and (max-width: 834px) {
     .article {
         width: 90vw;
-        padding: 1rem;
     }
 }

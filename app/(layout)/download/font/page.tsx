@@ -2,7 +2,7 @@ import { SiteLink } from "@/link"
 
 const Page = () => {
     return (
-        <div className="mainContainer">
+        <>
             <h1>フォント</h1>
             <p>各種自作フォントのダウンロードを行うことが出来ます。</p>
 
@@ -20,7 +20,7 @@ const Page = () => {
                 さんの製作している『シャレイア語』で使われる文字体系です。
             </p>
             <SiteLink title="Càgit" desc="シャレイア文字のセリフ体風フォントです。" url="font/cagit"/>
-        </div>
+        </>
     )
 }
 
