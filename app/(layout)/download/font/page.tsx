@@ -17,9 +17,10 @@ const Page = () => {
             <h2>シャレイア文字</h2>
             <p>
                 <a href="https://twitter.com/Ziphil">Ziphil</a>
-                さんの製作している『シャレイア語』で使われる文字体系です。
+                さんの製作している『シャレイア語』で用いられる文字体系です。
             </p>
             <SiteLink title="Càgit" desc="シャレイア文字のセリフ体風フォントです。" url="font/cagit"/>
+            <SiteLink title="Bosval" desc="シャレイア文字のドットフォントです。" url="font/bosval"/>
         </>
     )
 }

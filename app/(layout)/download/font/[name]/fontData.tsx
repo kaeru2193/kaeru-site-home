@@ -34,11 +34,27 @@ export const fontData = [
         "desc": 
             <>
                 <p>
-                    <a href="https://twitter.com/Ziphil">Ziphil</a>
-                    さんの製作している『シャレイア語』で使われる、シャレイア文字のセリフ体風フォントです。Regular, Boldの2ウェイトが含まれます。
+                    <a href="https://ziphil.com">Ziphil</a>
+                    さんの製作している『シャレイア語』で用いられる『シャレイア文字』のセリフ体風フォントです。Regular, Boldの2ウェイトが含まれます。
                 </p>
                 <div className={style.fontImgContainer}>
                     <Image src="/font-preview/cagit.png" className={style.fontImg} quality={100} width={2000} height={2000} alt={"cagit preview"} priority/>
+                </div>
+            </>
+    },
+    {
+        "name": "Bosval",
+        "id": "bosval",
+        "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/Bosval-latest.zip",
+        "example": "sizkulig okebiq a hay adoj te rafepxav acal e monaf.",
+        "desc": 
+            <>
+                <p>
+                    <a href="https://ziphil.com">Ziphil</a>
+                    さんの製作している『シャレイア語』で用いられる『シャレイア文字』のドットフォントです。Regular, Boldの2ウェイトが含まれます。
+                </p>
+                <div className={style.fontImgContainer}>
+                    <Image src="/font-preview/bosval.png" className={style.fontImg} quality={100} width={2000} height={2000} alt={"bosval preview"} priority/>
                 </div>
             </>
     },

@@ -40,4 +40,9 @@ export const newsData =
         "name": "技術棟を増築！",
         "desc": <>新たにWebツールを放り込む予定の「<a href="/download/gallery">之機堂技術棟</a>」ページを公開しました！</>
     },
+    {
+        "date": "2024-07-06",
+        "name": "Bosvalフォントを公開しました",
+        "desc": <>新たにシャレイア文字のドットフォント「<a href="/download/font/bosval">Bosval</a>」を公開しました！</>
+    },
 ]

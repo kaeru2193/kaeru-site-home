@@ -5,7 +5,6 @@
 .fontImg {
     height: 500px;
     width: auto;
-    aspect-ratio: 2500/2441;
 }
 
 .example {
@@ -40,4 +39,9 @@
 @font-face {
     font-family: "cagit";
     src: url("https://kaeru2193.github.io/Phun-Resources/font/Cagit-regular-latest.woff");
+}
+
+@font-face {
+    font-family: "bosval";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/Bosval-regular-latest.woff");
 }
