@@ -3,8 +3,8 @@
 }
 
 .fontImg {
-    height: 500px;
-    width: auto;
+    max-width: 600px;
+    width: 100%;
 }
 
 .example {

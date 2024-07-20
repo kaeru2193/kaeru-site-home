@@ -30,7 +30,7 @@ export const fontData = [
         "name": "Càgit",
         "id": "cagit",
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/Cagit-latest.zip",
-        "example": "sizkulig okebiq a hay adoj te rafepxav acal e monaf.",
+        "example": "sizkulig okebiq a hay adoj te rafepxav acál e monaf.",
         "desc": 
             <>
                 <p>
@@ -46,7 +46,7 @@ export const fontData = [
         "name": "Bosval",
         "id": "bosval",
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/Bosval-latest.zip",
-        "example": "sizkulig okebiq a hay adoj te rafepxav acal e monaf.",
+        "example": "sizkulig okebiq a hay adoj te rafepxav acál e monaf.",
         "desc": 
             <>
                 <p>
