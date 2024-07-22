@@ -26,6 +26,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#60c187"/>
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#60c187"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </head>
       <body>
         {children}

@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-    margin: 0.8rem 0 0.5rem 0;
+    margin: 1rem 0 0.3rem 0;
     font-size: 1.2rem;
     text-align: left;
     color: #355bbd;
@@ -43,6 +43,10 @@ li {
     text-align: -webkit-match-parent;
     unicode-bidi: isolate;
     margin-left: 1.5rem;
+}
+
+li + li {
+    margin-top: 0.2rem;
 }
 
 a {

@@ -5,13 +5,17 @@ import styles from "./components.module.css"
 
 export const Input = (props: any) => {
     if (props.textarea) {
-        return (<textarea className={styles.textarea} rows={props.height} onBlur={(e) => {
-            props.set(e.target.value)
-        }}/>)
+        return <label className={styles.textareaBox}><span className={styles.label}>{props.label}</span>
+            <textarea className={styles.textarea} defaultValue={props.default? props.default: ""} rows={props.height} onBlur={(e) => {
+                props.set(e.target.value)
+            }}/>
+        </label>
     } else {
-        return (<input className={styles.input} type="text" onBlur={(e) => {
-            props.set(e.target.value)
-        }}/>)
+        return <label className={styles.inputBox}><span className={styles.label}>{props.label}</span>
+            <input className={styles.input} type={props.number? "number": "text"} defaultValue={props.default? props.default: ""} onBlur={(e) => {
+                props.set(e.target.value)
+            }}/>
+        </label>
     }
 }
 
@@ -23,9 +27,8 @@ const copyText = async (text: string, set: Function) => {
 }
 
 export const Output = (props: any) => {
+    const [copyLabel, setCopyLabel] = useState("COPY")
     if (props.textarea) {
-        const [copyLabel, setCopyLabel] = useState("COPY")
-
         return (
             <div className={styles.outputArea}>
                 <div className={styles.outputTool}>
@@ -35,7 +38,11 @@ export const Output = (props: any) => {
             </div>
         )
     } else {
-        return (<input className={`${styles.input} ${styles.output}`} type="text" value={props.var} readOnly/>)
+        return (
+        <div className={styles.outputRowArea}>
+            <input className={`${styles.input} ${styles.outputRow}`} type="text" value={props.var} readOnly/>
+            <button className={styles.copyButton} onClick={() => copyText(props.var, setCopyLabel)}>{copyLabel}</button>
+        </div>)
     }
 }
 
@@ -58,8 +65,8 @@ export const Select = (props: any) => {
 export const OptionRow = (props: any) => {
     return (
         <div className={styles.optionRow}>
-            <span className={styles.optionLabel}>{props.label}</span>
-            <span>{props.children}</span>
+            <span className={styles.label}>{props.label}</span>
+            <span className={styles.optionBody}>{props.children}</span>
         </div>
     )
 }

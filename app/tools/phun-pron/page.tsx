@@ -40,7 +40,6 @@ const App = (props: {data: any[]}) => {
     const [type, setType] = useState("accent")
     
     const sentences = text.split(/([。、「」！？〈〉―\n])/)
-    console.log(sentences)
     const processed = sentences.map(s => {
         const words = s.split(" ")
         const converted = words.map(w => w.split("")
@@ -74,8 +73,8 @@ const App = (props: {data: any[]}) => {
 
     return (
         <>
-            <h1>雰語を漢字転写から表音表記に変換</h1>
-            <Input var={text} set={setText} height={10} textarea/>
+            <h1>雰語を漢字翻字から表音表記化</h1>
+            <Input label="漢字翻字" var={text} set={setText} height={10} textarea/>
 
             <OptionRow label="変換方法">
                 <Select var={type} set={setType} data={{
