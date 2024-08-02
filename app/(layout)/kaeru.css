@@ -13,13 +13,13 @@ body {
     border-radius: 0 0 1rem 1rem;
     background-color: white;
     width: calc(80vw + 5rem);
-    max-width: 65rem;
+    max-width: 75rem;
 }
 
 .mainContainer {
     margin: 0 auto;
     width: 80vw;
-    max-width: 60rem;
+    max-width: 70rem;
 }
 
 a {
@@ -59,10 +59,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: var(--phun-text-dark);
-    margin: 1rem 0;
+    margin: 1.2rem 0 0.7rem 0;
 }
 
 p {
@@ -70,14 +70,19 @@ p {
 }
 
 ul {
+    padding-left: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+ul ul {
     list-style: none;
     padding-left: 2rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
 }
 
 ul li {
     padding: initial;
-    margin: 0.3rem 0;
+    margin-top: 0.5rem;
 }
 
 ul li::before {

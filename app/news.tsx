@@ -45,4 +45,9 @@ export const newsData =
         "name": "Bosvalフォントを公開しました",
         "desc": <>新たにシャレイア文字のドットフォント「<a href="/download/font/bosval">Bosval</a>」を公開しました！</>
     },
+    {
+        "date": "2024-08-02",
+        "name": "一部ページを更新しました",
+        "desc": <>ページ構造や内容を一部変更しました。</>
+    },
 ]
