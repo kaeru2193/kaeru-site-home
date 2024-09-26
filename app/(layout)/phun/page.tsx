@@ -9,7 +9,7 @@ const siteData =
 const externalData = 
     [
         {name: "雰界資料集", desc: "雰界創作に関する総合Wikiです。", url: "https://phunworld.miraheze.org"},
-        {name: "雷家向雰民", desc: "雰界創作のための公式Discordサーバーです。", url: "https://phunworld.miraheze.org"},
+        {name: "雷家向雰民", desc: "雰界創作のための公式Discordサーバーです。", url: "https://discord.gg/tHhA4bBYap"},
     ]
 
 const Page = () => {
