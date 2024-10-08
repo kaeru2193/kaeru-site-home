@@ -1,0 +1,148 @@
+.word {
+    display: inline-block;
+    position: relative;
+}
+
+.useDict {
+    display: inline-flex;
+    background-color: #e8e8e8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.dictCheckbox {
+    display: inline-block;
+}
+
+.dictCheckbox input {
+    display: none;
+}
+
+.dictCheckbox span {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+}
+
+.dictCheckbox input:checked + span {
+    color: #ffffff;
+    background-color: #014f41;
+}
+
+.dictPop {
+    background-color: white;
+    color: black;
+    border: 1px solid #808080;
+    display: inline-block;
+    width: max-content;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.popTop {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.popEntry {
+    font-family: "Phun-Sans";
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.popKanji {
+    font-size: 0.8rem;
+    
+}
+
+.popPron {
+    font-size: 0.8rem;
+}
+
+.popContent {
+    display: block;
+}
+
+.popMeanRow {
+    display: flex;
+}
+
+.popMeanRow + .popMeanRow {
+    margin-top: 3px;
+}
+
+.popMeanType {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+    background-color: #014f41;
+    color: white;
+    margin-right: 0.5rem;
+    padding: 0 0.15rem;
+    flex-shrink: 0;
+}
+
+.popMeanTrans {
+    font-size: 0.8rem;
+    line-height: 110%;
+}
+
+.popMeanTransRow {
+    display: block;
+}
+
+.popMeanTransRow + .popMeanTransRow {
+    margin-top: 2px;
+}
+
+.popMeanTransNum {
+    display: inline-flex;
+    border: 1px solid black;
+    font-size: 0.7rem;
+    width: 1rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin-right: 2px;
+    border-radius: 50%;
+}
+
+.popMeanExp {
+    display: block;
+    font-size: 0.75rem;
+    border-left: 4px solid #c0c0c0;
+    padding: 2px 0 2px 3px;
+    margin: 2px 0 3px 0;
+}
+
+.popMeanPhun {
+    font-family: "Phun-Sans";
+    margin: 0 2px;
+}
+
+.popMeanPhun + .popMeanPhun {
+    margin-left: 0;
+}
+
+.popMeanPhun:has(+ .popMeanPhun) {
+    margin-right: 0;
+}

@@ -30,6 +30,7 @@
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "react-icons": "^5.0.1",
+    "react-string-replace": "^1.1.1",
     "remark-breaks": "^4.0.0",
     "remark-gfm": "^4.0.0"
   }

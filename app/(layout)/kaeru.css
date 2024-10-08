@@ -7,7 +7,7 @@ body {
 
 .article {
     box-sizing: border-box;
-    overflow: hidden;
+    padding-top: 1px;
     margin: 0 auto;
     padding-bottom: 1rem;
     border-radius: 0 0 1rem 1rem;
