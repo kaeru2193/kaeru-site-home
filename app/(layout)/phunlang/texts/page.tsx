@@ -1,4 +1,5 @@
 import style from "./page.module.css"
+import Link from "next/link"
 
 const Page = () => {
     return (
@@ -7,10 +8,10 @@ const Page = () => {
             <p>雰語によるテキストを閲覧できます。</p>
             <h2>翻訳</h2>
             <ul>
-                <li><a href="./texts/alice">『Alice's Adventures in Wonderland』</a></li>
-                <li><a href="./texts/babel">『バベルの塔』</a></li>
-                <li><a href="./texts/scp">『SCP財団とは』</a></li>
-                <li><a href="./texts/internationale">『L'Internationale』</a></li>
+                <li><Link href="./texts/alice">『Alice's Adventures in Wonderland』</Link></li>
+                <li><Link href="./texts/babel">『バベルの塔』</Link></li>
+                <li><Link href="./texts/scp">『SCP財団とは』</Link></li>
+                <li><Link href="./texts/internationale">『L'Internationale』</Link></li>
             </ul>
         </>
     )

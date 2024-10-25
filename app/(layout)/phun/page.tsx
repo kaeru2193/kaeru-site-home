@@ -1,4 +1,5 @@
 import { SiteLinkList } from "@/link"
+import Link from "next/link"
 
 const externalData = 
     [
@@ -15,15 +16,15 @@ const Page = () => {
             <h2>案内</h2>
             <ul>
                 <li>
-                    <a href="phunlang">雰語</a>
+                    <Link href="phunlang">雰語</Link>
                     <ul><li>かえるによって2021年頃から制作されている芸術言語です。</li></ul>
                 </li>
                 <li>
-                    <a href="phun/lang">雰界の諸言語</a>
+                    <Link href="phun/lang">雰界の諸言語</Link>
                     <ul><li>雰界で話される各言語の紹介です。</li></ul>
                 </li>
                 <li>
-                    <a href="phun/world">雰界</a>
+                    <Link href="phun/world">雰界</Link>
                     <ul><li>雰語を初めとする人工言語が用いられる世界観であり、雰界創作における全ての事象を内包する並行宇宙です。</li></ul>
                 </li>
             </ul>

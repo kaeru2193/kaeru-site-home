@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const newsData =
 [
     {
@@ -8,7 +10,7 @@ export const newsData =
     {
         "date": "2024-02-05",
         "name": "Càgitフォントを公開しました",
-        "desc": <>新たにシャレイア文字のセリフ体風フォント「<a href="/download/font/cagit">Càgit</a>」を公開しました！</>
+        "desc": <>新たにシャレイア文字のセリフ体風フォント「<Link href="/download/font/cagit">Càgit</Link>」を公開しました！</>
     },
     {
         "date": "2024-02-07",
@@ -23,7 +25,7 @@ export const newsData =
     {
         "date": "2024-03-12",
         "name": "「ギャラリー」ページを公開しました",
-        "desc": <>ロゴ・紋章などの画像ファイルを閲覧・ダウンロードできる「<a href="/download/gallery">ギャラリー</a>」ページを公開しました！</>
+        "desc": <>ロゴ・紋章などの画像ファイルを閲覧・ダウンロードできる「<Link href="/download/gallery">ギャラリー</Link>」ページを公開しました！</>
     },
     {
         "date": "2024-03-28",
@@ -38,16 +40,21 @@ export const newsData =
     {
         "date": "2024-05-19",
         "name": "技術棟を増築！",
-        "desc": <>新たにWebツールを放り込む予定の「<a href="/download/gallery">之機堂技術棟</a>」ページを公開しました！</>
+        "desc": <>新たにWebツールを放り込む予定の「<Link href="/download/gallery">之機堂技術棟</Link>」ページを公開しました！</>
     },
     {
         "date": "2024-07-06",
         "name": "Bosvalフォントを公開しました",
-        "desc": <>新たにシャレイア文字のドットフォント「<a href="/download/font/bosval">Bosval</a>」を公開しました！</>
+        "desc": <>新たにシャレイア文字のドットフォント「<Link href="/download/font/bosval">Bosval</Link>」を公開しました！</>
     },
     {
         "date": "2024-08-02",
         "name": "一部ページを更新しました",
         "desc": <>ページ構造や内容を一部変更しました。</>
+    },
+    {
+        "date": "2024-10-25",
+        "name": "ページを公開しました",
+        "desc": <>新たに<Link href="/phunlang/name">雰名</Link>ページを公開しました！</>
     },
 ]
