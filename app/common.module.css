@@ -78,6 +78,10 @@
     font-size: 1.1rem;
 }
 
+.topLinks a:hover {
+    color: white;
+}
+
 .count {
     margin: 0.7rem 0;
     font-size: 1rem;
