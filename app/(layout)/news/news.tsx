@@ -21,7 +21,7 @@ export const NewsList = (props: any) => {
         <div>
             {sorted.map((e: any, idx: number) => {
                 const postDate = dayjs(`${e.date}T00:00:00+09:00`)
-                const viewdate = postDate.tz('Asia/Tokyo').format('YYYY/MM/DD')
+                const viewdate = postDate.tz('Asia/Tokyo').format('YYYY.MM.DD')
 
                 return (
                     <div className={style.entry} key={idx}>

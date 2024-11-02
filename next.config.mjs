@@ -1,6 +1,7 @@
 import nextMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
+import remarkSlug from "remark-slug";
 
 const withMDX = nextMDX({
   extensions: /\.mdx?$/,
@@ -10,9 +11,10 @@ const withMDX = nextMDX({
     // https://github.com/remarkjs/remark-gfm#install
     remarkPlugins: [
       remarkGfm,
-      remarkBreaks
+      remarkBreaks,
+      remarkSlug
     ],
-    rehypePlugins: [],
+    rehypePlugins: []
     // If you use `MDXProvider`, uncomment the following line.
     // providerImportSource: "@mdx-js/react",
   },

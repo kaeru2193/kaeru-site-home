@@ -31,8 +31,8 @@ export const BreadCrumb = () => {
             <span className={style.linkContainer} key={idx}>
               <FaAngleRight className={style.rightArrow}/>
               {link
-                ? <Link className={style.link} href={`/${roots[idx]}`}>{linkTitle}</Link>
-                : <span className={style.presentPage}>{linkTitle}</span>
+                ? <Link className={style.link} href={`/${roots[idx]}`}>{decodeURI(linkTitle!)}</Link>
+                : <span className={style.presentPage}>{decodeURI(linkTitle!)}</span>
               }
             </span>
           )

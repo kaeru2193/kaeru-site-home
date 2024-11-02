@@ -74,13 +74,18 @@ ul {
     margin-bottom: 0.8rem;
 }
 
-ul ul {
+ol {
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+ul ul, ol ol {
     list-style: none;
     padding-left: 2rem;
     margin-bottom: 0;
 }
 
-ul li {
+ul li, ol li {
     padding: initial;
     margin-top: 0.5rem;
 }
@@ -90,16 +95,20 @@ ul li::before {
     content:  "";
     width: 0.8rem;
     height: 0.8rem;
-    background-image:  url(/list-mark.svg);
-    background-size:  contain;
+    background-image: url(/list-mark.svg);
+    background-size: contain;
     margin-right: 0.3rem;
-    background-repeat:  no-repeat;
-    position:  relative;
+    background-repeat: no-repeat;
+    position: relative;
     top: 2px;
 }
 
 ul > li > ul li::before {
     background-image:  url(/list-mark-white.svg);
+}
+
+ol {
+    list-style: decimal;
 }
 
 table {
@@ -115,13 +124,38 @@ th {
     background-color: var(--kaeru-light);
 }
 
-pre {
+td {
+    background-color: white;
+}
+
+:not(pre) > code {
+    background: #24272c;
+    color: white;
+    padding: 3px 5px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+pre:has(code) {
     margin: 1rem 0;
     padding: 0.8rem;
     border-radius: 5px;
     background: #24272c;
     color: white;
     white-space: pre-wrap;
+}
+
+blockquote {
+    padding: 3px 12px;
+    border-left: 5px solid var(--phun-text-dark);
+}
+
+blockquote p {
+    margin: 0.5rem 0;
+}
+
+blockquote p + p {
+    margin-top: 1rem;
 }
 
 .ipa {

@@ -1,7 +1,81 @@
 .header {
     width: 100%;
     background-color: var(--kaeru-main);
-    padding: 0.5rem 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 70rem;
+    height: 76px;
+    display: flex;
+    z-index: 0;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logoLink {
+    text-decoration: none;
+    position: relative;
+    padding: 0 10px 0 2px;
+    z-index: 1;
+}
+
+.title {
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 0 0 3px 20px;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.topLinks {
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topLinks div {
+    display: block;
+    text-wrap: nowrap;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.topLinks div::before, .logoLink::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--kaeru-dark);
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.topLinks div:hover::before, .logoLink:hover::before {
+    height: 100%;
+    transition: 0.2s;
+}
+
+.topLinks a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .count {
@@ -35,27 +109,6 @@
     font-weight: bold;
 }
 
-.content {
-    margin: 0 auto;
-    width: 80vw;
-    max-width: 70rem;
-    display: flex;
-    align-items: center;
-}
-
-.logoLink {
-    height: 60px;
-}
-
-.title {
-    vertical-align: middle;
-    font-weight: bold;
-    padding-left: 20px;
-    color: #ffffff;
-    margin: 0;
-    font-size: 2rem;
-}
-
 .copyright {
     margin: 0.7rem 0;
     color: var(--kaeru-text);
@@ -64,16 +117,23 @@
 }
 
 @media screen and (max-width: 834px) {
-    .header {
-        padding: 0.5rem;
+    .logoLink {
+        padding: 8px 20px 3px 12px;
     }
 
     .content {
+        flex-direction: column;
         width: 100%;
+        height: fit-content;
+        align-items: center;
     }
     
-    .title {
-        padding-left: 0.5rem;
+    .topLinks {
+        margin-left: 0;
+    }
+
+    .topLinks div {
+        padding: 10px 20px;
     }
 }
 

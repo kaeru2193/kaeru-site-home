@@ -11,9 +11,17 @@ export const Header = () => {
         <div className={style.header}>
             <div className={style.content}>
                 <Link href="/" className={style.logoLink}>
-                    <Image src="/kaeru_logo.svg" alt="logo" height={60} width={60}/>
+                    <div className={style.logoContainer}>
+                        <Image src="/kaeru_logo.svg" alt="logo" height={60} width={60}/>
+                        <span className={style.title}>之機堂</span>
+                    </div>
                 </Link>
-                <span className={style.title}>之機堂</span>
+                <div className={style.topLinks}>
+                    <Link href="/phun"><div>雰界創作</div></Link>
+                    <Link href="/ikenolog"><div>池ノ録</div></Link>
+                    <Link href="/download"><div>倉庫</div></Link>
+                    <Link href="/tools"><div>技術棟</div></Link>
+                </div>
             </div>
         </div>
     )
@@ -46,7 +54,7 @@ export const Footer = () => {
 
     return (
         <div className={style.footer}>
-            <p className={style.copyright}>© 2023-2024 kaeru2193</p>
+            <p className={style.copyright}>© 2021-2024 kaeru2193</p>
             <div className={style.count}>
                 {kiriban
                     ? <div className={style.message}>おめでとうございます！あなたは之機堂の<span className={style.messageNum}>{countData}</span>番目の来館者です！</div>

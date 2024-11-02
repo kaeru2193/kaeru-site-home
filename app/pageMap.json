@@ -16,6 +16,25 @@
     "title": "ギャラリー"
   },
   {
+    "route": "ikenolog",
+    "title": "池ノ録"
+  },
+  {
+    "route": "ikenolog"
+  },
+  {
+    "route": "ikenolog/20241102",
+    "title": "Ikenolog、開設！"
+  },
+  {
+    "route": "ikenolog/archives",
+    "title": "アーカイブ"
+  },
+  {
+    "route": "ikenolog/tags",
+    "title": "タグ"
+  },
+  {
     "route": "news",
     "title": "新着情報"
   },
@@ -25,15 +44,39 @@
   },
   {
     "route": "phun/lang",
-    "title": "雰語"
+    "title": "雰界の諸言語"
   },
   {
     "route": "phun/world",
     "title": "雰界"
   },
   {
-    "route": "self-intro",
-    "title": "Who am I?"
+    "route": "phunlang",
+    "title": "雰語"
+  },
+  {
+    "route": "phunlang/name",
+    "title": "雰名"
+  },
+  {
+    "route": "phunlang/texts",
+    "title": "雰語文庫"
+  },
+  {
+    "route": "phunlang/texts/alice",
+    "title": "Alice's Adventures in Wonderland"
+  },
+  {
+    "route": "phunlang/texts/babel",
+    "title": "バベルの塔"
+  },
+  {
+    "route": "phunlang/texts/internationale",
+    "title": "L'Internationale"
+  },
+  {
+    "route": "phunlang/texts/scp",
+    "title": "SCP財団とは"
   },
   {
     "route": "various",
@@ -48,7 +91,15 @@
     "title": "技術棟トップ"
   },
   {
+    "route": "tools/misqo-conv",
+    "title": "算用数字を雰算字に変換"
+  },
+  {
     "route": "tools/phun-pron",
-    "title": "雰語を漢字転写から表音表記に変換"
+    "title": "雰語を漢字翻字から表音表記化"
+  },
+  {
+    "route": "tools/radix-conv",
+    "title": "進数変換器"
   }
 ]

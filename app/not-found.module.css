@@ -13,8 +13,12 @@
 }
 
 .title {
+    font-size: 3rem;
     margin: 20px 0;
     font-weight: bold;
+    color: white;
+    border: none;
+    text-align: center;
 }
 
 .box {
@@ -31,10 +35,6 @@
 .box a {
     color: white;
     text-decoration: underline;
-}
-
-.title {
-    font-size: 3rem;
 }
 
 @keyframes float {

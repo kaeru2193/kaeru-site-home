@@ -57,4 +57,9 @@ export const newsData =
         "name": "ページを公開しました",
         "desc": <>新たに<Link href="/phunlang/name">雰名</Link>ページを公開しました！</>
     },
+    {
+        "date": "2024-11-02",
+        "name": "池ノ録を開設！",
+        "desc": <>新たに文書置き場として<Link href="/ikenolog">池ノ録</Link>を公開しました！</>
+    },
 ]

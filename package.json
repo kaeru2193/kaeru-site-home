@@ -25,13 +25,16 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.3",
     "@types/mdx": "^2.0.13",
+    "@types/papaparse": "^5.3.14",
     "bignumber.js": "^9.1.2",
     "eikyu-clock": "^1.0.1",
     "fs": "^0.0.1-security",
+    "papaparse": "^5.4.1",
     "path": "^0.12.7",
     "react-icons": "^5.0.1",
     "react-string-replace": "^1.1.1",
     "remark-breaks": "^4.0.0",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "remark-slug": "^7.0.1"
   }
 }

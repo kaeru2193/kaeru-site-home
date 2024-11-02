@@ -40,6 +40,13 @@ const Page = () => {
                         <td>2023/04頃</td>
                     </tr>
                     <tr>
+                        <td><span className="phun">蒼 日透</span></td>
+                        <td>蒼 日透</td>
+                        <td>Cò Kúanglí</td>
+                        <td><Link href="https://x.com/Distr_to_Yonder">佐藤陽花</Link></td>
+                        <td>2023/08/31</td>
+                    </tr>
+                    <tr>
                         <td><span className="phun">山 知乾</span></td>
                         <td>山 知乾</td>
                         <td>Dás Qài'só</td>
