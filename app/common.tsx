@@ -20,7 +20,7 @@ export const Header = () => {
                     <Link href="/phun"><div>雰界創作</div></Link>
                     <Link href="/ikenolog"><div>池ノ録</div></Link>
                     <Link href="/download"><div>倉庫</div></Link>
-                    <Link href="/tools"><div>技術棟</div></Link>
+                    <a href="/tools"><div>技術棟</div></a>
                 </div>
             </div>
         </div>
