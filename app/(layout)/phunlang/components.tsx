@@ -1,6 +1,19 @@
-import style from "./dictPop.module.css"
+import style from "./components.module.css"
 import { useRef } from "react"
 import reactStringReplace from "react-string-replace"
+import { getPhunPron } from "@/funcs"
+
+export const KanjiText = (pron: {text: string[]}) => <div className={style.kanjiText}>
+    {pron.text.map((p, idx) => 
+        <p key={idx}>{p.replace(/\./g, "")}</p>
+    )}
+</div>
+
+export const LatinPron = (pron: {text: string[]}) => <div className={style.latinText}>
+    {pron.text.map((p, idx) => 
+        <p key={idx}>{getPhunPron(p)}</p>
+    )}
+</div>
 
 export const DictCheckBox = (props: any) => {
     return (

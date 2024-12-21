@@ -1,3 +1,11 @@
+.kanjiText, .latinText {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.latinText {
+    font-size: 0.95rem;
+}
+
 .word {
     display: inline-block;
     position: relative;

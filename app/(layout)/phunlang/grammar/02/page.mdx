@@ -1,0 +1,214 @@
+
+import { Table, PText } from "@/components/Module"
+import { ScrollableImg } from "@/components"
+
+# 音韻論
+
+## 音節
+
+雰語の音節は明確な構造を有し、「(C)V(X)<sup>T</sup>」という形で記述することが可能である。ここで C は頭子音、 V は母音、 X は末子音、 T は声調を指す。括弧で囲んだ要素は存在しない場合もある。
+
+## 頭子音
+
+雰語では20の頭子音が区別される。左側がラテン文字転写、右側がIPA表記である。
+
+<span className="ipa">/h/</span>の調音は話者によって様々であるが、狭母音 (<span className="ipa">/i/</span>, <span className="ipa">/u/</span>) の前では<span className="ipa">[x]</span>、それ以外の母音の前では<span className="ipa">[h]</span>として実現される傾向にある。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th colSpan={2}>頭子音</th><th>両唇</th><th>歯茎</th><th>口蓋</th><th>軟口蓋</th><th>声門</th>
+    </tr>
+    <tr>
+        <th rowSpan={2}>破裂</th>
+        <th>無声</th>
+        <td><PText>p</PText> <span className="ipa">/p/</span></td>
+        <td><PText>t</PText> <span className="ipa">/t/</span></td>
+        <td></td>
+        <td><PText>k</PText> <span className="ipa">/k/</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td><PText>b</PText> <span className="ipa">/b/</span></td>
+        <td><PText>d</PText> <span className="ipa">/d/</span></td>
+        <td></td>
+        <td><PText>g</PText> <span className="ipa">/g/</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>鼻</th>
+        <td><PText>m</PText> <span className="ipa">/m/</span></td>
+        <td><PText>n</PText> <span className="ipa">/n/</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th rowSpan={2}>破擦</th>
+        <th>無声</th>
+        <td></td>
+        <td><PText>c</PText> <span className="ipa">/t͡s/</span></td>
+        <td><PText>q</PText> <span className="ipa">/t͡ʃ/</span></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td></td>
+        <td></td>
+        <td><PText>j</PText> <span className="ipa">/d͡ʒ/</span></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th rowSpan={2}>摩擦</th>
+        <th>無声</th>
+        <td><PText>f</PText> <span className="ipa">/ɸ/</span></td>
+        <td><PText>s</PText> <span className="ipa">/s/</span></td>
+        <td><PText>x</PText> <span className="ipa">/ʃ/</span></td>
+        <td colSpan={2}><PText>h</PText> <span className="ipa">/h/ [h~x]</span></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td><PText>v</PText> <span className="ipa">/β/</span></td>
+        <td><PText>z</PText> <span className="ipa">/z/</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>接近</th>
+        <td><PText>w</PText> <span className="ipa">/w/</span></td>
+        <td></td>
+        <td><PText>y</PText> <span className="ipa">/j/</span></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>側面接近</th>
+        <td></td>
+        <td><PText>l</PText> <span className="ipa">/l/</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody></table></div>
+
+## 母音
+
+### 単母音
+
+雰語では5の単母音が区別される。左側がラテン文字転写、右側がIPA表記である。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "300px"}}><tbody>
+    <tr>
+        <th>母音</th><th>前舌</th><th>中舌</th><th>後舌</th>
+    </tr>
+    <tr>
+        <th>狭</th>
+        <td><PText>i</PText> <span className="ipa">/i/</span></td>
+        <td></td>
+        <td><PText>u</PText> <span className="ipa">/ɯ/</span></td>
+    </tr>
+    <tr>
+        <th>中間</th>
+        <td><PText>e</PText> <span className="ipa">/ɛ/</span></td>
+        <td></td>
+        <td><PText>o</PText> <span className="ipa">/o/</span></td>
+    </tr>
+    <tr>
+        <th>広</th>
+        <td></td>
+        <td><PText>a</PText> <span className="ipa">/a/</span></td>
+        <td></td>
+    </tr>
+</tbody></table></div>
+
+### 二重母音
+
+雰語の二重母音には <PText>ao</PText> <span className="ipa">/ao/</span>、<PText>ai</PText> <span className="ipa">/ai/</span>、<PText>ua</PText> <span className="ipa">/ɯa/</span>、<PText>uo</PText> <span className="ipa">/ɯo/</span>の4つが存在する。
+
+## 末子音
+
+雰語では5の末子音が区別される。左側がラテン文字転写、右側がIPA表記である。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th colSpan={2}>末子音</th><th>両唇</th><th>歯茎</th><th>口蓋</th><th>軟口蓋</th><th>声門</th>
+    </tr>
+    <tr>
+        <th rowSpan={2}>破裂</th>
+        <th>無声</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>鼻</th>
+        <td><PText>m</PText> <span className="ipa">/m/</span></td>
+        <td><PText>n</PText> <span className="ipa">/n/</span></td>
+        <td></td>
+        <td><PText>ng</PText> <span className="ipa">/ŋ/</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th rowSpan={2}>破擦</th>
+        <th>無声</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th rowSpan={2}>摩擦</th>
+        <th>無声</th>
+        <td></td>
+        <td><PText>s</PText> <span className="ipa">/s/</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>有声</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>接近</th>
+        <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <th colSpan={2}>側面接近</th>
+        <td></td>
+        <td><PText>l</PText> <span className="ipa">/l/</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody></table></div>
+
+## 声調
+
+雰語は声調言語であり、3つの声調が区別される。転写例では便宜上 <PText>a</PText> を例に取る。
+
+<ScrollableImg src="/phun-grammar/tones.png" height={400}/>
+
+### 第一声
+
+高く平らな声調。調値は <span className="ipa">/⁵⁵/</span>。ラテン文字転写では <PText>á</PText> 、数字表記では <PText>a1</PText> と表記される。
+
+### 第二声
+
+低く平らな声調。調値は <span className="ipa">/²²/</span>。ラテン文字転写では <PText>à</PText> 、数字表記では <PText>a2</PText> と表記される。
+
+但し、第二声が2つ以上連続する場合には末尾以外の音節の声調が<span className="ipa">/²⁴/</span>に変化する。
+
+### 第三声
+
+高くから下降する声調。調値は <span className="ipa">/⁵³/</span>。ラテン文字転写では <PText>â</PText> 、数字表記では <PText>a3</PText> と表記される。
+
+## 音配列の禁則
+
+雰語の音節のうち、<PText>yi</PText> と <PText>wu</PText> を含むものは禁則であり出現しない。

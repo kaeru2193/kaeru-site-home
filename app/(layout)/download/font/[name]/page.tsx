@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 
 import { TestWrite } from "./input"
-import { DownloadButton } from "@/download"
+import { DownloadButton } from "@/components"
 
 import { fontData } from "./fontData"
 

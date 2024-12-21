@@ -3,6 +3,7 @@
 
 body {
     background-color: var(--background);
+    color: var(--text);
 }
 
 .article {
@@ -10,7 +11,7 @@ body {
     padding-top: 1px;
     margin: 0 auto;
     padding-bottom: 1rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 10px 10px;
     background-color: white;
     width: calc(80vw + 5rem);
     max-width: 75rem;
@@ -20,6 +21,13 @@ body {
     margin: 0 auto;
     width: 80vw;
     max-width: 70rem;
+    position: relative;
+    padding-left: 0.3rem;
+}
+
+.mainContainer > h1, .mainContainer > h2, .mainContainer > h3,
+.mainContainer > h4, .mainContainer > h5, .mainContainer > h6 {
+    margin-left: -1rem;
 }
 
 a {
@@ -40,33 +48,44 @@ input[type="text"] {
 h1 {
     font-weight: bold;
     margin: 1.5rem 0 0.8rem 0;
-    padding: 0 0 0.1rem 0.8rem;
+    padding: 0 0 0.1rem 10px;
     font-size: 1.6rem;
     border-bottom-left-radius: 0.25rem;
     color: var(--phun-text-dark);
     border: var(--phun-text-dark) solid;
-    border-width: 0 0 3px 10px;
+    border-width: 0 0 3px 8px;
     text-align: left;
 }
 
 h2 {
-    margin: 1rem 0;
-    padding: 2px 0 2px 3px;
+    margin: 1.2rem 0 1rem 0;
+    padding: 2px 0 2px 5px;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--phun-text);
-    border-bottom: 2px solid var(--phun-dark-transparent);
+    border-bottom: 4px double var(--phun-dark-transparent);
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--phun-text-dark);
+    border-bottom: 1px dashed var(--phun-text-dark-transparent);
     margin: 1.2rem 0 0.7rem 0;
+    padding: 2px 0 2px 5px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--phun-main);
+    margin: 1.2rem 0 0.5rem 0;
+    padding-left: 5px;
 }
 
 p {
     margin: 1rem 0;
+    line-height: 1.7;
 }
 
 ul {
@@ -111,21 +130,37 @@ ol {
     list-style: decimal;
 }
 
+.tableBox, .imgBox {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 1rem 0;
+}
+
 table {
     border-collapse: collapse;
+    margin: 0 auto;
+    text-wrap: nowrap;
 }
 
 td, th {
     border: 1px var(--kaeru-border) solid;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.5rem;
 }
 
 th {
     background-color: var(--kaeru-light);
+    font-weight: normal;
 }
 
 td {
     background-color: white;
+}
+
+.imgBox > img {
+    height: 100%;
+    display: block;
+    width: auto;
 }
 
 :not(pre) > code {
@@ -156,10 +191,6 @@ blockquote p {
 
 blockquote p + p {
     margin-top: 1rem;
-}
-
-.ipa {
-    font-family: 'Charis SIL', 'Doulos SIL', 'DejaVu Sans', 'Code2000', 'Hiragino Kaku Gothic Pro', 'Matrix Unicode', 'Tahoma', 'Microsoft Sans Serif', sans-serif;
 }
 
 @media screen and (max-width: 834px) {

@@ -1,12 +1,9 @@
-import Image from "next/image";
+"use client"
 
-import styles from "./Image.module.css"
+import styles from "./Module.module.css"
+import { getPhunPron } from "@/funcs";
 
-export const MdxImage = (props: any) => {
-  return (
-    <img src={props.src} width={props.width}/>
-  )
-}
+import { FaAngleRight } from "react-icons/fa6";
 
 export const Table = (props: any) => {
   const isHeader: boolean = props.head? props.head: false
@@ -38,4 +35,35 @@ export const Table = (props: any) => {
         {tableElem}
       </tbody>
     </table>)
+}
+
+export const PPron = (props: {text: string, children: React.ReactNode}) => {
+  return <>
+    <span className={styles.phunText}>{props.children}</span>
+    <span className={styles.phunPron}>({getPhunPron(props.text)})</span>
+  </>
+}
+
+export const Translate = (props: {children: React.ReactNode}) => {
+  return <div className={styles.transContainer}>
+    <span className={styles.transIcon}><FaAngleRight/></span><span>{props.children}</span>
+  </div>
+}
+
+export const Misqo = (props: {children: React.ReactNode}) => {
+  return <span className={styles.phunMisqo}>
+    {props.children}
+  </span>
+}
+
+export const PBox = (props: {children: React.ReactNode}) => {
+  return <div className={styles.translateBox}>
+    {props.children}
+  </div>
+}
+
+export const PText = (props: {children: React.ReactNode}) => {
+  return <span className={styles.phunText}>
+    {props.children}
+  </span>
 }

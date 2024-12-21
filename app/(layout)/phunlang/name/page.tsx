@@ -23,7 +23,8 @@ const Page = () => {
             <p>
                 2024年10月現在、11名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
             </p>
-            <table>
+
+            <div className="tableBox"><table>
                 <tbody>
                     <tr>
                         <th>雰名</th>
@@ -34,69 +35,69 @@ const Page = () => {
                     </tr>
                     <tr>
                         <td>(<span className="phun">之機</span>)<sup>*1</sup></td>
-                        <td>(之機)</td>
-                        <td>(Kúaàil)</td>
+                        <td>(<span className="serif">之機</span>)</td>
+                        <td>(<span className="serif">Kúaàil</span>)</td>
                         <td><Link href="https://kaeru2193.net/">かえる</Link></td>
                         <td>2023/04頃</td>
                     </tr>
                     <tr>
                         <td><span className="phun">蒼 日透</span></td>
-                        <td>蒼 日透</td>
-                        <td>Cò Kúanglí</td>
+                        <td><span className="serif">蒼 日透</span></td>
+                        <td><span className="serif">Cò Kúanglí</span></td>
                         <td><Link href="https://x.com/Distr_to_Yonder">佐藤陽花</Link></td>
                         <td>2023/08/31</td>
                     </tr>
                     <tr>
                         <td><span className="phun">山 知乾</span></td>
-                        <td>山 知乾</td>
-                        <td>Dás Qài'só</td>
+                        <td><span className="serif">山 知乾</span></td>
+                        <td><span className="serif">Dás Qài'só</span></td>
                         <td><Link href="https://twitter.com/atri_nen">Atridott</Link></td>
                         <td>2023/09/23</td>
                     </tr>
                     <tr>
                         <td><span className="phun">緑 月定</span></td>
-                        <td>緑 月定</td>
-                        <td>Dúal Vò'lûa</td>
+                        <td><span className="serif">緑 月定</span></td>
+                        <td><span className="serif">Dúal Vò'lûa</span></td>
                         <td><Link href="https://ponsuqe.github.io/">ぽんすけ</Link></td>
                         <td>2023/10/15</td>
                     </tr>
                     <tr>
                         <td><span className="phun">慶宇 川奏</span></td>
-                        <td>慶宇 川奏</td>
-                        <td>Nûdúo Hùocáil</td>
+                        <td><span className="serif">慶宇 川奏</span></td>
+                        <td><span className="serif">Nûdúo Hùocáil</span></td>
                         <td><Link href="https://ja.pronouns.page/@nsopikha">ンソピハ</Link></td>
                         <td>2023/10/15</td>
                     </tr>
                     <tr>
                         <td><span className="phun">葉 気翠</span></td>
-                        <td>葉 気翠</td>
-                        <td>Pûa Síngzào</td>
+                        <td><span className="serif">葉 気翠</span></td>
+                        <td><span className="serif">Pûa Síngzào</span></td>
                         <td>rain=sailen</td>
                         <td>2023/10/17</td>
                     </tr>
                     <tr>
                         <td><span className="phun">六 間恒</span></td>
-                        <td>六 間恒</td>
-                        <td>Lîs Túdùang</td>
+                        <td><span className="serif">六 間恒</span></td>
+                        <td><span className="serif">Lîs Túdùang</span></td>
                         <td>闇瀬</td>
                         <td>2024/04/20</td>
                     </tr>
                     <tr>
                         <td><span className="phun">柑 風暁</span></td>
-                        <td>柑 風暁</td>
-                        <td>Túl Têmmí</td>
+                        <td><span className="serif">柑 風暁</span></td>
+                        <td><span className="serif">Túl Têmmí</span></td>
                         <td>暁理</td>
                         <td>2024/08/14</td>
                     </tr>
                     <tr>
                         <td><span className="phun">桜 晴葉</span></td>
-                        <td>桜 晴葉</td>
-                        <td>Túo Zênpûa</td>
+                        <td><span className="serif">桜 晴葉</span></td>
+                        <td><span className="serif">Túo Zênpûa</span></td>
                         <td><Link href="https://x.com/jan__Keta">epikijetesantakalu Keta</Link></td>
                         <td>2024/10/24</td>
                     </tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>*1: 音写を事実上の雰名として用いているため家名は存在しない。</p>
         </>
     )

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 
 import { FetchData } from "@/funcs";
-import { DictPop, DictCheckBox } from "../../dictPop";
+import { DictPop, DictCheckBox, KanjiText, LatinPron } from "../../components";
 
 const content = [
     "立跳.、.被.戦.然.下人.、",
@@ -16,7 +16,7 @@ const content = [
     "不.持.然.民.持.万.。",
     "之.為.遣.後.万.然.戦.、",
     "集.衆.、.戦.向.透.先日.。",
-    "万国.民.衆.含.衆結.、（.高火刃炭森兵.、）",
+    "万国.民.衆.含.衆結.、.（.高火刃炭森兵.、.）",
     "其.先.為.世.遍.法.！"
 ]
 
@@ -48,21 +48,10 @@ const Page = () => {
             <DictPop text={content} dict={dict} use={useDict}/>
 
             <h2>漢字転写</h2>
-            {content.map((p, idx) => <p key={idx}>{p.replace(/\./g, "")}</p>)}
+            <KanjiText text={content}/>
 
             <h2>ラテン文字転写</h2>
-            <p>qûogô, jé bàs kém yâhá, </p>
-            <p>qûogô, cúamhá sùo áonùn! </p>
-            <p>nîmbùn jûa qîm màin sùo dás, </p>
-            <p>tàng xès fúa dûo zâi tùo fúa. </p>
-            <p>pûo bàs vû xès nàil pùon sào, </p>
-            <p>jé mài kém fúa zôm, qûogô! </p>
-            <p>vúo kúafúa lòm lîng hûas yâ, </p>
-            <p>kí pêng kém zôm pêng áo. </p>
-            <p>kúa xêl cúo yûas áo kém bàs, </p>
-            <p>nàimmàil, bàs vû lí tâolkúang. </p>
-            <p>áonùn zômmàil lòm màiljúo, (wîng tàng ná sî yón nâl,)</p>
-            <p>cén tâol xêl fúa qùom wèl! </p>
+            <LatinPron text={content}/>
 
         </>
     )

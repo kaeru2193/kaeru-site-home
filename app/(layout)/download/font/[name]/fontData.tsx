@@ -1,5 +1,6 @@
 import style from "./page.module.css"
 import Image from "next/image"
+import { ScrollableImg } from "@/components"
 
 export const fontData = [
     {
@@ -37,9 +38,7 @@ export const fontData = [
                     <a href="https://ziphil.com">Ziphil</a>
                     さんの製作している『シャレイア語』で用いられる『シャレイア文字』のセリフ体風フォントです。Regular, Boldの2ウェイトが含まれます。
                 </p>
-                <div className={style.fontImgContainer}>
-                    <Image src="/font-preview/cagit.png" className={style.fontImg} quality={100} width={2000} height={2000} alt={"cagit preview"} priority/>
-                </div>
+                <ScrollableImg src="/font-preview/cagit.png" height={500} alt={"cagit preview"}/>
             </>
     },
     {
@@ -53,9 +52,7 @@ export const fontData = [
                     <a href="https://ziphil.com">Ziphil</a>
                     さんの製作している『シャレイア語』で用いられる『シャレイア文字』のドットフォントです。Regular, Boldの2ウェイトが含まれます。
                 </p>
-                <div className={style.fontImgContainer}>
-                    <Image src="/font-preview/bosval.png" className={style.fontImg} quality={100} width={2000} height={2000} alt={"bosval preview"} priority/>
-                </div>
+                <ScrollableImg src="/font-preview/bosval.png" height={500} alt={"bosval preview"}/>
             </>
     },
 ]

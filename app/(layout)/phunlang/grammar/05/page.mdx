@@ -1,0 +1,191 @@
+import { PPron, Translate, PBox, PText } from "@/components/Module"
+
+# 名詞
+
+## 人称代名詞
+
+雰語における人称代名詞は男性/女性/不定性の3系統に大別され、更に年齢・役職などによる上下関係によって使い分けられる。但し、ここに示したのはあくまで一般的なものに過ぎないことに留意せよ。
+
+以下に**男性人称代名詞**を示す。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="爾">爾</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td colSpan={2}><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td><PPron text="侶">侶</PPron></td>
+        <td colSpan={2}>(<PPron text="上処">上処</PPron><sup>\*3</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}><PPron text="侶衆">侶衆</PPron></td>
+    </tr>
+</tbody></table></div>
+
+以下に**女性人称代名詞**を示す。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="子">子</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td><PPron text="子衆">子衆</PPron></td>
+        <td><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td><PPron text="媛">媛</PPron></td>
+        <td colSpan={2}>(<PPron text="上処">上処</PPron><sup>\*3</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}><PPron text="媛衆">媛衆</PPron></td>
+    </tr>
+</tbody></table></div>
+
+以下に**不定性人称代名詞**を示す。性別が不明である人物や、性別が混在している大規模な集団などに用いられる。また近年ではペットなどの動物に対しても用いられることがある。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="爾">爾</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td><PPron text="爾衆">爾衆</PPron></td>
+        <td><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td colSpan={3}>(<PPron text="其">其</PPron><sup>\*4</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}>(<PPron text="其衆">其衆</PPron><sup>\*4</sup>)</td>
+    </tr>
+</tbody></table></div>
+
+\*1: へりくだった一人称。
+\*2: 「<PText>団</PText>」は文語的な一人称複数。日常会話では廃れており古風・権威的である。
+\*3: 実際にはその人物の家名や役職名を用いることも多い。
+\*4: 殆どの場合ではその人物の名前や役職名を用いる。
+
+## 指示代名詞
+
+雰語における指示代名詞は、近称（話し手に近い）、遠称（話し手から遠い）、文脈参照（直前や以前の文脈での内容）、疑問（疑問文で用いる）、不特定（何か一つの事物）の5系統からなる。
+
+指示代名詞で数が意識されることは余り無いが、敢えて複数であることを明示する場合には「<PPron text="集">集</PPron>」を接尾辞として代名詞に付ける。
+
+また、文脈参照の「<PText>其</PText>」は形式目的語として使われる場合がある。詳しくは「形式目的語」の項を参照。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "700px"}}><tbody>
+<tr>
+<th style={{width: "min-content"}}>属性</th><th>近称</th><th>遠称</th><th>文脈参照</th><th>疑問</th><th>不特定</th>
+</tr>
+<tr>
+<th>事物</th><td><PPron text="之">之</PPron></td><td><PPron text="彼">彼</PPron></td><td><PPron text="其">其</PPron></td><td><PPron text="何">何</PPron></td><td><PPron text="或">或</PPron></td>
+</tr>
+<tr>
+<th>人物</th><td><PPron text="之人">之人</PPron></td><td><PPron text="彼人">彼人</PPron></td><td><PPron text="其人">其人</PPron></td><td><PPron text="何人">何人</PPron></td><td><PPron text="或人">或人</PPron></td>
+</tr>
+<tr>
+<th>場所</th><td><PPron text="之処">之処</PPron></td><td><PPron text="彼処">彼処</PPron></td><td><PPron text="其処">其処</PPron></td><td><PPron text="何処">何処</PPron></td><td><PPron text="或処">或処</PPron></td>
+</tr>
+<tr>
+<th>方向</th><td><PPron text="之向">之向</PPron></td><td><PPron text="彼向">彼向</PPron></td><td><PPron text="其向">其向</PPron></td><td><PPron text="何向">何向</PPron></td><td><PPron text="或向">或向</PPron></td>
+</tr>
+<tr>
+<th>時間</th><td><PPron text="之時">之時</PPron></td><td><PPron text="彼時">彼時</PPron></td><td><PPron text="其時">其時</PPron></td><td><PPron text="何時">何時</PPron></td><td><PPron text="或時">或時</PPron></td>
+</tr>
+<tr>
+<th>方法</th><td><PPron text="之法">之法</PPron></td><td><PPron text="彼法">彼法</PPron></td><td><PPron text="其法">其法</PPron></td><td><PPron text="何法">何法</PPron></td><td><PPron text="或法">或法</PPron></td>
+</tr>
+<tr>
+<th>様子</th><td><PPron text="之態">之態</PPron></td><td><PPron text="彼態">彼態</PPron></td><td><PPron text="其態">其態</PPron></td><td><PPron text="何態">何態</PPron></td><td><PPron text="或態">或態</PPron></td>
+</tr>
+<tr>
+<th>選択</th><td><PPron text="之手">之手</PPron></td><td><PPron text="彼手">彼手</PPron></td><td><PPron text="其手">其手</PPron></td><td><PPron text="手何">手何</PPron></td><td><PPron text="手或">手或</PPron></td>
+</tr>
+</tbody></table></div>
+
+
+### 属性の省略
+
+周辺の動詞や前置詞句などから指示代名詞の**属性**が明らかである場合、最も単純な語形である**事物の指示代名詞**で代用される。
+
+<PBox>
+- <PText>伴行**其処**焉。</PText> → <PPron text="伴.行.其.焉.。">伴行**其**焉。</PPron><Translate>そこへ行こう。</Translate>
+</PBox>
+
+## 外来語の扱い
+
+外来語を雰語に取り込む場合には基本的に音写よりも意訳が重視され、普通名詞であれば翻訳借用されることが多い。固有名詞は音写される場合もあるが、雰語名を持つ人物などであればそちらが優先される。
+
+### 音写の方法
+
+雰語における固有名詞の音写では特に規則は存在せず、ある程度字音が近い雰字をいくつか並べることで音写が行われる。但し特別な理由がない限り、不吉な字義などを持つ雰字は避けられる傾向にある。

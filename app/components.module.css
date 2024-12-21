@@ -36,3 +36,20 @@
     width: 1rem;
     margin-right: 0.5rem;
 }
+
+.scrollableBox {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+
+}
+
+.imageBox {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.scrollableImage {
+    object-fit: cover;
+}

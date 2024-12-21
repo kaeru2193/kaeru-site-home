@@ -5,10 +5,13 @@
     --kaeru-light: #e7fff0;
     --background: #d2ffe3;
 
+    --text: #303030;
+
     --kaeru-border: #b9efce;
 
     --phun-main: #014f41;
     --phun-text-dark: #0c836d;
+    --phun-text-dark-transparent: #0c836da0;
     --phun-text: #15a389;
     --phun-dark: #00ad8d;
     --phun-dark-transparent: #00ad8d80;

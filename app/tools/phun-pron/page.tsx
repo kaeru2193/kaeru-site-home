@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import { FetchData } from "@/funcs";
+import { FetchData, PhunWordToLatin } from "@/funcs";
 import { marks } from "./marks";
 import { Input, Output, Select, OptionRow, BreakLine } from "../components";
 
@@ -42,7 +42,7 @@ const App = (props: {data: any[]}) => {
     const sentences = text.split(/([。、「」！？〈〉―\n])/)
     const processed = sentences.map(s => {
         const words = s.split(" ")
-        const converted = words.map(w => w.split("")
+        const converted = words.map(w => PhunWordToLatin(props.data, w)/*w.split("")
         .map(c => {
             if (marks.hasOwnProperty(c)) {
                 return marks[c]
@@ -64,7 +64,7 @@ const App = (props: {data: any[]}) => {
                     return c
                 }
             }
-        }))
+        })*/)
         return type == "accent"
             ?converted.map(w => w.join("")).join(" ")
             :converted.map(w => w.join(" ")).join(" ")

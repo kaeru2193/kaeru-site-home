@@ -1,0 +1,128 @@
+import { PPron, Translate, PBox, PText } from "@/components/Module"
+
+# 基本的な文
+
+[節](./03/#節)の項で説明した通り、文を構成する節は 「(主語/主題) + 述語 + (目的語/補語) + (0個以上の前置詞句) + (情詞)」という構造を持つ。
+
+## 平叙文
+
+基本的な構造から変化はない。
+
+<PBox>
+- <PPron text="媛.行.其.以.道車.。">媛行其以道車。</PPron><Translate>彼女は電車でそこへ行く。</Translate>
+</PBox>
+
+## 繋辞文
+
+雰語にはコピュラ動詞として「<PPron text="為">為</PPron>」が存在する。この動詞は補語のみを取り、目的語は取らない。
+
+<PBox>
+- <PPron text="我.為.知人.。">我**為**知人。</PPron><Translate>私は学生です。</Translate>
+- <PPron text="侶.為.二十.年.。">侶**為**二十年。</PPron><Translate>彼は*二十歳*です。</Translate>
+  - 暦法や進法が異なるため、現界の年齢に換算すると約36歳となる。
+- <PPron text="其.人.為.訓宗人.向.栄言.。">其人**為**訓宗人向栄言。</PPron><Translate>その人は雰語の伝道師だ。</Translate>
+</PBox>
+
+## 否定文
+
+動詞の否定表現には副詞「<PPron text="不">不</PPron>」を用いる。
+
+<PBox>
+- <PPron text="彼.人.不.目跳.跨.甲.分.。">彼人**不**目跳跨甲分。</PPron><Translate>あの人は8分間まばたきをしていない。</Translate>
+- <PPron text="在.去日.我.入.浄処.然.時.、.温杯.不.湛.。">在去日我入浄処然時、温杯**不**湛。</PPron><Translate>昨日私が風呂場に入ったとき、湯船には（湯が）溜まっていなかった。</Translate>
+</PBox>
+
+ただしコピュラの否定表現は例外的で、「不為」ではなく否定コピュラ「<PPron text="非">非</PPron>」を用いる。
+
+<PBox>
+- <PPron text="我.非.違言人.！">我**非**違言人！</PPron><Translate>私は嘘吐きではない！</Translate>
+- <PText>*\*我不為違言人！*</PText>
+</PBox>
+
+## 疑問文
+
+疑問文の文末に置かれる約物は疑問符であることが多いが、代わりに句点が置かれたり省略される場合もある。
+
+### 是非疑問文
+
+是非疑問文（肯定か否定を要求する疑問文）は、平叙文に情詞「<PPron text="如">如</PPron>」を付加することで表現する。
+
+<PBox>
+- <PPron text="其.兵.戦.於.団.王.如.？">其兵戦於団王**如**？</PPron><Translate>その兵士は我等の王を攻撃したのか？</Translate>
+</PBox>
+
+また、是非疑問文に応答するには、文中の動詞をそのまま用いる方法と「<PText>為</PText>/<PText>非</PText>」を用いる方法の二つがある。例として、上の例文への応答はこのようになる。
+
+<PBox>
+- <PText>其兵戦於団王如？</PText>
+  - <PPron text="戦.。">戦。</PPron> / <PPron text="為.。">為。</PPron><Translate>攻撃しました。（肯定）</Translate>
+  - <PPron text="不.戦.。">不戦。</PPron> / <PPron text="非.。">非。</PPron><Translate>攻撃しませんでした。（否定）</Translate>
+</PBox>
+
+ただし、否定文を疑問に用いている場合は以下のように対応が逆転することに注意。
+
+<PBox>
+- <PPron text="宇.仁.不.来.在.之日.如.？">宇仁不来在之日如？</PPron><Translate>*宇*さんは今日来ないのですか？</Translate>
+  - <PPron text="不.来.。">不来。</PPron> / <PPron text="為.。">為。</PPron><Translate>来ません。（質問に対する肯定）</Translate>
+  - <PPron text="来.。">来。</PPron> / <PPron text="非.。">非。</PPron><Translate>来ます。（質問に対する否定）</Translate>
+</PBox>
+
+以下は表に直したものである。（<PText>做</PText>は文中の動詞を表す）
+
+<div className="tableBox">
+<table><tbody style={{textAlign: "center"}}>
+  <tr>
+    <th></th>
+    <th>質問文への肯定</th>
+    <th>質問文への否定</th>
+  </tr>
+  <tr>
+    <th>肯定疑問文</th>
+    <td><PText>*做*。</PText> / <PText>為。</PText></td>
+    <td><PText>不*做*。</PText> / <PText>非。</PText></td>
+  </tr>
+  <tr>
+    <th>否定疑問文</th>
+    <td><PText>不*做*。</PText> / <PText>為。</PText></td>
+    <td><PText>*做*。</PText> / <PText>非。</PText></td>
+  </tr>
+</tbody></table>
+</div>
+
+### 不定疑問文
+
+不定疑問文（ある事柄について質問する疑問文）は、情詞「如」を付加した上で、質問する部分を疑問代名詞（[指示代名詞](./05/#指示代名詞)を参照）に置き換えることで表現する。
+
+不定疑問文に対する答え方については明確な規定は無いが、通常の会話では述語のみを用いた必要最低限の文で答えることが一般的である。
+
+<PBox>
+- <PPron text="之.為.何.如.？">之為**何**如？</PPron><Translate>これは何ですか？</Translate>
+  - <PPron text="為.赤果.。">為赤果。</PPron><Translate>リンゴです。</Translate>
+- <PPron text="何人.成.肉.於.其.豚.如.？">**何人**成肉於其豚如？</PPron><Translate>誰がその豚を肉にしたのですか？</Translate>
+  - <PPron text="汝.成.。">汝成。</PPron><Translate>あなたです。</Translate>
+</PBox>
+
+また、以下のように前置詞句の中に疑問代名詞を置くことも多い。
+
+<PBox>
+- <PPron text="彼.蟾.跳.行.何処.如.？">彼蟾跳行**何処**如？</PPron><Translate>あのカエルはどこへ跳ぶのですか？</Translate>
+- <PPron text="以.何由.、.媛.訓人.透.態.赤.如.？">以**何由**、媛訓人透態赤如？</PPron><Translate>なぜ、彼女の教師は赤く光り輝いているのですか？</Translate>
+</PBox>
+
+### 選択疑問文
+
+選択疑問文（特定の範囲内での選択を要求する疑問文）は、疑問選択指示代名詞「手何」を配置した上で前置詞句を用いて範囲を示して表現する。
+
+<PBox>
+- <PPron text="汝.欲.食.手何.内.肉.岐.魚.如.？">汝欲食**手何**内肉岐魚如？</PPron><Translate>あなたは肉と魚のどちらを食べたいですか？</Translate>
+</PBox>
+
+## 命令文
+
+雰語には、命令を直接的に表すための文法範疇が存在しない。そのため主語を省略した平叙文か、強調や呼びかけを表す「<PPron text="焉">焉</PPron>」などの情詞を用いた文で間接的に表現される。
+
+<PBox>
+- <PPron text="食.悉.餐.等.菜草.焉.！">食悉餐等菜草**焉**！</PPron><Translate>（料理の）野菜も全部食べなさい！</Translate>
+- <PPron text="居.在.其.到.侶.行.。">居在其到侶行。</PPron><Translate>彼が行くまでそこで待っていて。</Translate>
+</PBox>
+

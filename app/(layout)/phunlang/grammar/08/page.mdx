@@ -1,0 +1,185 @@
+import { PPron, PText, Translate, Misqo, PBox } from "@/components/Module"
+
+# 数詞
+
+## 数量表現
+
+名詞や動詞を数詞で修飾することで、事物の個数や量、動作の回数などを表現することが出来る。また、基本的に[助数詞](./09)と共に用いられ、修飾する対象を明示する。
+
+<PBox>
+- <PPron text="三.貝.人">**三**貝人</PPron><Translate>三人の人たち</Translate>
+</PBox>
+
+## 12までの数
+
+雰界では一般的に12進法が用いられる。この章のこれ以下の例文では、原則0～9、A～Bの12進数表記を用いる。
+
+雰語で数を表記する場合、雰字を用いて書くことも可能だが、一般には位取り表記に特化した「**算字**」と呼ばれる算用数字が用いられる。基本的に数の表記には日用・学術用途ともに算字が使用されることがほとんどであり、雰字で数を表記する場面は古風な雰囲気を強調する場合や、雰語学習者に向けて数の読みを示す場合などに限られる。
+
+以下で、0から10<sub>(12)</sub>までの数を示す。
+
+<div className="tableBox">
+| 算用数字<sub>(12)</sub> | 雰語  | 算字 |
+|----------------|----------|-------|
+| 0    | <PPron text="零">零</PPron> | <Misqo>**〇**</Misqo>   |
+| 1    | <PPron text="一">一</PPron> | <Misqo>**〡**</Misqo>   |
+| 2    | <PPron text="二">二</PPron> | <Misqo>**〢**</Misqo>   |
+| 3    | <PPron text="三">三</PPron> | <Misqo>**〣**</Misqo>   |
+| 4    | <PPron text="四">四</PPron> | <Misqo>**〤**</Misqo>   |
+| 5    | <PPron text="五">五</PPron> | <Misqo>**〥**</Misqo>   |
+| 6    | <PPron text="六">六</PPron> | <Misqo>**〦**</Misqo>   |
+| 7    | <PPron text="七">七</PPron> | <Misqo>**〧**</Misqo>   |
+| 8    | <PPron text="八">八</PPron> | <Misqo>**〨**</Misqo>   |
+| 9    | <PPron text="九">九</PPron> | <Misqo>**〩**</Misqo>   |
+| A    | <PPron text="甲">甲</PPron> | <Misqo>**〹**</Misqo>   |
+| B    | <PPron text="乙">乙</PPron> | <Misqo>**〺**</Misqo>   |
+| 10   | <PPron text="十">十</PPron> | <Misqo>**〡〇**</Misqo> |
+</div>
+
+## 大数
+
+### 12^4未満
+
+10000<sub>(12)</sub>までの数は、それぞれの位の値に以下の接尾辞をつけて表記される。10<sub>(12)</sub>の位と100<sub>(12)</sub>の位では、数が1である場合は省略し、位の接尾辞のみで表記することが可能である。
+
+また、数の途中に値が0である位が挟まる場合、「<PPron text="虚">虚</PPron>」を挿入して桁が飛ぶことを明示することもある。
+
+<div className="tableBox">
+| 算用数字<sub>(12)</sub> | 雰語  |
+|----------------|--------|
+| 10 (12<sup>1</sup>)            | <PPron text="十">十</PPron> |
+| 100 (12<sup>2</sup>)           | <PPron text="百">百</PPron> |
+| 1000 (12<sup>3</sup>)          | <PPron text="千">千</PPron> |
+</div>
+
+<PBox>
+- <PPron text="十.甲">十甲</PPron><Translate>1A（<Misqo>**〡〹**</Misqo>）</Translate>
+- <PPron text="二十.三">二十三</PPron><Translate>23（<Misqo>**〢〣**</Misqo>）</Translate>
+- <PPron text="百.五十.八">百五十八</PPron><Translate>158（<Misqo>**〡〥〨**</Misqo>）</Translate>
+- <PPron text="三百.九十">三百九十</PPron><Translate>390（<Misqo>**〣〩〇**</Misqo>）</Translate>
+- <PPron text="一千.虚.七">一千虚七</PPron><Translate>1007（<Misqo>**〡〇〇〧**</Misqo>）</Translate>
+- <PPron text="乙千.乙百.乙十.乙">乙千乙百乙十乙</PPron><Translate>BBBB（<Misqo>**〺〺〺〺**</Misqo>）</Translate>
+</PBox>
+
+### 12^4以上
+
+10000<sub>(12)</sub>以上の数は、まず4桁ごとに区切り、次にそれぞれの塊に上の方法を適用し、最後に塊の位ごとに以下の接尾辞をつけて表記される。4桁ごとの境目を跨いで値が0である位が挟まる場合には、前述の「<PText>虚</PText>」は挿入されない。
+
+算字による表記上では、4桁ごとに空白、または桁区切り記号 (<Misqo>**’**</Misqo>) が挿入される場合も多い。
+
+<div className="tableBox">
+| 数    | 雰語  |
+|-------|--------|
+| 12<sup>4</sup>  | <PPron text="万">万</PPron> |
+| 12<sup>8</sup>  | <PPron text="億">億</PPron> |
+| 12<sup>12</sup> | <PPron text="巨">巨</PPron> |
+| 12<sup>16</sup> | <PPron text="越">越</PPron> |
+| 12<sup>20</sup> | <PPron text="遠">遠</PPron> |
+| 12<sup>24</sup> | <PPron text="永">永</PPron> |
+| 12<sup>28</sup> | <PPron text="恒">恒</PPron> |
+</div>
+
+<PBox>
+- <PPron text="百.二十.三億.四千.五百.六十.七万.八千.九百.甲十.乙">百二十三億 四千五百六十七万 八千九百甲十乙</PPron><Translate>123456789AB（<Misqo>**〡〢〣’〤〥〦〧’〨〩〹〺**</Misqo>）</Translate>
+- <PPron text="五千.虚.二億.三万">五千虚二億 三万</PPron><Translate>500200030000（<Misqo>**〥〇〇〢’〇〇〇〣’〇〇〇〇**</Misqo>）</Translate>
+</PBox>
+
+## 小数
+
+### 整数部が0であるもの
+
+整数部が0である小数のうち、小数部が3桁以下のものは、位が大きい順で値に以下の接尾辞をつけて表記される。算字による表記上では、1<sub>(12)</sub>の位の上部に基位記号 (**<Misqo>　・</Misqo>**) が置かれる。
+
+小数の場合でも、値が0で位が飛ぶ場合には「<PText>虚</PText>」を挿入することが多い。
+
+<div className="tableBox">
+| 数    | 雰語 |
+|-------|--------|
+| 12<sup>-1</sup> | <PPron text="少">少</PPron> |
+| 12<sup>-2</sup> | <PPron text="毛">毛</PPron> |
+| 12<sup>-3</sup> | <PPron text="米">米</PPron> |
+</div>
+
+<PBox>
+- <PPron text="四少">四少</PPron><Translate>0.4（<Misqo>**〇・〤**</Misqo>）</Translate>
+- <PPron text="一少.八毛.六米">一少八毛六米</PPron><Translate>0.186（<Misqo>**〇・〡〨〦**</Misqo>）</Translate>
+- <PPron text="甲少.虚.二米">甲少虚二米</PPron><Translate>0.A02（<Misqo>**〇・〹〇〢**</Misqo>）</Translate>
+</PBox>
+
+小数部が4桁以上のものでは、小数部を4桁ごとに区切ってそれぞれの塊に上の方法を適用し、位ごとに以下の接尾辞をつけて表記される。
+
+大数と同じように、4桁ごとに桁区切り記号が挿入される場合も多い。
+
+<div className="tableBox">
+| 数     | 雰語 |
+|--------|--------|
+| 12<sup>-4</sup>  | <PPron text="糸">糸</PPron> |
+| 12<sup>-8</sup>  | <PPron text="粒">粒</PPron> |
+| 12<sup>-12</sup> | <PPron text="砕">砕</PPron> |
+| 12<sup>-16</sup> | <PPron text="落">落</PPron> |
+| 12<sup>-20</sup> | <PPron text="粉">粉</PPron> |
+</div>
+
+<PBox>
+- <PPron text="四少.乙毛.七米.九糸.一少.七毛.虚.甲粒.七毛砕">四少乙毛七米九糸 一少七毛虚甲粒 七毛砕</PPron><Translate>0.4B79170A07（<Misqo>**〇・〤〺〧〩’〡〧〇〹’〇〧**</Misqo>）</Translate>
+</PBox>
+
+### 整数部が0でないもの
+
+整数部が0でない小数は、整数部と小数部についてそれぞれ上記の方法を適用した後、「<PPron text="定">定</PPron>」を挟んで連結することで得られる。
+
+<PBox>
+- <PPron text="三.定.一少.八毛.四米.八糸.九毛.四米.九粒">三**定** 一少八毛四米八糸 九毛四米九粒</PPron><Translate>3.18480949（<Misqo>**〣・〡〨〤〨〇〩〤〩**</Misqo>）</Translate>
+</PBox>
+
+## 負数
+
+負数は、正数を指す表現に接頭辞として「<PPron text="下">下</PPron>」をつけることで表される。
+
+算字による表記上では、先頭の位に負数記号 (**<Misqo>／</Misqo>**)を重ねて表現される。
+
+<PBox>
+- <PPron text="下.一">**下**一</PPron><Translate>-1（<Misqo>**／〡**</Misqo>）</Translate>
+- <PPron text="下.三十.四.定.二少.甲毛.一米">**下**三十四定 二少甲毛一米</PPron><Translate>-34.2A1（<Misqo>**／〣〤・〢〹〡**</Misqo>）</Translate>
+</PBox>
+
+## 分数
+
+分子が1である単位分数は、分母となる数に接頭辞として「<PPron text="片">片</PPron>」をつけることで表される。
+
+算字による本来の数式では分母を分数記号で囲って表記するが、表示できない環境では短縮分数記号 (<Misqo>/</Misqo>)を前置して表される。
+
+<PBox>
+- <PPron text="片.七">**片**七</PPron><Translate>7分の1（<Misqo>**/〧**</Misqo>）</Translate>
+</PBox>
+
+分子が1でない分数は、分子となる数を分母の単位分数に前置して表現する。
+
+算字による表記上でも同様に、分子部分を前置する。
+
+<PBox>
+- <PPron text="二百.五十.七.片.九十.五">二百五十七 **片**九十五</PPron><Translate>95分の257（<Misqo>**〢〥〧/〩〥**</Misqo>）</Translate>
+</PBox>
+
+## 冪
+
+AのB乗は、「<PPron text="跳.A.以.B">跳A以B</PPron>」という形で表現される。但し指数が2である場合は「<PText>以二</PText>」を省略できる。
+
+算字では、縦・横書きともに底の右下に小書きで指数が表記される。
+
+<PBox>
+- <PPron text="跳.二.以.三十.六">**跳**二**以**三十六</PPron><Translate>2の36乗（<Misqo>**〢<sub>〣〦</sub>**</Misqo>）</Translate>
+- <PPron text="跳.下.三.以.一.定.乙少">**跳**下三**以**一定乙少</PPron><Translate>-3の1.B乗（<Misqo>**／〣<sub>〡・〺</sub>**</Misqo>）</Translate>
+</PBox>
+
+## 冪根
+
+AのB乗根は、「<PPron text="解.A.以.B">解A以B</PPron>」という形で表現される。冪と同じく、指数が2である場合は「<PText>以二</PText>」を省略できる。
+
+算字では、本来は被開平数に冪根記号を重ねて表記するが、表示できない環境では短縮冪根記号 (<Misqo>√</Misqo>)を前置して表記する。
+
+<PBox>
+- <PPron text="解.十.五">**解**十五</PPron><Translate>15の平方根（<Misqo>**√一〥**</Misqo>）</Translate>
+- <PPron text="解.跳.四十.二.以.五.以.五">**解** 跳四十二以五 **以**五</PPron><Translate>(42の5乗)の5乗根（<Misqo>**√<sub>〥</sub>〤〢<sub>〥</sub>**</Misqo>）</Translate>
+</PBox>
+

@@ -12,6 +12,7 @@ const Page = () => {
                 <li><Link href="./texts/babel">『バベルの塔』</Link></li>
                 <li><Link href="./texts/scp">『SCP財団とは』</Link></li>
                 <li><Link href="./texts/internationale">『L'Internationale』</Link></li>
+                <li><Link href="./texts/lords_prayer">『主の祈り』</Link></li>
             </ul>
         </>
     )

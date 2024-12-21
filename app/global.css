@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700');
 @import "./(layout)/kaeru-theme.css";
 
 html {
@@ -21,7 +23,17 @@ input:focus {
 }
 
 .phun {
-    font-family: "Phun-Sans";
+    font-family: "Phun-Sans", serif;
+}
+
+.ipa {
+    font-family: 'Charis SIL', 'Doulos SIL', 'DejaVu Sans', 'Code2000', 'Hiragino Kaku Gothic Pro', 'Matrix Unicode', 'Tahoma', 'Microsoft Sans Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.serif {
+    font-family: 'Noto Serif JP', serif;
 }
 
 @font-face {

@@ -64,12 +64,13 @@ const Page = () => {
                 
                 <li>之機 / Kúaàil (雰名)
                     <ul>
-                        <li>[kɯa˥.ail˨] または [kʰə˧˥.ɛl˩˧]</li>
+                        <li><span className="ipa">[kɯa˥.ail˨]</span> または <span className="ipa">[kʰə˧˥.ɛl˩˧]</span></li>
                     </ul>
                 </li>
                 <li>akesi Kawelu (<a href="https://tokipona.org">トキポナ</a>名)</li>
                 <li>ʻkáles-ʻcolfomas (<a href="https://ziphil.com/conlang/document/16.html">シャレイア</a>名)</li>
                 <li>Mońieto Fjenkaamsi (<a href="https://zpdic.ziphil.com/dictionary/raqef/">ラゼフ</a>名)</li>
+                <li>opalfwaluttai Kaeru (<a href="https://ithkuil.net">イスクイル3</a>名)</li>
             </ul>
             <h3>興味範囲</h3>
             <ul>

@@ -55,6 +55,62 @@
     "title": "雰語"
   },
   {
+    "route": "phunlang/grammar",
+    "title": "雰文典"
+  },
+  {
+    "route": "phunlang/grammar/01",
+    "title": "文字と転写"
+  },
+  {
+    "route": "phunlang/grammar/02",
+    "title": "音韻論"
+  },
+  {
+    "route": "phunlang/grammar/03",
+    "title": "形態論・統語論"
+  },
+  {
+    "route": "phunlang/grammar/04",
+    "title": "基本的な文"
+  },
+  {
+    "route": "phunlang/grammar/05",
+    "title": "名詞"
+  },
+  {
+    "route": "phunlang/grammar/06",
+    "title": "動詞"
+  },
+  {
+    "route": "phunlang/grammar/07",
+    "title": "形容詞・副詞"
+  },
+  {
+    "route": "phunlang/grammar/08",
+    "title": "数詞"
+  },
+  {
+    "route": "phunlang/grammar/09",
+    "title": "助数詞"
+  },
+  {
+    "route": "phunlang/grammar/10",
+    "title": "助詞"
+  },
+  {
+    "route": "phunlang/grammar/11",
+    "title": "前置詞"
+  },
+  {
+    "route": "phunlang/grammar/12",
+    "title": "接続詞"
+  },
+  {
+    "route": "phunlang/grammar/13",
+    "title": "情詞"
+  },
+  {
     "route": "phunlang/name",
     "title": "雰名"
   },
@@ -73,6 +129,10 @@
   {
     "route": "phunlang/texts/internationale",
     "title": "L'Internationale"
+  },
+  {
+    "route": "phunlang/texts/lords_prayer",
+    "title": "主の祈り"
   },
   {
     "route": "phunlang/texts/scp",
