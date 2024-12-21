@@ -62,4 +62,9 @@ export const newsData =
         "name": "池ノ録を開設！",
         "desc": <>新たに文書置き場として<Link href="/ikenolog">池ノ録</Link>を公開しました！</>
     },
+    {
+        "date": "2024-12-21",
+        "name": "雰文典を公開！",
+        "desc": <><Link href="/phunlang/grammar">雰文典</Link>ページで雰語の文法書を公開しました！</>
+    },
 ]
