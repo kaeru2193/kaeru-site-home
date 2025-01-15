@@ -23,6 +23,11 @@
 }
 
 @font-face {
+    font-family: "phundot";
+    src: url("https://kaeru2193.github.io/Phun-Resources/font/PhunDot-latest.woff");
+}
+
+@font-face {
     font-family: "blophabet";
     src: url("https://kaeru2193.github.io/Phun-Resources/font/Blophabet.woff");
 }

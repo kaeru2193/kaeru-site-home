@@ -25,6 +25,10 @@ const Page = () => {
                 <li>
                     <Link href="https://qo.kaeru2193.net">雰字典</Link> ― 雰語表記に用いられる雰字のオンライン字典です。それぞれの雰字について詳細を確認することが可能です。
                 </li>
+            </ul>
+
+            <h2>翻訳</h2>
+            <ul>
                 <li>
                     <Link href="./phunlang/texts">雰語文庫</Link> ― 雰語の例文や翻訳した文章の置き場です。ポップアップ辞典を用いて語義を確認しながら読むことも出来ます。
                 </li>
@@ -32,10 +36,18 @@ const Page = () => {
                     <Link href="https://lib.kaeru2193.net/">栄言記集</Link> ― 雰語のみで書かれたブログ記事のような何かの置き場です。
                 </li>
             </ul>
+
             <h2>文化</h2>
             <ul>
                 <li>
-                    <Link href="./phunlang/name">雰名</Link> ― 雰人の名前についての解説
+                    <Link href="./phunlang/name">雰名</Link> ― 雰人の名前についての解説です。
+                </li>
+            </ul>
+
+            <h2>その他</h2>
+            <ul>
+                <li>
+                    <Link href="./download/font">フォント</Link> ― 雰字のフォントをダウンロードできます。
                 </li>
             </ul>
         </>

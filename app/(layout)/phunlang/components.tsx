@@ -1,7 +1,7 @@
 import style from "./components.module.css"
-import { useRef } from "react"
+import { useRef, useEffect, useState } from "react"
 import reactStringReplace from "react-string-replace"
-import { getPhunPron } from "@/funcs"
+import { getPhunPron, FetchData } from "@/funcs"
 
 export const KanjiText = (pron: {text: string[]}) => <div className={style.kanjiText}>
     {pron.text.map((p, idx) => 
@@ -28,12 +28,27 @@ export const DictCheckBox = (props: any) => {
 }
 
 export const DictPop = (props: any) => {
+    const [dict, setDict] = useState<any[]>([])
+
+    useEffect(() => {
+        const access = async () => {
+            try {
+                const data = await FetchData("https://kaeru2193.github.io/Phun-Resources/dict/phun-dict.json");
+                const json = JSON.parse(data)
+                setDict(json.data)
+            } catch (error) {
+                setDict([])
+            }
+        }
+        access()
+    }, []);
+
     const content: string[] = props.text
     return (
         <div>
             {content.map((c, idx) => {
                 const words = c.split(".").map((w, idx) => {
-                    const content = props.use? searchDict(props.dict, w): false //ポップアップ辞書がOFFの場合は表示させない
+                    const content = props.use? searchDict(dict, w): false //ポップアップ辞書がOFFの場合は表示させない
                     return (content? <DictPopPanel info={content} key={idx}>{w}</DictPopPanel>: <span className={`${style.word} phun`}>{w}</span>)
                 })
                 return (<p key={idx}>{words}</p>)
@@ -89,7 +104,8 @@ const DictContent = (props: any) => {
         "接頭辞": "接頭",
         "接尾辞": "接尾",
         "代名詞": "代名",
-        "動詞": "動",
+        "及動詞": "及動",
+        "不及動詞": "不及動",
         "形容詞": "形",
         "副詞": "副",
         "助詞": "助",

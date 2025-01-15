@@ -1,8 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
-
-import { FetchData } from "@/funcs";
+import { useState } from "react"
 import { DictPop, DictCheckBox, KanjiText, LatinPron } from "../../components";
 
 const content = [
@@ -18,30 +16,16 @@ const content = [
 
 const Page = () => {
     const [useDict, setUseDict] = useState(false)
-    const [dict, setDict] = useState<any>()
-
-    useEffect(() => {
-        const access = async () => {
-          try {
-            const data = await FetchData("https://kaeru2193.github.io/Phun-Resources/dict/phun-dict.json");
-            const json = JSON.parse(data)
-            setDict(json.data)
-          } catch (error) {
-            setDict(null)
-          }
-        }
-        access()
-    }, []);
 
     return (
         <>
             <h1>主の祈り</h1>
-            {dict? <DictCheckBox use={useDict} setUse={setUseDict}/>: <></>}
+            <DictCheckBox use={useDict} setUse={setUseDict}/>
 
             <p><b>『主の祈り』</b>（雰題：<span className="phun"><b>天祈言</b></span>）</p>
 
             <h2>訳文</h2>
-            <DictPop text={content} dict={dict} use={useDict}/>
+            <DictPop text={content} use={useDict}/>
 
             <h2>漢字転写</h2>
             <KanjiText text={content}/>

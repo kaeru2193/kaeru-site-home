@@ -22,7 +22,7 @@ body {
     width: 80vw;
     max-width: 70rem;
     position: relative;
-    padding-left: 0.3rem;
+    padding-left: 0.5rem;
 }
 
 .mainContainer > h1, .mainContainer > h2, .mainContainer > h3,
@@ -196,5 +196,9 @@ blockquote p + p {
 @media screen and (max-width: 834px) {
     .article {
         width: 90vw;
+    }
+    .mainContainer > h1, .mainContainer > h2, .mainContainer > h3,
+    .mainContainer > h4, .mainContainer > h5, .mainContainer > h6 {
+        margin-left: -0.5rem;
     }
 }

@@ -20,6 +20,17 @@ export const fontData = [
             <p>かえるが雰字を手書きしたフォントです。Regularの1ウェイトのみが含まれます。</p>
     },
     {
+        "name": "PhunDot",
+        "id": "phundot",
+        "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/PhunDot-latest.zip",
+        "example": "我為之機、汝為何如？",
+        "desc": 
+            <>
+                <p>雰字の16×16ドットフォントです。1ウェイトのみが含まれます。</p>
+                <ScrollableImg src="/font-preview/phun-dot.png" height={500} alt={"PhunDot preview"}/>
+            </>
+    },
+    {
         "name": "Blophabet",
         "id": "blophabet",
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/Blophabet-latest.zip",
