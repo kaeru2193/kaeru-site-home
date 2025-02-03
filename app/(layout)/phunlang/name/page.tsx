@@ -21,7 +21,7 @@ const Page = () => {
             </p>
             <h2>雰名保持者一覧</h2>
             <p>
-                2024年10月現在、11名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
+                2025年02月現在、14名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
             </p>
 
             <div className="tableBox"><table>
@@ -95,6 +95,27 @@ const Page = () => {
                         <td><span className="serif">Túo Zênpûa</span></td>
                         <td><Link href="https://x.com/jan__Keta">epikijetesantakalu Keta</Link></td>
                         <td>2024/10/24</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">青 燧兎</span></td>
+                        <td><span className="serif">青 燧兎</span></td>
+                        <td><span className="serif">Qâi Fìlxûo</span></td>
+                        <td><Link href="https://bsky.app/profile/yuuzakikanade.bsky.social">夕向奏</Link></td>
+                        <td>2025/01/03</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">泰 苗曙</span></td>
+                        <td><span className="serif">泰 苗曙</span></td>
+                        <td><span className="serif">Lò Wèngzâs</span></td>
+                        <td><Link href="https://bsky.app/profile/haluksiklo.bsky.social">Halu Kaventulmexl Siklo</Link></td>
+                        <td>2025/01/18</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">常代 方累</span></td>
+                        <td><span className="serif">常代 方累</span></td>
+                        <td><span className="serif">Xûyâo Zùngwíl</span></td>
+                        <td><Link href="https://tktb-tess.github.io/">斗琴庭暁響</Link></td>
+                        <td>2025/02/01</td>
                     </tr>
                 </tbody>
             </table></div>
