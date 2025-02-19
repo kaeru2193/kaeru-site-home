@@ -42,35 +42,36 @@ const App = (props: {data: any[]}) => {
     const sentences = text.split(/([。、「」！？〈〉―\n])/)
     const processed = sentences.map(s => {
         const words = s.split(" ")
-        const converted = words.map(w => PhunWordToLatin(props.data, w)/*w.split("")
-        .map(c => {
-            if (marks.hasOwnProperty(c)) {
-                return marks[c]
-            } else {
-                const search = props.data.filter(w => w.word == c)
-                if (search[0]) {
-                    switch(type) {
-                        case "numeric":
-                            return search[0].pron
-                        case "accent":
-                        case "accent-space":
-                            return search[0].latinPron
-                        case "ipa":
-                            return search[0].ipa.slice(1, -1)
-                        default:
+        const converted = words.map(w => {
+            switch(type) {
+                case "accent":
+                    return PhunWordToLatin(props.data, w).join("")
+                case "accent-space":
+                    return PhunWordToLatin(props.data, w).join(" ")
+                case "numeric":
+                case "ipa":
+                default:
+                    return w.split("").map(c => {
+                        const search = props.data.find(entry => entry.word == c)
+
+                        if (!search) {
                             return c
-                    }
-                } else {
-                    return c
-                }
+                        }
+                        switch(type) {
+                            case "numeric":
+                                return search.pron
+                            case "ipa":
+                                return search.ipa.slice(1, -1)
+                            default:
+                                return c
+                        }
+                    }).join("")
             }
-        })*/)
-        return type == "accent"
-            ?converted.map(w => w.join("")).join(" ")
-            :converted.map(w => w.join(" ")).join(" ")
+        })
+        return converted.join(" ")
         }
     ).join("")
-
+    
     return (
         <>
             <h1>雰語を漢字翻字から表音表記化</h1>

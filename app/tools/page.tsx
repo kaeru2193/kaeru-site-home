@@ -14,6 +14,10 @@ const Page = () => {
             <ul>
                 <li><Link href="tools/radix-conv">進数変換器</Link></li>
             </ul>
+            <h2>テキスト操作</h2>
+            <ul>
+                <li><Link href="tools/hilbert-writing">ヒルベルト曲線に沿った書記</Link></li>
+            </ul>
         </>
     )
 }

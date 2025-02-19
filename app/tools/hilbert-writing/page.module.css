@@ -1,0 +1,16 @@
+.pokiLinja {
+    user-select: none;
+    background-color: #101010;
+    font-size: 0.9rem;
+    line-height: 1.1;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.pokiLinja span {
+    display: inline-block;
+    height: 1em;
+}
