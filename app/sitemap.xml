@@ -32,13 +32,13 @@
             <loc>https://kaeru2193.net/news</loc>
         </url>
         <url>
-            <loc>https://kaeru2193.net/phun</loc>
+            <loc>https://kaeru2193.net/phuncreation</loc>
         </url>
         <url>
-            <loc>https://kaeru2193.net/phun/lang</loc>
+            <loc>https://kaeru2193.net/phuncreation/lang</loc>
         </url>
         <url>
-            <loc>https://kaeru2193.net/phun/world</loc>
+            <loc>https://kaeru2193.net/phuncreation/world</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/phunlang</loc>
@@ -110,10 +110,19 @@
             <loc>https://kaeru2193.net/various</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/phun</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/tok</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/clock</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/tools</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/tools/hilbert-writing</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/tools/misqo-conv</loc>

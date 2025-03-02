@@ -2,7 +2,7 @@
 import { Header, Footer } from "@/common"
 import { BreadCrumb } from "@/breadCrumb"
 
-import { usePathname } from "next/navigation";
+import { langParse } from "@/languages"
 
 import "./kaeru.css"
 
@@ -11,7 +11,9 @@ export default function KaeruLayout({
   }: {
     children: React.ReactNode
   }) {
-    const isRoot = usePathname() == "/"
+    const paths = langParse()
+
+    const isRoot = !paths.pagePath[0] //言語版のトップページかどうか（0番目の要素があるか）
 
     return (
       <>
@@ -21,14 +23,14 @@ export default function KaeruLayout({
           integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB"
           crossOrigin="anonymous"
         />
-        <Header/>
+        <Header data={paths.data}/>
             <div className="article">
-              {isRoot? <></>: <BreadCrumb/>}
+              {isRoot? <></>: <BreadCrumb lang={paths.lang} paths={paths.pagePath}/>}
               <div className="mainContainer">
                 {children}
               </div>
             </div>
-        <Footer/>
+        <Footer data={paths.data}/>
       </>
     )
 }

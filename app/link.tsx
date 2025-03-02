@@ -1,5 +1,10 @@
 import Link from "next/link"
 import linkCSS from "./link.module.css"
+import { usePathname } from "next/navigation";
+
+export const RelativeLink = (props: {href: string}) => {
+    
+}
 
 export const SiteLink = (props: any) => {
     let linkElem = <></>

@@ -26,6 +26,7 @@ const withMDX = nextMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: false,
+    trailingSlash: true,
     images: {
         domains: ['kaeru2193.github.io'],
     },

@@ -17,7 +17,7 @@ const Page = () => {
             <h2>資料</h2>
             <ul>
                 <li>
-                    <Link href="./phunlang/grammar">雰文典</Link> ― 雰語の文法事項を整理した資料です。
+                    <Link href="grammar">雰文典</Link> ― 雰語の文法事項を整理した資料です。
                 </li>
                 <li>
                     <Link href="https://dict.kaeru2193.net">雰和辞典</Link> ― 雰語のオンライン辞書ツールです。モバイル端末にも対応しています。
@@ -30,7 +30,7 @@ const Page = () => {
             <h2>翻訳</h2>
             <ul>
                 <li>
-                    <Link href="./phunlang/texts">雰語文庫</Link> ― 雰語の例文や翻訳した文章の置き場です。ポップアップ辞典を用いて語義を確認しながら読むことも出来ます。
+                    <Link href="texts">雰語文庫</Link> ― 雰語の例文や翻訳した文章の置き場です。ポップアップ辞典を用いて語義を確認しながら読むことも出来ます。
                 </li>
                 <li>
                     <Link href="https://lib.kaeru2193.net/">栄言記集</Link> ― 雰語のみで書かれたブログ記事のような何かの置き場です。
@@ -40,14 +40,14 @@ const Page = () => {
             <h2>文化</h2>
             <ul>
                 <li>
-                    <Link href="./phunlang/name">雰名</Link> ― 雰人の名前についての解説です。
+                    <Link href="name">雰名</Link> ― 雰人の名前についての解説です。
                 </li>
             </ul>
 
             <h2>その他</h2>
             <ul>
                 <li>
-                    <Link href="./download/font">フォント</Link> ― 雰字のフォントをダウンロードできます。
+                    <Link href="../download/font">フォント</Link> ― 雰字のフォントをダウンロードできます。
                 </li>
             </ul>
         </>

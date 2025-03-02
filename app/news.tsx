@@ -4,67 +4,62 @@ export const newsData =
 [
     {
         "date": "2024-02-02",
-        "name": "リニューアルを行いました",
-        "desc": <>之機堂を新たなデザインにリニューアルしました。これからもよろしくお願いします！</>
+        "desc": <>之機堂のリニューアルを行いました</>
     },
     {
         "date": "2024-02-05",
-        "name": "Càgitフォントを公開しました",
-        "desc": <>新たにシャレイア文字のセリフ体風フォント「<Link href="/download/font/cagit">Càgit</Link>」を公開しました！</>
+        "desc": <>シャレイア文字のセリフ体風フォント「<Link href="/download/font/cagit">Càgit</Link>」を公開</>
     },
     {
         "date": "2024-02-07",
-        "name": "リンク修正",
-        "desc": <>BlueSkyのハンドルを変更したため、ページ上部のリンク先を修正しました。</>
+        "desc": <>BlueSkyのリンク先を修正</>
     },
     {
         "date": "2024-02-17",
-        "name": "永球時計をリニューアル！",
-        "desc": <>1年前に制作した地球・永球時計を、改めて<a href="/clock">永球時計</a>として作り直しました！</>
+        "desc": <>地球・永球時計を<a href="/clock">永球時計</a>としてリニューアル</>
     },
     {
         "date": "2024-03-12",
-        "name": "「ギャラリー」ページを公開しました",
-        "desc": <>ロゴ・紋章などの画像ファイルを閲覧・ダウンロードできる「<Link href="/download/gallery">ギャラリー</Link>」ページを公開しました！</>
+        "desc": <><Link href="/download/gallery">ギャラリー</Link>ページを公開</>
     },
     {
         "date": "2024-03-28",
-        "name": "アクセスカウンター設置",
-        "desc": <>ページ下部に雰算字で表記されるアクセスカウンターを設置しました。</>
+        "desc": <>アクセスカウンターを設置</>
     },
     {
         "date": "2024-04-13",
-        "name": "パンくずリスト設置",
-        "desc": <>サイト内の案内としてページ上部にパンくずリストを設置しました。</>
+        "desc": <>ページ上部にパンくずリストを設置</>
     },
     {
         "date": "2024-05-19",
-        "name": "技術棟を増築！",
-        "desc": <>新たにWebツールを放り込む予定の「<Link href="/download/gallery">之機堂技術棟</Link>」ページを公開しました！</>
+        "desc": <><Link href="/download/gallery">之機堂技術棟</Link>ページを公開</>
     },
     {
         "date": "2024-07-06",
-        "name": "Bosvalフォントを公開しました",
-        "desc": <>新たにシャレイア文字のドットフォント「<Link href="/download/font/bosval">Bosval</Link>」を公開しました！</>
+        "desc": <>シャレイア文字のドットフォント「<Link href="/download/font/bosval">Bosval</Link>」を公開</>
     },
     {
         "date": "2024-08-02",
-        "name": "一部ページを更新しました",
-        "desc": <>ページ構造や内容を一部変更しました。</>
+        "desc": <>ページ構造を一部変更</>
     },
     {
         "date": "2024-10-25",
-        "name": "ページを公開しました",
-        "desc": <>新たに<Link href="/phunlang/name">雰名</Link>ページを公開しました！</>
+        "desc": <><Link href="/phunlang/name">雰名</Link>ページを公開</>
     },
     {
         "date": "2024-11-02",
-        "name": "池ノ録を開設！",
-        "desc": <>新たに文書置き場として<Link href="/ikenolog">池ノ録</Link>を公開しました！</>
+        "desc": <>文書置き場として<Link href="/ikenolog">池ノ録</Link>を公開</>
     },
     {
         "date": "2024-12-21",
-        "name": "雰文典を公開！",
-        "desc": <><Link href="/phunlang/grammar">雰文典</Link>ページで雰語の文法書を公開しました！</>
+        "desc": <><Link href="/phunlang/grammar">雰文典</Link>ページで雰語の文法書を公開</>
+    },
+    {
+        "date": "2025-02-19",
+        "desc": <><a href="/tools/hilbert-writing/">ヒルベルト曲線に沿った書記</a>を公開</>
+    },
+    {
+        "date": "2025-03-02",
+        "desc": <>サイトを多言語対応化</>
     },
 ]

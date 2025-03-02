@@ -6,7 +6,8 @@ import articles from '../articles.json'
 import { TopInfo } from "../components";
 
 export default function Template({ children }: { children: React.ReactNode }) {
-    const articleID = usePathname().slice(1).split("/").pop()
+    const pathCut = usePathname().slice(1).split("/")
+    const articleID = pathCut[pathCut.length - 2]
     const articleData = articles.find(a => a.id == articleID)
     const title = articleData!.data.title
     const date = articleData!.data.date

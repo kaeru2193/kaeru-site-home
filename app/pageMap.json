@@ -39,15 +39,15 @@
     "title": "新着情報"
   },
   {
-    "route": "phun",
+    "route": "phuncreation",
     "title": "雰界創作"
   },
   {
-    "route": "phun/lang",
+    "route": "phuncreation/lang",
     "title": "雰界の諸言語"
   },
   {
-    "route": "phun/world",
+    "route": "phuncreation/world",
     "title": "雰界"
   },
   {
@@ -143,12 +143,24 @@
     "title": "がらくた箱"
   },
   {
+    "route": "phun",
+    "title": "喜汝！"
+  },
+  {
+    "route": "tok",
+    "title": "kama pona!"
+  },
+  {
     "route": "clock",
     "title": "永球時計"
   },
   {
     "route": "tools",
     "title": "技術棟トップ"
+  },
+  {
+    "route": "tools/hilbert-writing",
+    "title": "ヒルベルト曲線に沿った書記"
   },
   {
     "route": "tools/misqo-conv",

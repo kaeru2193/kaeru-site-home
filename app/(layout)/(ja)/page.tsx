@@ -1,7 +1,7 @@
 import style from "./page.module.css"
 import { SiteLinkList } from "@/link"
 
-import { NewsList } from "@/(layout)/news/news"
+import { NewsList } from "./news/news"
 import { newsData } from "@/news"
 
 const snsData =
@@ -22,7 +22,7 @@ const snsData =
 
 const siteData = 
     [
-        {name: "雰界創作", desc: "主に取り組んでいる、人工言語「雰語」と世界観「雰界」を中心とする創作活動です。", url: "/phun"},
+        {name: "雰界創作", desc: "主に取り組んでいる、人工言語「雰語」と世界観「雰界」を中心とする創作活動です。", url: "/phuncreation"},
         {name: "人工言語", desc: "雰界創作以外の人工言語活動についてです。", url: "/conlang"},
         {name: "池ノ録", desc: "雑多な文書置き場です。", url: "/ikenolog"},
         {name: "倉庫", desc: "各種創作物をダウンロードします。", url: "/download"},
@@ -71,6 +71,7 @@ const Page = () => {
                 <li>ʻkáles-ʻcolfomas (<a href="https://ziphil.com/conlang/document/16.html">シャレイア</a>名)</li>
                 <li>Mońieto Fjenkaamsi (<a href="https://zpdic.ziphil.com/dictionary/raqef/">ラゼフ</a>名)</li>
                 <li>opalfwaluttai Kaeru (<a href="https://ithkuil.net">イスクイル3</a>名)</li>
+                <li>Kaela / Rhuigympha (<a href="https://lamplight0.sakura.ne.jp/a/articles/?id=100">リサトプ</a>名 / <a href="https://lamplight0.sakura.ne.jp/a/articles/?id=520">シャサフ</a>名)</li>
             </ul>
             <h3>興味範囲</h3>
             <ul>
@@ -103,7 +104,7 @@ const Page = () => {
 
             <h2>更新履歴</h2>
             <div>
-                <NewsList data={newsData} limit={3}/>
+                <NewsList data={newsData} limit={5}/>
                 <span className={style.newsLink}><a href="/news">過去の更新履歴を見る</a></span>
             </div>
 

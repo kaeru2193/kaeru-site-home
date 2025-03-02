@@ -3,7 +3,7 @@ import path from "path";
 
 const processPaths = {
     directoryPath: path.join(process.cwd(), './app'),
-    blogPath: path.join(process.cwd(), './app/(layout)/ikenolog/(articles)'),
+    blogPath: path.join(process.cwd(), './app/(layout)/(ja)/ikenolog/(articles)'),
     tmpPath: path.join(process.cwd(), './tools/.tmp')
 }
 

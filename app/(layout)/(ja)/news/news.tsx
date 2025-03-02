@@ -26,8 +26,7 @@ export const NewsList = (props: any) => {
                 return (
                     <div className={style.entry} key={idx}>
                         <div className={style.date}>{viewdate}</div>
-                        <div className={style.title}>{e.name}</div>
-                        <div>{e.desc}</div>
+                        <div className={style.text}>{e.desc}</div>
                     </div>
                 )
             })}

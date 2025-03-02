@@ -22,6 +22,10 @@ input:focus {
     outline: 0;
 }
 
+.defFont {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .phun {
     font-family: "Phun-Sans", serif;
 }

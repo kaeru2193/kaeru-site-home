@@ -4,8 +4,6 @@ export const dynamic = 'force-dynamic'
 
 import "./global.css"
 
-const siteName= '之機堂';
-const description = 'かえるのホームページです。';
 const url = 'https://kaeru2193.net/';
 
 export default function RootLayout({
@@ -16,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head prefix="og: https://ogp.me/ns#">
-        <MetaOGP site={siteName} url={url} desc={description}/>
+        <MetaOGP url={url}/>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png"/>

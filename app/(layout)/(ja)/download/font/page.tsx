@@ -8,7 +8,7 @@ const Page = () => {
             <p>各種自作フォントのダウンロードを行うことが出来ます。</p>
 
             <h2>雰字</h2>
-            <p><Link href="/phun/lang">雰語</Link>を書記するための表意文字体系です。</p>
+            <p><Link href="/phuncreation/lang">雰語</Link>を書記するための表意文字体系です。</p>
             <SiteLink title="PhunSans" desc="様々な媒体で違和感なく使える丸ゴシック体の雰字フォントです。" url="font/phunsans"/>
             <SiteLink title="PhunDot" desc="雰字の16×16ドットフォントです。" url="font/phundot"/>
             <SiteLink title="PhunWrite" desc="かえるの手書き雰字フォントです。現在は更新を停止しています。" url="font/phunwrite"/>
