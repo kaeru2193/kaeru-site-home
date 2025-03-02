@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./common.module.css"
 
-import { useState } from "react";
+import { FetchData } from "./funcs";
+import { useState, useEffect } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { langTexts } from "./languages";
 import reactStringReplace from "react-string-replace";
@@ -44,7 +45,6 @@ export const Footer = (props: {data: langTexts}) => {
     const [countData, setCountData]: any = useState("")
     const [kiriban, setKiriban] = useState(false)
 
-    /*
     useEffect(() => {
         const access = async () => {
           try {
@@ -65,7 +65,6 @@ export const Footer = (props: {data: langTexts}) => {
     
         access()
       }, []);
-    */
 
     return (
         <div className={style.footer}>
