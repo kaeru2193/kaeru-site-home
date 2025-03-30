@@ -6,7 +6,7 @@ const snsData =
         {id: "x", name: "十処", url: "https://twitter.com/kaeru2193"},
         {id: "you", name: "内立影", url: "https://youtube.com/channel/UCohJlUTohjjcikJPD7b2mdA"},
         {id: "dis", name: "壁宝宇", url: "https://discord.gg/tHhA4bBYap"},
-        {id: "mis", name: "数後", url: "https://misskey.io/@kaeru2193"},
+        {id: "mis", name: "数終", url: "https://misskey.io/@kaeru2193"},
         {id: "gih", name: "或間算", url: "https://github.com/kaeru2193"},
         {id: "ste", name: "熱霞", url: "https://steamcommunity.com/profiles/76561199224206180/"},
         {id: "bls", name: "青宇", url: "https://bsky.app/profile/kaeru2193.net"},

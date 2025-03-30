@@ -27,7 +27,7 @@
     "@types/mdx": "^2.0.13",
     "@types/papaparse": "^5.3.14",
     "bignumber.js": "^9.1.2",
-    "eikyu-clock": "^1.0.1",
+    "eikyu-clock": "^2.0.0",
     "fs": "^0.0.1-security",
     "papaparse": "^5.4.1",
     "path": "^0.12.7",

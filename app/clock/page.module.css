@@ -20,6 +20,7 @@
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
+    margin: 25px 0 20px 0;
 }
 
 .heading {
@@ -66,6 +67,8 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .earthTime {

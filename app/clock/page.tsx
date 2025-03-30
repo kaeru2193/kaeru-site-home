@@ -22,15 +22,14 @@ const Page = () => {
             pf.sec = pf.sec.padStart(2, "〇") //桁数が変わるためゼロ埋め
 
             setDisplay([
-                <>{pf.yea}年{pf.sea}季{pf.poi}旬{pf.day}日</>,
-                <>{pf.hou}時{pf.per}刻{pf.min}分{pf.sec}秒</>
+                <>{pf.yea}年{pf.poi}旬{pf.day}日</>,
+                <>{pf.per}刻{pf.min}分{pf.sec}秒</>
             ])
             const format = eikyu.getFormat()
             setAngles({
-                sec: format.sec * 5,
-                min: format.min * 30 + format.sec / 72 * 30,
-                per: format.per * 30 + format.min / 12 * 30 + format.sec / 72 / 12 * 30,
-                hou: format.hou * 30 + format.per / 12 * 30 + format.min / 12 / 12 * 30 + format.sec / 72 / 12 / 12 * 30,
+                sec: format.sec * 2.5,
+                min: format.min * 30 + format.sec / 144 * 30,
+                per: format.per * 6 + format.min / 12 * 6 + format.sec / 144 / 12 * 6
             })
             const earth = new Date()
             const earthNums = [earth.getFullYear(), earth.getMonth() + 1, earth.getDate(), earth.getHours(), earth.getMinutes(), earth.getSeconds()]
@@ -58,7 +57,6 @@ const Page = () => {
                 <div className={style.clockRow}>
                     <div className={style.clockContainer}>
                         <img src="/clock/base.png"/>
-                        <ClockHand img="hour" deg={angles.hou}/>
                         <ClockHand img="period" deg={angles.per}/>
                         <ClockHand img="minute" deg={angles.min}/>
                         <ClockHand img="second" deg={angles.sec}/>
@@ -99,7 +97,7 @@ const setNow = (setE: Function, setP: Function) => {
     setE(earthArr.join("_"))
 
     const p = new EikyuDate(EikyuDate.toEikyu(e.getTime())).getFormat()
-    const phunArr = [p.yea, p.sea, p.poi, p.day, p.hou, p.per, p.min, p.sec]
+    const phunArr = [p.yea, p.poi, p.day, p.per, p.min, p.sec]
     setP(phunArr.join("_"))
 }
 
@@ -112,15 +110,15 @@ const E2P = (earth: string, setP: Function) => {
     e.setUTCHours(eArr[3], eArr[4], eArr[5])
 
     const p = new EikyuDate(EikyuDate.toEikyu(e.getTime())).getFormat()
-    const phunArr = [p.yea, p.sea, p.poi, p.day, p.hou, p.per, p.min, p.sec]
+    const phunArr = [p.yea, p.poi, p.day, p.per, p.min, p.sec]
     setP(phunArr.join("_"))
 }
 
 const P2E = (phun: string, setE: Function) => {
-    const defaultTime = [0, 1, 1, 1, 0, 0, 0, 0]
+    const defaultTime = [0, 1, 1, 0, 0, 0]
     const pSplit = phun.split("_").map(p => Number(p))
     const pArr = defaultTime.map((d, idx) => pSplit[idx]? pSplit[idx]: d)
-    const p = new EikyuDate(pArr[0], pArr[1], pArr[2], pArr[3], pArr[4], pArr[5], pArr[6], pArr[7])
+    const p = new EikyuDate(pArr[0], pArr[1], pArr[2], pArr[3], pArr[4], pArr[5])
 
     const e = new Date(EikyuDate.toEarth(p.date))
     const earthArr = [e.getUTCFullYear(), e.getUTCMonth() + 1, e.getUTCDate(), e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds()]
@@ -132,6 +130,7 @@ const ClockHand = (props: any) => {
         transform: `rotate(${props.deg}deg)`
     }
     return <img
+        className="clockHand"
         src={`/clock/${props.img}.png`}
         style={style}
     />
