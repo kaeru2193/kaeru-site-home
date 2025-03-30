@@ -7,10 +7,10 @@ export const getClockParams = () => {
 
     return {
         year: `${pf.yea}年`,
-        date: `${pf.sea}季${pf.poi}旬${pf.day}日`,
-        time: `${pf.hou}時${pf.per}刻${pf.min}分`,
-        minDeg: f.min * 30 + f.sec / 72 * 30,
-        perDeg: f.per * 30 + f.min / 12 * 30 + f.sec / 72 / 12 * 30,
-        houDeg: f.hou * 30 + f.per / 12 * 30 + f.min / 12 / 12 * 30 + f.sec / 72 / 12 / 12 * 30,
+        date: `${pf.poi}旬${pf.day}日`,
+        time: `${pf.per}刻${pf.min}分`,
+        minDeg: 0, //いつか修正、取り敢えず機能停止
+        perDeg: 0,
+        houDeg: 0,
     }
 }
