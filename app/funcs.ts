@@ -89,8 +89,10 @@ export const PhunWordToLatin = (dict: any[], word: string) => {
         const nextPron: string = nextEntry.pron
 
         const splitFlag =
-            ( dictPron.match(/[slmn]\d$/g) && nextPron.match(/^[aiueo]/g) ) ||
-            ( dictPron.match(/[aiueo]\d$/g) && nextPron.match(/^[slmn]/g) )
+            ( dictPron.match(/[slmn]\d$/g) && nextPron.match(/^[aiueo]/g) ) || //末子音と母音の曖昧さ回避
+            ( dictPron.match(/[aiueo]\d$/g) && nextPron.match(/^[slmn]/g) ) ||
+            ( dictPron.match(/ng\d$/g) && nextPron.match(/^[aiueo]/g) ) || //ngとg始まりの語の曖昧さ回避
+            ( dictPron.match(/n\d$/g) && nextPron.match(/^g/g) )
 
         return splitFlag ? dictEntry.latinPron + "'" : dictEntry.latinPron
     })

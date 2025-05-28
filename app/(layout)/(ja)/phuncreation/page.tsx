@@ -1,5 +1,6 @@
 import { SiteLinkList } from "@/link"
 import Link from "next/link"
+import { ScrollableImg } from "@/components"
 
 const externalData = 
     [
@@ -11,6 +12,7 @@ const Page = () => {
     return (
         <>
             <h1>雰界創作</h1>
+            <ScrollableImg src="/phuncreation-logo.png" height={150} alt="the logo of Phun Creation"/>
             <p>かえるが2021年頃から断続的に行っている、人工言語「雰語」と世界観「雰界」を中心とする創作活動です。</p>
             
             <h2>案内</h2>

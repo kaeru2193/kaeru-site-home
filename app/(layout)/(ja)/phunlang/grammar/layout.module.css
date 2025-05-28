@@ -1,0 +1,15 @@
+.linkBox {
+    height: 2.5rem;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    border-top: #60c187a0 2px solid;
+}
+
+.linkBox > span {
+    display: inline-block;
+    width: 10rem;
+    text-align: center;
+}

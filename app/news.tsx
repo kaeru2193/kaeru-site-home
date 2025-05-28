@@ -62,4 +62,8 @@ export const newsData =
         "date": "2025-03-02",
         "desc": <>サイトを多言語対応化</>
     },
+    {
+        "date": "2025-05-28",
+        "desc": <>新しくなった<a href="/download/font/phundot">PhunDot</a>をサイトに適用</>
+    },
 ]

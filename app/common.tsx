@@ -68,7 +68,7 @@ export const Footer = (props: {data: langTexts}) => {
 
     return (
         <div className={style.footer}>
-            <p className={`${style.copyright} defFont`}>© 2021-2024 kaeru2193</p>
+            <p className={`${style.copyright} defFont`}>© 2021-2025 kaeru2193</p>
             <div className={style.count}>
                 {kiriban
                     ? <div className={style.message}>

@@ -23,7 +23,8 @@ const snsData =
 const siteData = 
     [
         {name: "雰界創作", desc: "主に取り組んでいる、人工言語「雰語」と世界観「雰界」を中心とする創作活動です。", url: "/phuncreation"},
-        {name: "人工言語", desc: "雰界創作以外の人工言語活動についてです。", url: "/conlang"},
+        {name: "雰語", desc: "2021年頃からかえるが創作している人工言語です。", url: "/phunlang"},
+        {name: "人工言語", desc: "雰界創作以外の人工言語活動についての内容です。", url: "/conlang"},
         {name: "池ノ録", desc: "雑多な文書置き場です。", url: "/ikenolog"},
         {name: "倉庫", desc: "各種創作物をダウンロードします。", url: "/download"},
         {name: "ギャラリー", desc: "ロゴや紋章など、画像形式の制作物をダウンロードできます。", url: "/download/gallery"},

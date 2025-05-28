@@ -53,7 +53,7 @@ const Page = () => {
 
             <h2>我為何人？</h2>
             <p><b>之機</b> （<span className="defFont">kaeru2193</span>等為名） 為思造言来世、追書算序、追做多事然蟾蛇 （定言名為<span className="defFont"><i>Dryophytes phunics</i></span>）。</p>
-            <p>活内之衆網元〡〢〥〩年〢季、追造思造言〈栄言〉来思造世〈栄世〉。</p>
+            <p>活内之衆網元〡〢〥〩年〺旬、追造思造言〈栄言〉来思造世〈栄世〉。</p>
             <h3>我名集</h3>
             <ul>
                 <li>之機 （<span className="defFont">kaeru2193</span>）</li>

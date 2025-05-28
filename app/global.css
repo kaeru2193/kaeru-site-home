@@ -27,7 +27,7 @@ input:focus {
 }
 
 .phun {
-    font-family: "Phun-Sans", serif;
+    font-family: "Phun-Sans", "PhunDot", serif;
 }
 
 .ipa {
@@ -50,4 +50,10 @@ input:focus {
     font-family: "Phun-Sans";
     font-weight: bold;
     src: url(https://kaeru2193.github.io/Phun-Resources/font/Phun-Sans/Phun-Sans-Rounded-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "PhunDot";
+    font-weight: normal;
+    src: url(https://kaeru2193.github.io/Phun-Resources/font/PhunDot-latest.woff) format("woff");
 }

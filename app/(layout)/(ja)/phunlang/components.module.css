@@ -67,7 +67,7 @@
 }
 
 .popEntry {
-    font-family: "Phun-Sans";
+    font-family: "Phun-Sans", "PhunDot";
     font-size: 1rem;
     font-weight: bold;
 }
@@ -143,7 +143,7 @@
 }
 
 .popMeanPhun {
-    font-family: "Phun-Sans";
+    font-family: "Phun-Sans", "PhunDot";
     margin: 0 2px;
 }
 
