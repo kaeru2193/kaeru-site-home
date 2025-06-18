@@ -14,7 +14,6 @@ const Page = () => {
         fontSize: 60,
         margin: 20,
         lineHeight: 1.2,
-        letterSpacing: 0,
         background: "ffffff",
         color: "000000"
     })
@@ -50,7 +49,6 @@ const Page = () => {
         const lineSize = params.fontSize * params.lineHeight
 
         ctx.font = `${params.fontSize}px ${params.fontFamily}`
-        ctx.letterSpacing = `${params.letterSpacing}px`
         const lines = wordWrap(
             ctx,
             params.text,
@@ -79,7 +77,6 @@ const Page = () => {
 
         ctx.fillStyle = "#" + params.color
         ctx.font = `${params.fontSize}px ${params.fontFamily}`
-        ctx.letterSpacing = `${params.letterSpacing}px`
         ctx.textBaseline = "top"
         ctx.textAlign = params.align
         
@@ -143,7 +140,6 @@ const Page = () => {
             <BreakLine text="追加設定"/>
 
             <Input var={params.lineHeight} set={setParam("lineHeight")} default={params.lineHeight} label="行の高さ" number/>
-            <Input var={params.letterSpacing} set={setParam("letterSpacing")} default={params.letterSpacing} label="文字間隔" number/>
             <Input var={params.color} set={setParam("color")} default={params.color} label="文字色"/>
             <Input var={params.background} set={setParam("background")} default={params.background} label="背景色"/>
             
