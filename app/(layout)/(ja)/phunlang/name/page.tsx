@@ -90,6 +90,13 @@ const Page = () => {
                         <td>2024/08/14</td>
                     </tr>
                     <tr>
+                        <td><span className="phun">蔔 冬燦</span></td>
+                        <td><span className="serif">蔔 冬燦</span></td>
+                        <td><span className="serif">Nòm Xòncâl</span></td>
+                        <td><Link href="https://wfturnip.github.io/Website/">たーなっぷ</Link></td>
+                        <td>2024/08/31</td>
+                    </tr>
+                    <tr>
                         <td><span className="phun">桜 晴葉</span></td>
                         <td><span className="serif">桜 晴葉</span></td>
                         <td><span className="serif">Túo Zênpûa</span></td>

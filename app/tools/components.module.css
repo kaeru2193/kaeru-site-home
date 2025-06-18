@@ -114,12 +114,9 @@
 }
 
 .optionRow {
+    margin: 15px 0;
     display: flex;
     flex-direction: row;
-}
-
-.optionBody {
-    margin-left: 0.5rem;
 }
 
 @media screen and (max-width: 864px) {

@@ -8,6 +8,7 @@ const Page = () => {
             <h2>雰界創作</h2>
             <ul>
                 <li><Link href="phun-pron">雰語を漢字翻字から表音表記化</Link></li>
+                <li><Link href="phun-renderer">雰字画像メーカー</Link></li>
                 <li><Link href="misqo-conv">算用数字を雰算字に変換</Link></li>
             </ul>
             <h2>数学</h2>

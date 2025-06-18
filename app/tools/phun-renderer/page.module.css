@@ -1,0 +1,17 @@
+.canvasBox {
+    width: 100%;
+    padding: 10px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.canvas {
+    box-shadow: 0 0 8px 5px #00000030;
+}
+
+.downloadButton {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 5px;
+}

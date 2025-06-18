@@ -13,7 +13,7 @@ export const Header = () => {
                     <a href="/">
                         <span className={style.toHome}>
                             <Image src="/tools_kaeru_logo.svg" alt="logo" height={25} width={25}/>
-                            <span>本棟へ</span>
+                            <span>本館へ</span>
                         </span>
                     </a>
                 </div>

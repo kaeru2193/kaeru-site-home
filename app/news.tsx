@@ -66,4 +66,8 @@ export const newsData =
         "date": "2025-05-28",
         "desc": <>新しくなった<a href="/download/font/phundot">PhunDot</a>をサイトに適用</>
     },
+    {
+        "date": "2025-06-18",
+        "desc": <><a href="/tools/phun-renderer/">雰字画像メーカー</a>を公開</>
+    },
 ]

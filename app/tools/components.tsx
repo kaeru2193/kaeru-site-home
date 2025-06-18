@@ -12,8 +12,11 @@ export const Input = (props: any) => {
         </label>
     } else {
         return <label className={styles.inputBox}><span className={styles.label}>{props.label}</span>
-            <input className={styles.input} type={props.number? "number": "text"} defaultValue={props.default? props.default: ""} onBlur={(e) => {
-                props.set(e.target.value)
+            <input className={styles.input} type={props.number? "number": "text"} defaultValue={props.default !== undefined? props.default: ""} onBlur={(e) => {
+                props.set(props.number
+                    ?Number(e.target.value)
+                    :e.target.value
+                )
             }}/>
         </label>
     }

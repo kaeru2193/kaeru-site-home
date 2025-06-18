@@ -57,3 +57,9 @@ input:focus {
     font-weight: normal;
     src: url(https://kaeru2193.github.io/Phun-Resources/font/PhunDot-latest.woff) format("woff");
 }
+
+@font-face {
+    font-family: "PhunWrite";
+    font-weight: normal;
+    src: url(https://kaeru2193.github.io/Phun-Resources/font/PhunWrite-Regular-latest.woff) format("woff");
+}
