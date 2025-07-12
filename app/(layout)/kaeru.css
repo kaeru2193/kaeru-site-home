@@ -112,14 +112,14 @@ ul li, ol li {
 ul li::before {
     display:  inline-block;
     content:  "";
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     background-image: url(/list-mark.svg);
     background-size: contain;
     margin-right: 0.3rem;
     background-repeat: no-repeat;
     position: relative;
-    top: 2px;
+    top: 1px;
 }
 
 ul > li > ul li::before {

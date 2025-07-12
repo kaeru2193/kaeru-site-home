@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { FetchData, PhunWordToLatin } from "@/funcs";
-import { marks } from "./marks";
 import { Input, Output, Select, OptionRow, BreakLine } from "../components";
 
 const Page = () => {
@@ -42,30 +41,29 @@ const App = (props: {data: any[]}) => {
     const sentences = text.split(/([。、「」！？〈〉―\n])/)
     const processed = sentences.map(s => {
         const words = s.split(" ")
+
+        const extractEntry = (text: string, func: Function) => text.split("").map(c => {
+            const search = props.data.find(entry => entry.word == c)
+            if (!search) {
+                return c
+            }
+            return func(search)
+        })
+
         const converted = words.map(w => {
             switch(type) {
                 case "accent":
                     return PhunWordToLatin(props.data, w).join("")
                 case "accent-space":
-                    return PhunWordToLatin(props.data, w).join(" ")
+                    return extractEntry(w, (e: any) => e.latinPron).join(" ")
                 case "numeric":
+                    return extractEntry(w, (e: any) => e.pron).join(" ")
                 case "ipa":
+                    return extractEntry(w, (e: any) => e.ipa.slice(1, -1)).join(".")
+                case "weqo":
+                    return extractEntry(w, (e: any) => e.weqo).join(" ")
                 default:
-                    return w.split("").map(c => {
-                        const search = props.data.find(entry => entry.word == c)
-
-                        if (!search) {
-                            return c
-                        }
-                        switch(type) {
-                            case "numeric":
-                                return search.pron
-                            case "ipa":
-                                return search.ipa.slice(1, -1)
-                            default:
-                                return c
-                        }
-                    }).join("")
+                    return w
             }
         })
         return converted.join(" ")
@@ -83,6 +81,7 @@ const App = (props: {data: any[]}) => {
                     "accent-space": "符号声調表記 (スペース挿入)",
                     numeric: "数字声調表記",
                     ipa: "IPA表記",
+                    weqo: "声字フォント用転写",
                 }}/>
             </OptionRow>
 

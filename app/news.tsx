@@ -70,4 +70,8 @@ export const newsData =
         "date": "2025-06-18",
         "desc": <><a href="/tools/phun-renderer/">雰字画像メーカー</a>を公開</>
     },
+    {
+        "date": "2025-07-12",
+        "desc": <><a href="/links">リンク集</a>を追加、サイトバナーを作成</>
+    },
 ]

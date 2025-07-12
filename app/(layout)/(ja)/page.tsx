@@ -52,18 +52,22 @@ const Page = () => {
                 })}
             </div>
 
+            <div className={style.otherLink}>
+                <a href="/links">他のリンクはこちらから</a>
+            </div>
+
             <h2>館内案内</h2>
             <SiteLinkList data={siteData}/>
 
             <h2>Who am I?</h2>
             <p><b>かえる</b>（kaeru2193とも）は、言語・世界創作やプログラミング、その他諸々の活動をしている雑多なかえる（学名 <i>Dryophytes phunics</i>）である。</p>
-            <p>2021/10頃から現界隈での生息が確認されており、主に人工言語「雰語」・架空世界「雰界」を創作するなどの生態が見られる。</p>
+            <p>2021/10頃から現界隈での生息が確認されており、主に人工言語・架空世界を創作する習性を持つ。</p>
             <p>サイト名は「之機 (雰語名の漢字転写) + 堂」であるが、正しい読みは不明である。</p>
             <h3>名義群</h3>
             <ul>
                 <li>かえる / kaeru2193</li>
                 
-                <li>之機 / Kúaàil (雰名)
+                <li><span className="phun">之機</span> / Kúaàil (<a href="/phunlang">雰</a>名)
                     <ul>
                         <li><span className="ipa">[kɯa˥.ail˨]</span> または <span className="ipa">[kʰə˧˥.ɛl˩˧]</span></li>
                     </ul>
@@ -103,6 +107,21 @@ const Page = () => {
                 </li>
             </ul>
 
+            <h3>連絡先</h3>
+            <p>かえるへの最も早く確実な連絡先はDiscordのDMです</p>
+            <ul>
+                <li>Discord: @kaeru2193</li>
+                <li>X/Twitter: @kaeru2193</li>
+                <li>Bluesky Social: @kaeru2193.net</li>
+                <li>Email: kaeru2193◉gmail.com (ジャノメはアットマークに置き換えて下さい)
+                    <ul><li>Emailはあまり確認しないので、可能な限り他の連絡先をご利用下さい</li></ul>
+                </li>
+            </ul>
+
+            <h2>リンクについて</h2>
+            <p>当サイトはリンクフリーです。リンクを貼る際には、以下のバナーを適宜ご使用下さい。</p>
+            <a href="https://kaeru2193.net"><img src="/banner.png" width="200" height="40" alt="之機堂" /></a>
+            <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner.png" width="200" height="40" alt="之機堂" /></a>`}</code></pre>
             <h2>更新履歴</h2>
             <div>
                 <NewsList data={newsData} limit={5}/>
