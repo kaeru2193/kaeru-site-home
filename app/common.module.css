@@ -16,6 +16,24 @@
     z-index: 0;
 }
 
+.animeIconBox {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+}
+
 .logoContainer {
     display: flex;
     align-items: center;
@@ -25,18 +43,36 @@
 .logoLink {
     text-decoration: none;
     position: relative;
-    padding: 0 10px 0 2px;
+    padding: 0 14px 0 6px;
     z-index: 1;
 }
 
+.titleBox {
+    padding: 0 0 3px 80px;
+    mask-image: linear-gradient(#000, #000), url("/icon_mask.svg");
+    mask-repeat: no-repeat;
+    mask-position: center center, 0px center;
+    mask-size: 100% 100%, 60px 60px;
+    mask-composite: exclude;
+}
+
 .title {
-    vertical-align: middle;
-    font-weight: bold;
-    padding: 0 0 3px 20px;
-    color: #ffffff;
-    margin: 0;
+    display: inline-block;
     font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
     white-space: nowrap;
+    z-index: -1;
+}
+
+.title.animeHide {
+    transform: translateX(-250px);
+}
+
+.title.animeShow {
+    transform: translateX(0);
+    transition: transform 0.5s 0s ease-out;
 }
 
 .topLinks {

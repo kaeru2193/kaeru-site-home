@@ -74,4 +74,8 @@ export const newsData =
         "date": "2025-07-12",
         "desc": <><a href="/links">リンク集</a>を追加、サイトバナーを作成</>
     },
+    {
+        "date": "2025-07-18",
+        "desc": <><a href="/ikenolog/20250406">ZpDICのAPIで、Discordにお手軽ランダム単語自動定期投稿チュートリアル【令和最新版】</a>を再投稿</>
+    },
 ]

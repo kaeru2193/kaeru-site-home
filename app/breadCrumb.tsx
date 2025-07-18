@@ -16,9 +16,11 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
   
     return (
       <div className={style.breadCrumb}>
-        <Link className={style.homeLink} href={props.lang == "ja" ?"/" :`/${props.lang}`}>
-          <span className={style.home}><FaHouseChimney/></span>
-        </Link>
+        <span className={style.home}>
+          <Link className={style.homeLink} href={props.lang == "ja" ?"/" :`/${props.lang}`}>
+            <FaHouseChimney/>
+          </Link>
+        </span>
         {paths.map((d, idx) => {
           const title = pageMap.filter(p =>
             p.route == roots[idx]
@@ -28,13 +30,16 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
           const linkTitle = title? title.title: d //登録されていればそれを、されていなければURLから取得して表示
 
           return (
-            <span className={style.linkContainer} key={idx}>
-              <FaAngleRight className={style.rightArrow}/>
-              {link
-                ? <Link className={style.link} href={`/${roots[idx]}`}>{decodeURI(linkTitle!)}</Link>
-                : <span className={style.presentPage}>{decodeURI(linkTitle!)}</span>
-              }
-            </span>
+            <>
+              <span className={style.rightArrowContainer}><FaAngleRight className={style.rightArrow}/></span>
+              <span className={style.linkContainer} key={idx}>
+                
+                {link
+                  ? <Link className={style.link} href={`/${roots[idx]}`}>{decodeURI(linkTitle!)}</Link>
+                  : <span className={style.presentPage}>{decodeURI(linkTitle!)}</span>
+                }
+              </span>
+            </>
           )
         })}
       </div>

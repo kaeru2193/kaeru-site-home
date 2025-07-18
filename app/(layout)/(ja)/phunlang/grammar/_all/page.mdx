@@ -1,0 +1,1180 @@
+import { PPron, PText, Translate, Misqo, PBox } from "@/components/Module-resource"
+import { ScrollableImg } from "@/components"
+
+# 雰語文法
+
+## 形態論・統語論
+
+### 品詞
+
+雰語の単語は以下の品詞に分類される。
+
+<div className="tableBox"><table><tbody>
+<tr><th>名称</th><th>説明</th></tr>
+<tr><td>名詞</td><td>物や概念の名称を叙述する。</td></tr>
+<tr><td>動詞</td><td>節の中心となり、動作や様態を叙述する。</td></tr>
+<tr><td>形容詞</td><td>名詞の状態や性質を叙述する。</td></tr>
+<tr><td>副詞</td><td>動詞や形容詞の状態や程度を叙述する。</td></tr>
+<tr><td>数詞</td><td>名詞や動詞の数量について叙述する。</td></tr>
+<tr><td>助数詞</td><td>数詞と共に用いられ、数量で表されている対象を類別する。</td></tr>
+<tr><td>助詞</td><td>複数の句を接続する。</td></tr>
+<tr><td>前置詞</td><td>句や節に前置されて前置詞句を作る。</td></tr>
+<tr><td>接続詞</td><td>複数の節を接続する。</td></tr>
+<tr><td>情詞</td><td>節末に置かれ、話者の語気や感情を叙述する。</td></tr>
+<tr><td>感動詞</td><td>感情表現や挨拶・返答のために単独で用いられる。</td></tr>
+</tbody></table></div>
+
+### 句
+
+複数の単語のまとまりを指す。
+
+#### 名詞句
+
+主要部が名詞であり、単語や他の名詞句、節、前置詞句などで修飾されている句。ただし、単独の名詞も名詞句として振る舞えることに留意。
+
+修飾の関係性を表すためには助詞を用いることが多いが、あくまで補助的な役割を果たしているに過ぎないため必ずしも必要ではない。詳しくは[助詞](../10/)の項を参照。
+
+また、前置詞による修飾においては名詞の主要部が省略され、あたかも単独の前置詞句が名詞句として振る舞うように見えることがある。詳しくは[前置詞](../11/)の項を参照。
+
+<PBox>
+- <PPron text="力車">力車</PPron><Translate>自動車</Translate>
+- <PPron text="赤.力車">赤力車</PPron><Translate>赤い自動車</Translate>
+- <PPron text="力車.行.侶.庵">力車行侶庵</PPron><Translate>彼の家行きの自動車（前置詞句による修飾）</Translate>
+- <PPron text="我.腕.然.力車">我腕然力車</PPron><Translate>私が運転する自動車（節による修飾）</Translate>
+</PBox>
+
+また、複数の名詞句を助詞で連結したものも名詞句として扱われる。
+
+<PBox>
+- <PPron text="我.来.汝">我来汝</PPron><Translate>私とあなた</Translate>
+</PBox>
+
+#### 前置詞句
+
+名詞句か節に対して前置詞を前置した句。
+
+<PBox>
+- <PPron text="内.其.国">内其国</PPron><Translate>その国の中で</Translate>
+- <PPron text="跨.我.行.其.追.行元">跨我行其追行元</PPron><Translate>私がそこへ行って帰る間</Translate>
+</PBox>
+
+#### 動詞句
+
+主要部が動詞であり、副詞で修飾されている句。また、単独の動詞も動詞句として扱われることに注意。
+
+<PBox>
+- <PPron text="食">食</PPron><Translate>食べる</Translate>
+- <PPron text="倫.眠">倫眠</PPron><Translate>ぐっすり眠る</Translate>
+- <PPron text="要.走.回">要走回</PPron><Translate>素早く回転すべき</Translate>
+</PBox>
+
+### 節
+
+節は、雰語における文の基本構造である。「(主語/主題) + 述語 + (目的語/補語) + (0個以上の前置詞句) + (情詞)」の形で構成される（括弧内のものは省略可能）。類型論的には雰語は主題優勢言語であり、主語が頻繁に省略されることも雰語の大きな特徴の一つである。
+
+また、「節 + (接続詞) + 節」のように複数の節を接続詞で繋いだものも節とされる。
+
+<PBox>
+- <PPron text="我.書.話.在.庵">我書話在庵</PPron><Translate>私は家で物語を書く</Translate>
+- <PPron text="肉.万定.不.食">肉万定不食</PPron><Translate>（私は）肉は絶対に食べない</Translate>
+- <PPron text="猫.入.在.籠.、.而.豊.其">猫入在籠、而豊其</PPron><Translate>猫が箱に入り、それを満たした</Translate>
+</PBox>
+
+#### 主語/主題
+
+主語/主題は共に名詞句である。雰語では頻繁に主語が省略され、代わりに主題が文頭に置かれることもある。また、目的語が主題化して文頭に出されることがある。
+
+<PBox>
+- <PPron text="媛.歩">**媛**歩</PPron><Translate>彼女は歩く \[主語\]</Translate>
+- <PPron text="日言.不.知">**日言**不知</PPron><Translate>日本語は分からない \[主題化した目的語\]</Translate>
+</PBox>
+
+主語が同一である複数の文が連続する場合には、先頭の文以外で主語が省略される。
+
+<PBox>
+- <PPron text="我.為.広.透暁.。.庵.在.天京.。">**我**為広透暁。庵在天京。</PPron><Translate>私は<PText>広透暁</PText>です。天京に住んでいます。</Translate>
+- <PPron text="我.為.広.透暁.。.我.庵.在.天京.。">**我**為広透暁。**我**庵在天京。</PPron> \[省略前の形\]
+</PBox>
+
+#### 述語
+
+述語は原則動詞句である。主に動作や状態を叙述し、節の中で省略することが出来ない唯一の要素である。裏を返せば、単独の動詞句であっても節として成立する。
+
+<PBox>
+- <PPron text="我.目.其.紙.。">我**目**其紙。</PPron><Translate>私はその紙を見る。</Translate>
+- <PPron text="目.。">**目**。</PPron><Translate>見る。</Translate>
+</PBox>
+
+##### 総主文
+
+例外として、総主文（「象は鼻が長い」のように、主題と主語が重複する文）では節が述語になる。
+
+<PBox>
+- <PPron text="其.獣.脚.為.太.。">其獣**脚為太**。</PPron><Translate>その動物は脚が太い。</Translate>
+- <PPron text="天京.古事.為.多.。">天京**古事為多**。</PPron><Translate>天京は歴史が長い。</Translate>
+</PBox>
+
+上記の二つ目の例文は修飾構造を用いて以下のように言い換えることもできるが、焦点の位置が異なっている。
+
+<PBox>
+- <PPron text="天京.然.古事.為.多.。">天京**然**古事為多。</PPron><Translate>天京の歴史は長い。</Translate>
+  - 焦点が「<PText>天京然古事</PText>」に置かれており、単体で文が完結している印象を読者に与える。
+- <PPron text="天京.古事.為.多.。">天京古事為多。</PPron><Translate>天京は歴史が長い。</Translate>
+  - 焦点が「<PText>天京</PText>」に置かれており、<PText>天京</PText>以外の都市と歴史を比べたり、<PText>天京</PText>について他の観点から述べたりする文脈を読者に感じさせる。
+  - <PPron text="天京.古事.為.多.、.商.為.栄.、.多.蟾.庵.。">天京古事為多、商為栄、多蟾庵。</PPron><Translate>天京は歴史が長く、商いが活発で、多くのカエルが住んでいる。</Translate>
+</PBox>
+
+##### 形容詞の述語化
+
+別の例外として、感嘆文など主語の存在しない節では形容詞が述語化することがある。これは古典雰語における用法の名残りであり、現代口語では特に感嘆文においてのみ現れる。
+
+<PBox>
+- <PPron text="哀.啊.。">哀啊。</PPron><Translate>悲しいなあ。</Translate>
+  - 通常の規則に当てはめれば「<PText>為哀啊。</PText>」が正しいが、このような表現は口語でもあまり見られない。
+- <PPron text="其昆.長.如.？">其昆長如？</PPron><Translate>そんなに長いのか？</Translate>
+  - 文語的な表現。口語では述語化させず「<PText>其昆為長如？</PText>」とするのが一般的。
+</PBox>
+
+#### 目的語
+
+目的語は名詞句か節であり、述語の作用する対象を指定する。省略することも可能で、その場合は動詞によって振る舞いが変化する。詳しくは[及・不及動詞](../06/#及・不及動詞)の項を参照。
+
+<PBox>
+- <PPron text="我.食.赤果.。">我食**赤果**。</PPron><Translate>私はリンゴを食べる。</Translate>
+- <PPron text="媛.知.侶衆.行.其.。">媛知**侶衆行其**。</PPron><Translate>彼女は彼らがそこへ行くことを知っている。</Translate>
+</PBox>
+
+また、前置詞を用いることで、主語を意味上の目的語として振る舞わせることもできる。
+
+<PBox>
+- <PPron text="赤果.食.使.我.。">赤果食**使我**。</PPron><Translate>リンゴは私が食べる。/ リンゴは私によって食べられる。</Translate>
+</PBox>
+
+#### 補語
+
+補語は名詞句、形容詞、副詞、節のいずれかであり、主語について描写する。補語を取ることが出来るのは「<PText>為</PText>」や「<PText>成</PText>」など、一部の動詞のみである。
+
+<PBox>
+- <PPron text="侶.為.平.仁.。">侶為**平仁**。</PPron><Translate>彼は<PText>平</PText>さんです。</Translate>
+- <PPron text="之.筆籠.為.多貨.。">之筆籠為**多貨**。</PPron><Translate>この筆箱は（金額的に）高い。</Translate>
+</PBox>
+
+但し、補語は主語として用いることができない。
+
+<PBox>
+- <PText>*\*平仁為（使侶）。*</PText>
+- <PText>*\*多貨為（使之筆籠）。*</PText>
+</PBox>
+
+#### 前置詞句
+
+節には複数の前置詞句を追加することが可能で、場所や時間、原因など様々な情報を付加できる。
+
+<PBox>
+- <PPron text="汝.記.其.帳.在.集帳家.。">汝記其帳**在集帳家**。</PPron><Translate>あなたはその本を図書館で読む。</Translate>
+- <PPron text="現.臓痛.由.食.古.果.。">現臓痛**由食古果**。</PPron><Translate>古くなった果物を食べたために腹痛がしている。</Translate>
+</PBox>
+
+また、主節であれば前置詞句を先頭に移動させてもよい。この場合、文構造が複雑な場合は前置詞句の後に読点を挿入して区切ることも多い。
+
+<PBox>
+- <PPron text="在.之日.我衆.不.行庵.汝.。">**在之日**我衆不行庵汝。</PPron><Translate>今日、私たちはあなたを帰宅させない。</Translate>
+- <PPron text="内.其.宗.、.制止.出.元.庵.在.新日.。">**内其宗**、制止出元庵在新日。</PPron><Translate>その宗教では、元日に家から出ることを禁じている。</Translate>
+</PBox>
+
+#### 情詞
+
+情詞は節の末で話し手の感情や態度を表現する。詳しくは[情詞](../13/)の項を参照。
+
+### 文
+
+文章構造の中で最上位に位置する節は**文**として扱われる。文はあくまで最上位の節とその下に位置する従属節をまとめて指す概念であるため、1つの文はそれ自体が1つの節でありながら、内部には複数の節が含まれる可能性がある。例として、以下に一文がある。
+
+<PBox>
+- <PPron text="青.仁.行.多.人.集.然.都.在.去日.、.故.賜.熱病.在.之日.。">青仁行多人集然都在去日、故賜熱病在之日。</PPron><Translate><PText>青</PText>さんは昨日多くの人が集まる街に行き、そのため今日は風邪を引いてしまった。</Translate>
+</PBox>
+
+これは単一の文であり単一の節だが、内部には更に幾つかの節を抱えている。
+
+<ScrollableImg src="/phun-grammar/structure.png" height={200}/>
+
+
+## 基本的な文
+
+[節](../03/#節)の項で説明した通り、文を構成する節は 「(主語/主題) + 述語 + (目的語/補語) + (0個以上の前置詞句) + (情詞)」という構造を持つ。
+
+### 平叙文
+
+基本的な構造から変化はない。
+
+<PBox>
+- <PPron text="媛.行.其.以.路車.。">媛行其以路車。</PPron><Translate>彼女は電車でそこへ行く。</Translate>
+</PBox>
+
+### 繋辞文
+
+雰語にはコピュラ動詞として「<PPron text="為">為</PPron>」が存在する。この動詞は補語のみを取り、目的語は取らない。
+
+<PBox>
+- <PPron text="我.為.習人.。">我**為**習人。</PPron><Translate>私は学生です。</Translate>
+- <PPron text="侶.為.二十.年.。">侶**為**二十年。</PPron><Translate>彼は<PText>二十歳</PText>です。</Translate>
+  - 暦法や進法が異なるため、現界の年齢に換算すると約36歳となる。
+- <PPron text="其.人.為.訓宗人.向.栄言.。">其人**為**訓宗人向栄言。</PPron><Translate>その人は雰語の伝道師だ。</Translate>
+</PBox>
+
+### 否定文
+
+動詞の否定表現には副詞「<PPron text="不">不</PPron>」を用いる。
+
+<PBox>
+- <PPron text="彼.人.不.目跳.跨.甲.分.。">彼人**不**目跳跨甲分。</PPron><Translate>あの人は8分間まばたきをしていない。</Translate>
+- <PPron text="在.去日.我.入.浄処.、.而.温杯.不.湛.。">在去日我入浄処、而温杯**不**湛。</PPron><Translate>昨日私が風呂場に入ったとき、湯船には（湯が）溜まっていなかった。</Translate>
+</PBox>
+
+ただしコピュラの否定表現は例外的で、「不為」ではなく否定コピュラ「<PPron text="非">非</PPron>」を用いる。
+
+<PBox>
+- <PPron text="我.非.違言人.！">我**非**違言人！</PPron><Translate>私は嘘吐きではない！</Translate>
+- <PText>*\*我不為違言人！*</PText>
+</PBox>
+
+### 疑問文
+
+疑問文の文末に置かれる約物は疑問符であることが多いが、代わりに句点が置かれたり省略される場合もある。
+
+#### 是非疑問文
+
+是非疑問文（肯定か否定を要求する疑問文）は、平叙文に情詞「<PPron text="如">如</PPron>」を付加することで表現する。
+
+<PBox>
+- <PPron text="其.兵.撃.団.王.如.？">其兵撃団王**如**？</PPron><Translate>その兵士は我等の王を攻撃したのか？</Translate>
+</PBox>
+
+また、是非疑問文に応答するには、文中の動詞をそのまま用いる方法と「<PText>為</PText>/<PText>非</PText>」を用いる方法の二つがある。例として、上の例文への応答はこのようになる。
+
+<PBox>
+- <PText>其兵戦於団王如？</PText>
+  - <PPron text="撃.。">撃。</PPron> / <PPron text="為.。">為。</PPron><Translate>攻撃しました。（肯定）</Translate>
+  - <PPron text="不.撃.。">不撃。</PPron> / <PPron text="非.。">非。</PPron><Translate>攻撃しませんでした。（否定）</Translate>
+</PBox>
+
+ただし、否定文を疑問に用いている場合は以下のように対応が逆転することに注意。
+
+<PBox>
+- <PPron text="宇.仁.不.来.在.之日.如.？">宇仁不来在之日如？</PPron><Translate><PText>宇</PText>さんは今日来ないのですか？</Translate>
+  - <PPron text="不.来.。">不来。</PPron> / <PPron text="為.。">為。</PPron><Translate>来ません。（質問に対する肯定）</Translate>
+  - <PPron text="来.。">来。</PPron> / <PPron text="非.。">非。</PPron><Translate>来ます。（質問に対する否定）</Translate>
+</PBox>
+
+以下は表に直したものである。（<PText>做</PText>は文中の動詞を表す）
+
+<div className="tableBox">
+<table><tbody style={{textAlign: "center"}}>
+  <tr>
+    <th></th>
+    <th>質問文への肯定</th>
+    <th>質問文への否定</th>
+  </tr>
+  <tr>
+    <th>肯定疑問文</th>
+    <td><PText>*做*。</PText> / <PText>為。</PText></td>
+    <td><PText>不*做*。</PText> / <PText>非。</PText></td>
+  </tr>
+  <tr>
+    <th>否定疑問文</th>
+    <td><PText>不*做*。</PText> / <PText>為。</PText></td>
+    <td><PText>*做*。</PText> / <PText>非。</PText></td>
+  </tr>
+</tbody></table>
+</div>
+
+#### 不定疑問文
+
+不定疑問文（ある事柄について質問する疑問文）は、情詞「如」を付加した上で、質問する部分を疑問代名詞（[指示代名詞](../05/#指示代名詞)を参照）に置き換えることで表現する。
+
+不定疑問文に対する答え方については明確な規定は無いが、通常の会話では述語のみを用いた必要最低限の文で答えることが一般的である。
+
+<PBox>
+- <PPron text="之.為.何.如.？">之為**何**如？</PPron><Translate>これは何ですか？</Translate>
+  - <PPron text="為.赤果.。">為赤果。</PPron><Translate>リンゴです。</Translate>
+- <PPron text="何人.成.肉.於.其.豚.如.？">**何人**成肉於其豚如？</PPron><Translate>誰がその豚を肉にしたのですか？</Translate>
+  - <PPron text="汝.成.。">汝成。</PPron><Translate>あなたです。</Translate>
+</PBox>
+
+また、以下のように前置詞句の中に疑問代名詞を置くことも多い。
+
+<PBox>
+- <PPron text="彼.蟾.跳.行.何処.如.？">彼蟾跳行**何処**如？</PPron><Translate>あのカエルはどこへ跳ぶのですか？</Translate>
+- <PPron text="以.何由.、.媛.訓人.透.態.赤.如.？">以**何由**、媛訓人透態赤如？</PPron><Translate>なぜ、彼女の教師は赤く光り輝いているのですか？</Translate>
+</PBox>
+
+#### 選択疑問文
+
+選択疑問文（特定の範囲内での選択を要求する疑問文）は、疑問選択指示代名詞「手何」を配置した上で前置詞句を用いて範囲を示して表現する。
+
+<PBox>
+- <PPron text="汝.欲.食.手何.内.肉.岐.魚.如.？">汝欲食**手何**内肉岐魚如？</PPron><Translate>あなたは肉と魚のどちらを食べたいですか？</Translate>
+</PBox>
+
+#### 間接疑問文
+
+間接疑問文のうち、是非疑問文については節の末尾に「<PPron text="岐非">岐非</PPron>」を付加することで作られる。
+
+<PBox>
+- <PPron text="二.貝.人.衝舌.、.向.絞.卵柑.而.散.在.炸餐.岐非.。">二貝人衝舌、向絞卵柑而散在炸餐**岐非**。</PPron><Translate>揚げ物にレモンを絞って掛けるかどうかについて、二人が口論した。</Translate>
+</PBox>
+
+不定疑問文については通常の疑問文と同様に、質問する部分を疑問代名詞に置き換えて作られる。
+
+<PBox>
+- <PPron text="曰.父.知.何人.去.画.彼.画.。">曰父知**何人**去画彼画。</PPron><Translate>父はあの絵を誰が描いたのか知っているらしい。</Translate>
+</PBox>
+
+### 命令文
+
+雰語には、命令を直接的に表すための文法範疇が存在しない。そのため主語を省略した平叙文か、強調や呼びかけを表す「<PPron text="焉">焉</PPron>」などの情詞を用いた文で間接的に表現される。
+
+<PBox>
+- <PPron text="食.悉.餐.等.菜草.焉.！">食悉餐等菜草**焉**！</PPron><Translate>（料理の）野菜も全部食べなさい！</Translate>
+- <PPron text="居.在.其.到.侶.行.。">居在其到侶行。</PPron><Translate>彼が行くまでそこで待っていて。</Translate>
+</PBox>
+
+
+
+
+## 名詞
+
+### 人称代名詞
+
+雰語における人称代名詞は男性/女性/不定性の3系統に大別され、更に年齢・役職などによる上下関係によって使い分けられる。但し、ここに示したのはあくまで一般的なものに過ぎないことに留意せよ。
+
+以下に**男性人称代名詞**を示す。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="爾">爾</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td colSpan={2}><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td><PPron text="侶">侶</PPron></td>
+        <td colSpan={2}>(<PPron text="上処">上処</PPron><sup>\*3</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}><PPron text="侶衆">侶衆</PPron></td>
+    </tr>
+</tbody></table></div>
+
+以下に**女性人称代名詞**を示す。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="子">子</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td><PPron text="子衆">子衆</PPron></td>
+        <td><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td><PPron text="媛">媛</PPron></td>
+        <td colSpan={2}>(<PPron text="上処">上処</PPron><sup>\*3</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}><PPron text="媛衆">媛衆</PPron></td>
+    </tr>
+</tbody></table></div>
+
+以下に**不定性人称代名詞**を示す。性別が不明である人物や、性別が混在している大規模な集団などに用いられる。また近年ではペットなどの動物に対しても用いられることがある。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "500px"}}><tbody>
+    <tr>
+        <th style={{width: "min-content"}}>人称</th>
+        <th>目下</th>
+        <th>対等</th>
+        <th>目上</th>
+    </tr>
+    <tr>
+        <th>一人称単数</th>
+        <td><PPron text="徒">徒</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我">我</PPron></td>
+    </tr>
+    <tr>
+        <th>一人称複数</th>
+        <td><PPron text="徒衆">徒衆</PPron><sup>\*1</sup></td>
+        <td colSpan={2}><PPron text="我衆">我衆</PPron><br/>(<PPron text="団">団</PPron><sup>\*2</sup>)</td>
+    </tr>
+    <tr>
+        <th>二人称単数</th>
+        <td><PPron text="爾">爾</PPron></td>
+        <td><PPron text="汝">汝</PPron></td>
+        <td><PPron text="仁">仁</PPron></td>
+    </tr>
+    <tr>
+        <th>二人称複数</th>
+        <td><PPron text="爾衆">爾衆</PPron></td>
+        <td><PPron text="汝衆">汝衆</PPron></td>
+        <td><PPron text="多仁">多仁</PPron></td>
+    </tr>
+    <tr>
+        <th>三人称単数</th>
+        <td colSpan={3}>(<PPron text="其">其</PPron><sup>\*4</sup>)</td>
+    </tr>
+    <tr>
+        <th>三人称複数</th>
+        <td colSpan={3}>(<PPron text="其衆">其衆</PPron><sup>\*4</sup>)</td>
+    </tr>
+</tbody></table></div>
+
+\*1: へりくだった一人称。
+\*2: 「<PText>団</PText>」は文語的な一人称複数。日常会話では廃れており古風・権威的である。
+\*3: 実際にはその人物の家名や役職名を用いることも多い。
+\*4: 殆どの場合ではその人物の名前や役職名を用いる。
+
+### 指示代名詞
+
+雰語における指示代名詞は、近称（話し手に近い）、遠称（話し手から遠い）、文脈参照（直前や以前の文脈での内容）、疑問（疑問文で用いる）、不特定（何か一つの事物）の5系統からなる。
+
+指示代名詞で数が意識されることは余り無いが、敢えて複数であることを明示する場合には「<PPron text="集">集</PPron>」を接尾辞として代名詞に付ける。
+
+また、文脈参照の「<PText>其</PText>」は形式目的語として使われる場合がある。詳しくは「形式目的語」の項を参照。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "700px"}}><tbody>
+<tr>
+<th style={{width: "min-content"}}>属性</th><th>近称</th><th>遠称</th><th>文脈参照</th><th>疑問</th><th>不特定</th>
+</tr>
+<tr>
+<th>事物</th><td><PPron text="之">之</PPron></td><td><PPron text="彼">彼</PPron></td><td><PPron text="其">其</PPron></td><td><PPron text="何">何</PPron></td><td><PPron text="或">或</PPron></td>
+</tr>
+<tr>
+<th>人物</th><td><PPron text="之人">之人</PPron></td><td><PPron text="彼人">彼人</PPron></td><td><PPron text="其人">其人</PPron></td><td><PPron text="何人">何人</PPron></td><td><PPron text="或人">或人</PPron></td>
+</tr>
+<tr>
+<th>場所</th><td><PPron text="之処">之処</PPron></td><td><PPron text="彼処">彼処</PPron></td><td><PPron text="其処">其処</PPron></td><td><PPron text="何処">何処</PPron></td><td><PPron text="或処">或処</PPron></td>
+</tr>
+<tr>
+<th>方向</th><td><PPron text="之向">之向</PPron></td><td><PPron text="彼向">彼向</PPron></td><td><PPron text="其向">其向</PPron></td><td><PPron text="何向">何向</PPron></td><td><PPron text="或向">或向</PPron></td>
+</tr>
+<tr>
+<th>時間</th><td><PPron text="之時">之時</PPron></td><td><PPron text="彼時">彼時</PPron></td><td><PPron text="其時">其時</PPron></td><td><PPron text="何時">何時</PPron></td><td><PPron text="或時">或時</PPron></td>
+</tr>
+<tr>
+<th>方法</th><td><PPron text="之法">之法</PPron></td><td><PPron text="彼法">彼法</PPron></td><td><PPron text="其法">其法</PPron></td><td><PPron text="何法">何法</PPron></td><td><PPron text="或法">或法</PPron></td>
+</tr>
+<tr>
+<th>様子</th><td><PPron text="之態">之昆</PPron></td><td><PPron text="彼態">彼昆</PPron></td><td><PPron text="其態">其昆</PPron></td><td><PPron text="何態">何態</PPron></td><td><PPron text="或態">或態</PPron></td>
+</tr>
+<tr>
+<th>選択</th><td><PPron text="之手">之手</PPron></td><td><PPron text="彼手">彼手</PPron></td><td><PPron text="其手">其手</PPron></td><td><PPron text="手何">手何</PPron></td><td><PPron text="手或">手或</PPron></td>
+</tr>
+</tbody></table></div>
+
+
+#### 属性の省略
+
+周辺の動詞や前置詞句などから指示代名詞の**属性**が明らかである場合、最も単純な語形である**事物の指示代名詞**で代用される。
+
+<PBox>
+- <PText>伴行**其処**焉。</PText> → <PPron text="伴.行.其.焉.。">伴行**其**焉。</PPron><Translate>そこへ行こう。</Translate>
+</PBox>
+
+### 外来語の扱い
+
+外来語を雰語に取り込む場合には基本的に音写よりも意訳が重視され、普通名詞であれば翻訳借用されることが多い。固有名詞は音写される場合もあるが、雰語名を持つ人物などであればそちらが優先される。
+
+#### 音写の方法
+
+雰語における固有名詞の音写では特に規則は存在せず、ある程度字音が近い雰字をいくつか並べることで音写が行われる。但し特別な理由がない限り、不吉な字義などを持つ雰字は避けられる傾向にある。
+
+
+## 動詞
+
+### 及・不及動詞
+
+雰語の動詞は、一部を除いて**及動詞**と**不及動詞**に分類される。雰語には自・他動詞の区別が存在せず、目的語に対する動詞の振る舞いはその動詞が及動詞と不及動詞のどちらであるかによって規定される。
+
+#### 及動詞
+
+「<PPron text="食">食</PPron>『食べる』」、「<PPron text="彩">彩</PPron>『着色する』」のように、動作を行う対象が存在することが前提となっており、目的語が無い場合の主語と、目的語がある場合の主語の動作が同じになる動詞を指す。例として、以下で目的語の有無による及動詞の意味の違いを比較する。
+
+<PBox>
+- <PPron text="我.食.。">我食。</PPron><Translate>私が食べる。</Translate>
+- <PPron text="我.食.果.。">我食果。</PPron><Translate>私が果物を食べる。</Translate>
+- <PPron text="汝.彩.。">汝彩。</PPron><Translate>あなたが着色する。</Translate>
+- <PPron text="汝.彩.壁.。">汝彩壁。</PPron><Translate>あなたが壁を着色する。</Translate>
+</PBox>
+
+#### 不及動詞
+
+「<PPron text="落">落</PPron>『落ちる』」、「<PPron text="活">活</PPron>『生きる』」のように、主語のみで動作を行うことが可能で、目的語が無い場合の主語と、目的語がある場合の目的語の動作が同じになる動詞を指す。すなわち、不及動詞が目的語を取った場合には「Sが（OがVしている）状態にさせる」といった文意の解釈がなされる。例として、以下で目的語の有無による不及動詞の意味の違いを比較する。
+
+<PBox>
+- <PPron text="猫.落.。">猫落。</PPron><Translate>猫が落ちる。</Translate>
+- <PPron text="猫.落.皿.。">猫落皿。</PPron><Translate>猫が皿を落とす。</Translate>
+- <PPron text="兵.活.。">兵活。</PPron><Translate>兵士が生きる。</Translate>
+- <PPron text="兵.活.虫.。">兵活虫。</PPron><Translate>兵士が虫を生かす。</Translate>
+</PBox>
+
+不及動詞を用いた文では、動作の対象・方向・目的などの要素が前置詞句で表される。これらを目的語に置くと文意が変化してしまうので注意が必要である。このとき用いられる前置詞の種類は、動詞毎に概ね決まっている。
+
+<PBox>
+- <PPron text="我.出.元.地洞.。">我出**元地洞**。</PPron><Translate>私は洞窟から出る。</Translate>
+- <PPron text="我.出.地洞.。">我出地洞。</PPron><Translate>私は洞窟を出す。🤔</Translate>
+</PBox>
+
+#### 特殊な動詞
+
+以下は及動詞にも不及動詞にも分類されない不規則な動詞である。
+
+##### 「為」
+
+コピュラ動詞であり、補語のみを取るため目的語を取ることがない。
+
+##### 「成」
+
+「変化する/させる」という意味の動詞であり、間接目的語が無い場合は及動詞的に、間接目的語がある場合には不及動詞的に振る舞う。なお、間接目的語は前置詞「<PText>於</PText>」で示される。
+
+<PBox>
+- <PPron text="蟾.成.。">蟾**成**。</PPron><Translate>カエルが（何かに）なる。</Translate>
+- <PPron text="蟾.成.大.。">蟾**成**大。</PPron><Translate>カエルが大きくなる。</Translate>
+- <PPron text="蟾.成.大.於.庵.。">蟾**成**大於庵。</PPron><Translate>カエルが家を大きくする。</Translate>
+</PBox>
+
+### 形式目的語
+
+不及動詞を用いた節では、目的語を省略することで文意が変化してしまう場合がある。このような節で意味を変えずに目的語を省略したい場合、形式目的語として「<PText>其</PText>」を用いることがある。ここでは不及動詞である「<PPron text="入">入</PPron>『入る』」を用いて例示する。
+
+<PBox>
+- <PPron text="我.入.柑.行.函氷籠.。">我入柑行函氷籠。</PPron><Translate>私が冷凍庫にミカンを入れる。（省略しない形）</Translate>
+- <PPron text="我.入.其.行.函氷籠.。">我入**其**行函氷籠。</PPron><Translate>私が冷凍庫に入れる。</Translate>
+- <PPron text="我.入.行.函氷籠.。">我入行函氷籠。</PPron><Translate>私が冷凍庫に入る。🤔（目的語なし）</Translate>
+</PBox>
+
+1つ目の文からそのまま目的語を省略すると、冷凍庫に入る主体が「<PText>我</PText>」になってしまう。そのため意味を持たない目的語として「<PText>其</PText>」が置かれ、文意が保たれている。
+
+
+## 形容詞・副詞
+
+### 修飾順
+
+形容詞は名詞か形容詞に前置され、名詞句を形成する。また、強調すべき形容詞ほど前に置かれる傾向にある。
+
+<PBox>
+- <PPron text="大.庵">**大**庵</PPron><Translate>大きい家</Translate>
+- <PPron text="糖.倫味.果">**糖倫味**果</PPron><Translate>甘く美味しい果物</Translate>
+</PBox>
+
+副詞は動詞、形容詞、副詞のいずれかに前置され、被修飾語を主要部とした句を形成する。副詞はそれ以後の文全てを修飾するため、修飾順によって意味が変わる場合がある。順序によって意味が変化しない部分では、形容詞と同様に強調すべき副詞が前に置かれる。
+
+また、形容詞を修飾する副詞として代表的なものには「<PPron text="大">大</PPron>『とても』」がある。
+
+<PBox>
+- <PPron text="強.戦">**強**戦</PPron><Translate>激しく戦う（動詞句）</Translate>
+- <PPron text="大.清.川">**大清**川</PPron><Translate>とても清らかな川（名詞句）</Translate>
+- <PPron text="万定.不.言">**万定不**言</PPron><Translate>絶対に話さない</Translate>
+  - <PPron text="不.万定.言">**不万定**言</PPron><Translate>必ず話すわけではない</Translate>
+</PBox>
+
+### 比較
+
+#### 単純比較
+
+雰語において複数の修飾語を比較する場合、前置詞「<PPron text="拠">拠</PPron>」の後に比較対象を置くことによって単純比較文を作ることができる。ただし一文中に修飾語が複数ある場合、それら全ての語に対して比較が行われていると解釈される。
+
+<PBox>
+- <PPron text="筆.為.強.拠.刃.。">筆為強**拠刃**。</PPron><Translate>ペンは剣よりも強し。</Translate>
+- <PPron text="侶.好.粘乳.拠.乾乳.。">侶好粘乳**拠乾乳**。</PPron><Translate>彼はチーズよりもヨーグルトを好む。</Translate>
+- <PPron text="訓人.能.走.書.美.字.拠.習人.。">訓人能<span className="text-red-500">走</span>書<span className="text-red-500">美</span>字**拠習人**。</PPron><Translate>先生は生徒よりも<span className="text-red-500">美しい</span>字を、生徒よりも<span className="text-red-500">速く</span>書くことができる。</Translate>
+</PBox>
+
+文中の一部の修飾語のみを比較する場合、副詞「<PPron text="上">上</PPron>」を用いて比較部分を示す。
+
+<PBox>
+- <PPron text="訓人.能.上.走.書.美.字.拠.習人.。">訓人能**上**<span className="text-red-500">走</span>書美字拠習人。</PPron><Translate>先生は美しい字を、生徒よりも<span className="text-red-500">速く</span>書くことができる。</Translate>
+</PBox>
+
+#### 最上表現
+
+雰語における最上表現は、対象の修飾語を副詞「<PPron text="頂">頂</PPron>」で修飾することで表現できる。比較の範囲となる領域や集合は、前置詞「<PPron text="在">在</PPron>」で表す。
+
+<PBox>
+- <PPron text="神旭山.為.頂.上神.山.在.栄国.。">神旭山為**頂**上神山在栄国。</PPron><Translate><PText>神旭山</PText>は雰国で最も神聖な山である。</Translate>
+</PBox>
+
+#### 序列表現
+
+*この項は、将来の版で加筆される予定です。*
+
+### 主要な文法的副詞
+
+雰語では、他言語の時制や相・法・態などに相当する情報が主に副詞によって表現される。ここではそれらの副詞のうち、主要なものを列挙する。
+
+#### 「去」
+
+「<PPron text="去">去</PPron>」は、完了や過去のニュアンスを持つ副詞である。以前の出来事であることを示す。
+
+また、この副詞は発話/執筆時点ではなく、文中の時間を基準として捉えられる。そのため未来の話題においても、完了相に相当する表現では「<PText>去</PText>」が使用される。
+
+<PBox>
+- <PPron text="我.庵.去.建.在.去日.。">我庵**去**建在去日。</PPron><Translate>私の家が昨日建った。</Translate>
+- <PPron text="蒼仁.去.来.行.之.在.五時.。">蒼仁**去**来行之在五時。</PPron><Translate><PText>蒼</PText>さんは<PText>五時</PText>には既にここに来ているだろう。</Translate>
+</PBox>
+
+#### 「先」
+
+「<PPron text="先">先</PPron>」は、未来や将然のニュアンスを持つ副詞である。純粋に未来の出来事であることのみを指し、話し手の行動に対する意思は含意されない。
+
+「<PText>去</PText>」と同様、時間は文中の時間を基準として示される。
+
+<PBox>
+- <PPron text="之.道車.先.到.在.少.分.。">之道車**先**到在少分。</PPron><Translate>この電車はあと数分で（目的地に）到着するだろう。</Translate>
+</PBox>
+
+
+## 数詞
+
+### 数量表現
+
+名詞や動詞を数詞で修飾することで、事物の個数や量、動作の回数などを表現することが出来る。また、基本的に[助数詞](../09)と共に用いられ、修飾する対象を明示する。
+
+<PBox>
+- <PPron text="三.貝.人">**三**貝人</PPron><Translate>三人の人たち</Translate>
+</PBox>
+
+### 12までの数
+
+雰界では一般的に12進法が用いられる。この章のこれ以下の例文では、原則0～9、A～Bの12進数表記を用いる。
+
+雰語で数を表記する場合、雰字を用いて書くことも可能だが、一般には位取り表記に特化した「**算字**」と呼ばれる算用数字が用いられる。基本的に数の表記には日用・学術用途ともに算字が使用されることがほとんどであり、雰字で数を表記する場面は古風な雰囲気を強調する場合や、雰語学習者に向けて数の読みを示す場合などに限られる。
+
+以下で、0から10<sub>(12)</sub>までの数を示す。
+
+<div className="tableBox">
+| 算用数字<sub>(12)</sub> | 雰語  | 算字 |
+|----------------|----------|-------|
+| 0    | <PPron text="零">零</PPron> | <Misqo>**〇**</Misqo>   |
+| 1    | <PPron text="一">一</PPron> | <Misqo>**〡**</Misqo>   |
+| 2    | <PPron text="二">二</PPron> | <Misqo>**〢**</Misqo>   |
+| 3    | <PPron text="三">三</PPron> | <Misqo>**〣**</Misqo>   |
+| 4    | <PPron text="四">四</PPron> | <Misqo>**〤**</Misqo>   |
+| 5    | <PPron text="五">五</PPron> | <Misqo>**〥**</Misqo>   |
+| 6    | <PPron text="六">六</PPron> | <Misqo>**〦**</Misqo>   |
+| 7    | <PPron text="七">七</PPron> | <Misqo>**〧**</Misqo>   |
+| 8    | <PPron text="八">八</PPron> | <Misqo>**〨**</Misqo>   |
+| 9    | <PPron text="九">九</PPron> | <Misqo>**〩**</Misqo>   |
+| A    | <PPron text="甲">甲</PPron> | <Misqo>**〹**</Misqo>   |
+| B    | <PPron text="乙">乙</PPron> | <Misqo>**〺**</Misqo>   |
+| 10   | <PPron text="十">十</PPron> | <Misqo>**〡〇**</Misqo> |
+</div>
+
+### 大数
+
+#### 12^4未満
+
+10000<sub>(12)</sub>までの数は、それぞれの位の値に以下の接尾辞をつけて表記される。10<sub>(12)</sub>の位と100<sub>(12)</sub>の位では、数が1である場合は省略し、位の接尾辞のみで表記することが可能である。
+
+また、数の途中に値が0である位が挟まる場合、「<PPron text="虚">虚</PPron>」を挿入して桁が飛ぶことを明示することもある。
+
+<div className="tableBox">
+| 算用数字<sub>(12)</sub> | 雰語  |
+|----------------|--------|
+| 10 (12<sup>1</sup>)            | <PPron text="十">十</PPron> |
+| 100 (12<sup>2</sup>)           | <PPron text="百">百</PPron> |
+| 1000 (12<sup>3</sup>)          | <PPron text="千">千</PPron> |
+</div>
+
+<PBox>
+- <PPron text="十.甲">十甲</PPron><Translate>1A（<Misqo>**〡〹**</Misqo>）</Translate>
+- <PPron text="二十.三">二十三</PPron><Translate>23（<Misqo>**〢〣**</Misqo>）</Translate>
+- <PPron text="百.五十.八">百五十八</PPron><Translate>158（<Misqo>**〡〥〨**</Misqo>）</Translate>
+- <PPron text="三百.九十">三百九十</PPron><Translate>390（<Misqo>**〣〩〇**</Misqo>）</Translate>
+- <PPron text="一千.虚.七">一千虚七</PPron><Translate>1007（<Misqo>**〡〇〇〧**</Misqo>）</Translate>
+- <PPron text="乙千.乙百.乙十.乙">乙千乙百乙十乙</PPron><Translate>BBBB（<Misqo>**〺〺〺〺**</Misqo>）</Translate>
+</PBox>
+
+#### 12^4以上
+
+10000<sub>(12)</sub>以上の数は、まず4桁ごとに区切り、次にそれぞれの塊に上の方法を適用し、最後に塊の位ごとに以下の接尾辞をつけて表記される。4桁ごとの境目を跨いで値が0である位が挟まる場合には、前述の「<PText>虚</PText>」は挿入されない。
+
+算字による表記上では、4桁ごとに空白、または桁区切り記号 (<Misqo>**’**</Misqo>) が挿入される場合も多い。
+
+<div className="tableBox">
+| 数    | 雰語  |
+|-------|--------|
+| 12<sup>4</sup>  | <PPron text="万">万</PPron> |
+| 12<sup>8</sup>  | <PPron text="億">億</PPron> |
+| 12<sup>12</sup> | <PPron text="巨">巨</PPron> |
+| 12<sup>16</sup> | <PPron text="越">越</PPron> |
+| 12<sup>20</sup> | <PPron text="遠">遠</PPron> |
+| 12<sup>24</sup> | <PPron text="永">永</PPron> |
+| 12<sup>28</sup> | <PPron text="恒">恒</PPron> |
+</div>
+
+<PBox>
+- <PPron text="百.二十.三億.四千.五百.六十.七万.八千.九百.甲十.乙">百二十三億 四千五百六十七万 八千九百甲十乙</PPron><Translate>123456789AB（<Misqo>**〡〢〣’〤〥〦〧’〨〩〹〺**</Misqo>）</Translate>
+- <PPron text="五千.虚.二億.三万">五千虚二億 三万</PPron><Translate>500200030000（<Misqo>**〥〇〇〢’〇〇〇〣’〇〇〇〇**</Misqo>）</Translate>
+</PBox>
+
+### 小数
+
+#### 整数部が0であるもの
+
+整数部が0である小数のうち、小数部が3桁以下のものは、位が大きい順で値に以下の接尾辞をつけて表記される。算字による表記上では、1<sub>(12)</sub>の位の上部に基位記号 (**<Misqo>　・</Misqo>**) が置かれる。
+
+小数の場合でも、値が0で位が飛ぶ場合には「<PText>虚</PText>」を挿入することが多い。
+
+<div className="tableBox">
+| 数    | 雰語 |
+|-------|--------|
+| 12<sup>-1</sup> | <PPron text="少">少</PPron> |
+| 12<sup>-2</sup> | <PPron text="毛">毛</PPron> |
+| 12<sup>-3</sup> | <PPron text="米">米</PPron> |
+</div>
+
+<PBox>
+- <PPron text="四少">四少</PPron><Translate>0.4（<Misqo>**〇・〤**</Misqo>）</Translate>
+- <PPron text="一少.八毛.六米">一少八毛六米</PPron><Translate>0.186（<Misqo>**〇・〡〨〦**</Misqo>）</Translate>
+- <PPron text="甲少.虚.二米">甲少虚二米</PPron><Translate>0.A02（<Misqo>**〇・〹〇〢**</Misqo>）</Translate>
+</PBox>
+
+小数部が4桁以上のものでは、小数部を4桁ごとに区切ってそれぞれの塊に上の方法を適用し、位ごとに以下の接尾辞をつけて表記される。
+
+大数と同じように、4桁ごとに桁区切り記号が挿入される場合も多い。
+
+<div className="tableBox">
+| 数     | 雰語 |
+|--------|--------|
+| 12<sup>-4</sup>  | <PPron text="糸">糸</PPron> |
+| 12<sup>-8</sup>  | <PPron text="粒">粒</PPron> |
+| 12<sup>-12</sup> | <PPron text="砕">砕</PPron> |
+| 12<sup>-16</sup> | <PPron text="落">落</PPron> |
+| 12<sup>-20</sup> | <PPron text="粉">粉</PPron> |
+</div>
+
+<PBox>
+- <PPron text="四少.乙毛.七米.九糸.一少.七毛.虚.甲粒.七毛砕">四少乙毛七米九糸 一少七毛虚甲粒 七毛砕</PPron><Translate>0.4B79170A07（<Misqo>**〇・〤〺〧〩’〡〧〇〹’〇〧**</Misqo>）</Translate>
+</PBox>
+
+#### 整数部が0でないもの
+
+整数部が0でない小数は、整数部と小数部についてそれぞれ上記の方法を適用した後、「<PPron text="定">定</PPron>」を挟んで連結することで得られる。
+
+<PBox>
+- <PPron text="三.定.一少.八毛.四米.八糸.九毛.四米.九粒">三**定** 一少八毛四米八糸 九毛四米九粒</PPron><Translate>3.18480949（<Misqo>**〣・〡〨〤〨〇〩〤〩**</Misqo>）</Translate>
+</PBox>
+
+### 負数
+
+負数は、正数を指す表現に接頭辞として「<PPron text="下">下</PPron>」をつけることで表される。
+
+算字による表記上では、先頭の位に負数記号 (**<Misqo>／</Misqo>**)を重ねて表現される。
+
+<PBox>
+- <PPron text="下.一">**下**一</PPron><Translate>-1（<Misqo>**／〡**</Misqo>）</Translate>
+- <PPron text="下.三十.四.定.二少.甲毛.一米">**下**三十四定 二少甲毛一米</PPron><Translate>-34.2A1（<Misqo>**／〣〤・〢〹〡**</Misqo>）</Translate>
+</PBox>
+
+### 分数
+
+分子が1である単位分数は、分母となる数に接頭辞として「<PPron text="片">片</PPron>」をつけることで表される。
+
+算字による本来の数式では分母を分数記号で囲って表記するが、表示できない環境では短縮分数記号 (<Misqo>/</Misqo>)を前置して表される。
+
+<PBox>
+- <PPron text="片.七">**片**七</PPron><Translate>7分の1（<Misqo>**/〧**</Misqo>）</Translate>
+</PBox>
+
+分子が1でない分数は、分子となる数を分母の単位分数に前置して表現する。
+
+算字による表記上でも同様に、分子部分を前置する。
+
+<PBox>
+- <PPron text="二百.五十.七.片.九十.五">二百五十七 **片**九十五</PPron><Translate>95分の257（<Misqo>**〢〥〧/〩〥**</Misqo>）</Translate>
+</PBox>
+
+### 冪
+
+AのB乗は、「<PPron text="跳.A.以.B">跳A以B</PPron>」という形で表現される。但し指数が2である場合は「<PText>以二</PText>」を省略できる。
+
+算字では、縦・横書きともに底の右下に小書きで指数が表記される。
+
+<PBox>
+- <PPron text="跳.二.以.三十.六">**跳**二**以**三十六</PPron><Translate>2の36乗（<Misqo>**〢<sub>〣〦</sub>**</Misqo>）</Translate>
+- <PPron text="跳.下.三.以.一.定.乙少">**跳**下三**以**一定乙少</PPron><Translate>-3の1.B乗（<Misqo>**／〣<sub>〡・〺</sub>**</Misqo>）</Translate>
+</PBox>
+
+### 冪根
+
+AのB乗根は、「<PPron text="解.A.以.B">解A以B</PPron>」という形で表現される。冪と同じく、指数が2である場合は「<PText>以二</PText>」を省略できる。
+
+算字では、本来は被開平数に冪根記号を重ねて表記するが、表示できない環境では短縮冪根記号 (<Misqo>√</Misqo>)を前置して表記する。
+
+<PBox>
+- <PPron text="解.十.五">**解**十五</PPron><Translate>15の平方根（<Misqo>**√一〥**</Misqo>）</Translate>
+- <PPron text="解.跳.四十.二.以.五.以.五">**解** 跳四十二以五 **以**五</PPron><Translate>(42の5乗)の5乗根（<Misqo>**√<sub>〥</sub>〤〢<sub>〥</sub>**</Misqo>）</Translate>
+</PBox>
+
+
+
+
+## 助数詞
+
+雰語では数詞と共に助数詞が用いられ、数えられる対象を類別する。
+
+助数詞には、主に名詞を修飾して個数や量を表す**形容詞的助数詞**と、主に動詞を修飾して動作の回数や期間を表す**副詞的助数詞**の二つが存在する。
+
+### 形容詞的助数詞
+
+*この項は、将来の版で加筆される予定です。*
+
+汎用的な形容詞的助数詞としては「<PPron text="貝">貝</PPron>」が存在する。
+
+<PBox>
+- <PPron text="一.貝.事言">一貝事言</PPron><Translate>一つの言語</Translate>
+</PBox>
+
+また、数量を表す度量衡の単位も形容詞的助数詞として分類される。
+
+<PBox>
+- <PPron text="二.杖.糸">二杖糸</PPron><Translate>2<PText>杖</PText>の糸</Translate>
+  - <PText>杖</PText>は雰地域における長さの基本単位であり、約1.148mに相当する。
+</PBox>
+
+### 副詞的助数詞
+
+代表的な副詞的助数詞に、動作の回数を表す「<PPron text="追">追</PPron>」が存在する。
+
+<PBox>
+- <PPron text="十.追.走.内.遊園.。">十追走内遊園。</PPron><Translate>12回公園で走る。</Translate>
+</PBox>
+
+### 序数・倍数の助数詞
+
+雰語では、序数や倍数を作る接尾辞も助数詞として分類される。これらの助数詞はその他の助数詞と重ねて用いることも可能で、その場合は数詞と一般助数詞の間に挿入される。
+
+#### 序数表現
+
+物事の順序や順番は、助数詞「<PPron text="序">序</PPron>」を用いることで表現できる。
+
+<PBox>
+- <PPron text="之.為.三.序.家.内.我.悉活.。">之為三序家内我悉活。</PPron><Translate>これは私の人生で三番目の家です。</Translate>
+- <PPron text="唔.、.外.五.序.貝.蟾.有.霊鬼.。">唔、外五序貝蟾有霊鬼。</PPron><Translate>う、五匹目のカエル以外には化け物が憑いているな。</Translate>
+</PBox>
+
+#### 倍数表現
+
+「AはBの～倍だ」のような倍数表現は、助数詞「<PPron text="累">累</PPron>」を用いることで表現できる。
+
+<PBox>
+- <PPron text="之.衣.為.彼.衣.然.二.累.貨処.。">之衣為彼衣然二累貨処。</PPron><Translate>この服はあの服の二倍の値段だ。</Translate>
+</PBox>
+
+
+## 助詞
+
+助詞は、内部に修飾関係を持つ名詞句の途中に挿入することで意味を明確化する。ここでは代表的なものをいくつか取り上げる。
+
+前提として、雰語では助詞を一切用いずとも全ての修飾関係を表すことが可能である。但しその場合には文意の解釈の幅が非常に広くなってしまうため、特に現代口語では、並列や選択の表現で助詞を省略することは殆ど無い。例として、新聞の見出しなどで文字数を削減する場合、表現技法として敢えて曖昧性を持たせる場合などには省略されることもある。
+
+### 単純修飾「然」
+
+「<PPron text="然">然</PPron>」は、名詞句に挟んで修飾関係にあることを明示する助詞である。この助詞自体は特に文法上の意味を持たず、単に文を読み易く、修飾構造であることを明確にするために用いられる。
+
+<PBox>
+- <PPron text="百.杖.遠.然.赤果">百杖遠**然**赤果</PPron><Translate><PText>百杖</PText>の距離のりんご</Translate>
+</PBox>
+
+節で名詞句を修飾する場合に、目的語付きの文と区別するために用いられることが多い。
+
+<PBox>
+- <PPron text="我.食.然.菜草">我食**然**菜草</PPron><Translate>私が食べる野菜</Translate>
+  - ここで「<PText>然</PText>」を省くと「<PText>我食菜草</PText>」となり、「私は野菜を食べる」という目的語付きの文と区別がつかない
+</PBox>
+
+### 並列「来」
+
+「<PPron text="来">来</PPron>」は、複数のものを同時に並列させる助詞である。
+
+<PBox>
+- <PPron text="其.人.来.春.仁.言.。">其人**来**春仁言。</PPron><Translate>その人と<PText>春</PText>さんが会話する。</Translate>
+</PBox>
+
+否定文や疑問文の中で用いられた場合、その全てが否定や疑問の対象となる。
+
+<PBox>
+- <PPron text="万.蟾.不.有.使能.来.不刈.。">万蟾不有使能**来**不刈。</PPron><Translate>全てのカエルは権利も自由も持たない。</Translate>
+- <PPron text="買.之.筆.来.書帳.在.何.処.如.？">買之筆**来**書帳在何処如？</PPron><Translate>このペンとノートはどこで買いましたか？</Translate>
+</PBox>
+
+### 選択「岐」
+
+「<PPron text="岐">岐</PPron>」は、複数のものを選択関係で並列する助詞である。
+
+<PBox>
+- <PPron text="我.欲.食.餅.岐.麺.。">我欲食餅**岐**麺。</PPron><Translate>私はパンか麺が食べたい。</Translate>
+</PBox>
+
+必ずしも択一の選択肢である必要はなく、可能性のある選択肢を列挙する場合にも用いられる。
+
+<PBox>
+- <PPron text="広.仁.岐.明.仁.概.知.其.。">広仁**岐**明仁概知其。</PPron><Translate><PText>広</PText>さんか<PText>明</PText>さんが多分それを知っている。</Translate>
+</PBox>
+
+### 所有「含」
+
+「<PPron text="含">含</PPron>」は、所有関係を表す助詞である。純粋な所有または所属のみを指し、修飾や事物の属性に対して用いることは出来ない。
+
+<PBox>
+- <PPron text="我.含.湛貨">我含湛貨</PPron><Translate>私の貯金</Translate>
+- <PPron text="彼.獣.含.毛">彼獣含毛</PPron><Translate>あの動物の毛</Translate>
+- <PPron text="栄言.含.訓人">*\*栄言含訓人*</PPron><Translate>\*雰語の教師</Translate>
+  - 所有関係ではないため、「<PText>栄言訓人</PText>」や「<PText>訓栄言然人</PText>」と表現するのが自然である。
+</PBox>
+
+
+
+## 前置詞
+
+雰語では、場所・因果・関係性などの情報を付加する最も基本的な手段として前置詞が用いられる。
+
+前置詞は、主に名詞句（物によっては節にも）に対して前置されることで**前置詞句**を形成する。前置詞句は節の一部として含めることができる他、名詞句を後ろから修飾することで新たな名詞句を形成することもできる。
+
+<PBox>
+- <PPron text="在.其.餐店">**在**其餐店</PPron><Translate>そのレストランで [前置詞句]</Translate>
+- <PPron text="我.食.在.其.餐店.。">我食**在**其餐店。</PPron><Translate>私はそのレストランで食べる。[節の一部]</Translate>
+- <PPron text="働人.在.其.餐店">働人**在**其餐店</PPron><Translate>そのレストランのスタッフ [名詞句の修飾]</Translate>
+</PBox>
+
+### 前置詞句の移動
+
+節の構成要素として含まれる前置詞句は、話題性や強調などの目的で先頭へ移動させることができる。前置詞句とそれ以降の区切りを示すために読点が挿入される場合もあるが、文の構造が複雑でなければ省略されることも多い。
+
+<PBox>
+- <PText>食肉**以刃**</PText> → <PPron text="以.刃.食.肉">**以刃**食肉</PPron><Translate>ナイフを使って肉を食べる</Translate>
+- <PText>我行湛帳家而記帳**在去日**。</PText> → <PPron text="在.去日.、.我.行.湛帳家.而.記.帳.。">**在去日**、我行湛帳家而記帳。</PPron><Translate>昨日、私は図書館に行って本を読みました。</Translate>
+</PBox>
+
+### 主要部の省略
+
+前置詞句が名詞句を主要部として修飾する場合、主要部が省略されることで単独の前置詞句のように見えながらも名詞句として振る舞うことがある。
+
+<PBox>
+- <PPron text="到.汝.庵.為.遠.。">**到汝庵**為遠。</PPron><Translate>あなたの家までは遠い。</Translate>
+- <PPron text="現.掃建.間.天京.来.燦川.。">現掃建**間天京来燦川**。</PPron><Translate>天京から燦川の区間を修理中です。</Translate>
+</PBox>
+
+### 主要な前置詞
+
+#### 「在」
+
+「<PPron text="在">在</PPron>」は、話題中で場所や時間を指す前置詞である。
+
+<PBox>
+- <PPron text="座.在.眠巾.。">座**在**眠巾。</PPron><Translate>おふとんに座る。</Translate>
+- <PPron text="衆談.開.在.先日.四.時.。">衆談開**在**先日四時。</PPron><Translate>会議が明日の<PText>四時</PText>に開かれる。</Translate>
+</PBox>
+
+#### 「行」
+
+「<PPron text="行">行</PPron>」は、動作の目的地や目標を指す前置詞である。
+
+<PBox>
+- <PPron text="我.現.走.行.世.端.。">我現走**行**世端。</PPron><Translate>私は世界の果てへと走っている。</Translate>
+- <PPron text="蟾.跳入.行.大.海.。">蟾跳入**行**大海。</PPron><Translate>カエルが大きな海に飛び込む。</Translate>
+</PBox>
+
+#### 「向」
+
+「<PPron text="向">向</PPron>」は、行動の目的や対象を指す前置詞である。
+
+<PBox>
+- <PPron text="団.戦.向.解.下人.焉.。">団戦**向**解下人焉。</PPron><Translate>我々は奴隷を解放するために闘うのだ。</Translate>
+- <PPron text="侶.去.談.跨.一.刻.向.其.事.。">侶去談跨一刻**向**其事。</PPron><Translate>彼はそのことについて<PText>一刻</PText>会話していた。</Translate>
+</PBox>
+
+#### 「元」
+
+「<PPron text="元">元</PPron>」は、動作の起点となった場所や時間を指す前置詞である。
+
+<PBox>
+- <PPron text="汝.来.元.何.領.如.？">汝来**元**何領如？</PPron><Translate>あなたはどこ（どの地域）から来られたのですか？</Translate>
+- <PPron text="彼.衆.働.在.之.商店.元.去年.。">彼衆働在之商店**元**去年。</PPron><Translate>あの人たちはこのスーパーで去年から働いている。</Translate>
+</PBox>
+
+#### 「使」
+
+「<PPron text="使">使</PPron>」は、動作の主体を指す前置詞である。受動文の動作主を指す場合にも用いられる。
+
+<PBox>
+- <PPron text="伴.建.新.都.使.我衆.。">伴建新都**使**我衆。</PPron><Translate>私たちで新しい街を建てよう。</Translate>
+</PBox>
+
+#### 「以」
+
+「<PPron text="以">以</PPron>」は、動作の手段や付属物を指す前置詞である。
+
+<PBox>
+- <PPron text="解.囊.以.交刃.。">解囊**以**交刃。</PPron><Translate>ハサミで袋を開ける。</Translate>
+</PBox>
+
+
+
+## 接続詞
+
+接続詞は、複数の節を連結する際にそれぞれの関係性を示す役割を担う。
+
+助詞と同様、特に文語では接続詞を用いず文同士を直接並べることも可能である。しかし口語では接続詞を用いない節の連結は文語ほど頻繁に見られず、堅い表現や成句など以外では接続詞を伴うことが多い。
+
+<PBox>
+- <PPron text="地.揺.而.家.崩消.。">地揺**而**家崩消。</PPron><Translate>地面が揺れて建物が壊れる。</Translate>
+- <PPron text="出.元.栄国.、.追.行.西.向.。">出元栄国、**追**行西向。</PPron><Translate>雰国を出て、西の方に向かう。</Translate>
+- <PPron text="媛.被.刺.以.弩.回.未.死.。">媛被刺以弩**回**未死。</PPron><Translate>彼女は銃に撃たれたがまだ死んでいない。</Translate>
+</PBox>
+
+ただし雰語においては、前置詞と接続詞の区別が曖昧になる場合がある。例えば以下の文で、原因を表す「<PPron text="以由">以由</PPron>」は前置詞とされるが、後続の節を従属節ではなく独立した節と捉え、接続詞として分類することもできる。
+
+<PBox>
+- <PPron text="我.欲.喉.水.、.以由.不.喉.跨.去.三.刻.。">我欲喉水、**以由**不喉跨去三刻。</PPron><Translate>水を飲みたい、なぜなら<PText>三刻</PText>の間（水を）飲んでいないから。</Translate>
+</PBox>
+
+### 整調の接続詞
+
+特に文語の詩的な表現などでは、短い節を連続させる場合に語調を整えるため、それ以前と意味的なつながりを持たない**整調の接続詞**が置かれる場合がある。
+
+<PBox>
+- <PPron text="追.旭.来.、.追.昼.来.、.追.夜.来.。">**追**旭来、追昼来、追夜来。</PPron><Translate>朝が来て、昼が来て、夜が来る。</Translate>
+</PBox>
+
+### 主要な接続詞
+
+#### 「追」
+
+「<PPron text="追">追</PPron>」は、前後の節が時間的に前後に並んでいることを示す接続詞である。また、時系列が明示されていない節において、話題の転換を伴わない節同士の接続に用いられる。
+
+<PBox>
+- <PPron text="出.元.車座.含.水門.追.行.左.。">出元車座含水門**追**行左。</PPron><Translate>駅の北口を出て左に進む。</Translate>
+- <PPron text="汝.食.麺.追.我.食.餅.。">汝食麺**追**我食餅。</PPron><Translate>あなたは麺を食べ、私はパンを食べる。</Translate>
+</PBox>
+
+#### 「経」
+
+「<PPron text="経">経</PPron>」は、前後の節で場面や話題の転換が起こる場合に用いられる接続詞である。
+
+<PBox>
+- <PPron text="歩.元.其.車座.経.入目.餐店.。">歩元其車座**経**入目餐店。</PPron><Translate>その駅から歩いてレストランを見つけた。</Translate>
+</PBox>
+
+#### 「而」
+
+「<PPron text="而">而</PPron>」は、前後の節が同時に発生する事柄であったり、一方がもう一方の補足や原因を示しているなど、密接な関係で結ばれている節に用いられる接続詞である。日本語における複合動詞の役割にも類似している。
+
+<PBox>
+- <PPron text="其人.走.而.来.。">青仁走**而**来。</PPron><Translate><PText>青</PText>さんが走って来る。</Translate>
+- <PPron text="掌.飛影機.而.掃建.。">掌飛影機**而**掃建。</PPron><Translate>テレビを叩いて治す。</Translate>
+- <PPron text="拡.恒冷籠.、.而.我.目.糖餅.居.。">拡恒冷籠、**而**我目糖餅居。</PPron><Translate>冷蔵庫を開けると、ケーキがあるのが見えた。</Translate>
+</PBox>
+
+#### 「故」
+
+「<PPron text="故">故</PPron>」は、順接の接続詞である。前の節が後の節の理由や根拠となっていることを示す。
+
+<PBox>
+- <PPron text="在.去日.長.歩.、.故.居.庵.在.之日.。">在去日長歩、**故**居庵在之日。</PPron><Translate>昨日は長く歩いたので、今日は家にいる。</Translate>
+</PBox>
+
+#### 「回」
+
+「<PPron text="回">回</PPron>」は、逆接の接続詞である。後の節が前の節から予測できる内容と異なることを示す。
+
+<PBox>
+- <PPron text="我.去.書.其.於.心記.紙.、.回.逃.其.紙.。">我去書其於心記紙、**回**逃其紙。</PPron><Translate>私はそれをメモ用紙に書いたが、その紙を無くした。</Translate>
+</PBox>
+
+#### 「模」
+
+「<PPron text="模">模</PPron>」は、前の節が条件や仮定、後の節がその結果となることを示す接続詞である。
+
+<PBox>
+- <PPron text="歩.在.外.白筋.模.汝.可.死.。">歩在外白筋**模**汝可死。</PPron><Translate>もし白線以外を歩けばあなたは死ぬだろう。</Translate>
+</PBox>
+
+
+
+## 情詞
+
+情詞は雰語における語気助詞であり、節の末尾に置かれて話し手の心情や態度を表す。
+
+### 主要な情詞
+
+#### 「啊」
+
+「<PPron text="啊">啊</PPron>」は、感嘆や強調を表す情詞である。
+
+<PBox>
+- <PPron text="之.赤果.為.倫味.啊.。">之赤果為倫味**啊**。</PPron><Translate>このりんごは美味しいな。</Translate>
+- <PPron text="啊.、.欲.成.蟾.啊.。">啊、欲成蟾**啊**。</PPron><Translate>ああ、カエルになりたいなぁ。</Translate>
+- <PPron text="其.茶.為.熱.啊.、.気思.！">其茶為熱**啊**、気思！</PPron><Translate>そのお茶は熱いよ、気を付けて！</Translate>
+</PBox>
+
+#### 「如」
+
+「<PPron text="如">如</PPron>」は、疑問を表す情詞である。文末に置いて疑問文を作ることができる。詳細は[疑問文](../04/#疑問文)の節を参照。
+
+<PBox>
+- <PPron text="汝.名.為.何.如.？">汝名為何**如**？</PPron><Translate>あなたの名前は何ですか？</Translate>
+</PBox>
+
+#### 「焉」
+
+「<PPron text="焉">焉</PPron>」は、強調や呼びかけを表す情詞である。命令を強調するためにも用いられることが多い。
+
+<PBox>
+- <PPron text="侶.為.真.善人.焉.。">侶為真善人**焉**。</PPron><Translate>彼こそ本当の人格者だ。</Translate>
+- <PPron text="拡.焉.！.団.為.天京.恒泰.！">拡**焉**！団為天京恒泰！</PPron><Translate>開けろ！天京市警だ！</Translate>
+</PBox>

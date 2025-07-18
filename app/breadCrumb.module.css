@@ -4,12 +4,17 @@
     margin: 1rem;
     border-radius: 0.5rem;
     font-size: 1rem;
-    display: flex;
+    display: block;
     align-items: center;
 }
 
-.home {
-    vertical-align: middle;
+.home, .rightArrowContainer {
+    width: fit-content;
+    height: 1lh;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightArrow {
@@ -18,9 +23,10 @@
 }
 
 .linkContainer {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .link {

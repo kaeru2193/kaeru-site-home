@@ -20,6 +20,7 @@ const snsData =
 const siteData = 
     [
         {name: "栄世思造", desc: "記向我多做然思造言〈栄言〉来思造世〈栄世〉。", url: "/phuncreation", reload: true},
+        {name: "栄言", desc: "記向我造元〡〢〥〩年然思造言。", url: "/phunlang"},
         {name: "思造言", desc: "記向我思造言事外栄世思造。", url: "/conlang", reload: true},
         {name: "蟾水録", desc: "据雑記処。", url: "/ikenolog", reload: true},
         {name: "函家", desc: "能汲録我造然物。", url: "/download", reload: true},
@@ -32,6 +33,7 @@ const Page = () => {
     return (
         <>
             <h1>喜汝！</h1>
+            <p className="bigText">喜汝！</p>
             
             <p>之家為之機 （<span className="defFont">kaeru2193</span>） 含蔓処。</p>
 
@@ -46,6 +48,10 @@ const Page = () => {
                             </a>
                         </div>)
                 })}
+            </div>
+
+            <div className={style.otherLink}>
+                <a href="/links">外蔓架居之処</a>
             </div>
 
             <h2>領紙向之家</h2>
@@ -69,7 +75,7 @@ const Page = () => {
                     <ul>
                         <li>思造言来思造世</li>
                         <li>書算序 （多書<span className="defFont">Typescript</span>、回等少書<span className="defFont">Python</span>）</li>
-                        <li>天知</li>
+                        <li>天律知</li>
                         <li>画雑紋</li>
                         <li>建字来書魂字</li>
                     </ul>

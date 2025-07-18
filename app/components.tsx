@@ -16,7 +16,7 @@ export const DownloadButton = (props: any) => {
 }
 
 export const ScrollableImg = (props: {src: string, height: number, alt: string}) => {
-    return <div className={style.scrollableBox} style={{height: props.height}}>
+    return <div className={style.scrollableBox}>
         <div className={style.imageBox}>
             <img className={style.scrollableImage}
                 src={props.src}

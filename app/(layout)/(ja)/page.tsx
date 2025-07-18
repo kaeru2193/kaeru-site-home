@@ -1,3 +1,5 @@
+"use client"
+
 import style from "./page.module.css"
 import { SiteLinkList } from "@/link"
 
@@ -36,6 +38,7 @@ const Page = () => {
     return (
         <>
             <h1>ようこそ！</h1>
+            <p className="bigText">ようこそ！</p>
             
             <p>ここはかえる（kaeru2193）のサイトです。</p>
 
@@ -108,7 +111,7 @@ const Page = () => {
             </ul>
 
             <h3>連絡先</h3>
-            <p>かえるへの最も早く確実な連絡先はDiscordのDMです</p>
+            <p>かえるへの最も早く確実な連絡先はDiscordのDMです。</p>
             <ul>
                 <li>Discord: @kaeru2193</li>
                 <li>X/Twitter: @kaeru2193</li>
@@ -118,10 +121,17 @@ const Page = () => {
                 </li>
             </ul>
 
-            <h2>リンクについて</h2>
+            <h2>相互リンク</h2>
+            <p>追加/削除の要望は、上の連絡先までお願いします。</p>
+            <ul>
+                <li><a href="https://epikijetesantakalu.github.io">lipu epikijetesantakalu</a></li>
+            </ul>
+
+            <h2>サイトバナー</h2>
             <p>当サイトはリンクフリーです。リンクを貼る際には、以下のバナーを適宜ご使用下さい。</p>
             <a href="https://kaeru2193.net"><img src="/banner.png" width="200" height="40" alt="之機堂" /></a>
             <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner.png" width="200" height="40" alt="之機堂" /></a>`}</code></pre>
+
             <h2>更新履歴</h2>
             <div>
                 <NewsList data={newsData} limit={5}/>

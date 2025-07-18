@@ -15,7 +15,8 @@ const Page = ({ params }: { params: { year: string, month: string } }) => {
 
     return (
         <>
-            <h1>{params.year}年{params.month}月の記事</h1>
+            <h1>月別アーカイブ</h1>
+            <h2>{params.year}年{params.month}月の記事</h2>
             <ArticleList list={result}/>
         </>
     )

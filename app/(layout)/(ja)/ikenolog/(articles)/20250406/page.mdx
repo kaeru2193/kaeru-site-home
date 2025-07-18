@@ -1,0 +1,61 @@
+import { ScrollableImg } from "@/components"
+
+export const meta = {
+    title: "ZpDICのAPIで、Discordにお手軽ランダム単語自動定期投稿チュートリアル【令和最新版】",
+    tags: ["技術", "人工言語"],
+    date: new Date("2025-04-06T00:00:00+09:00"),
+    outline: "ZpDIC APIの恩恵に最速で与る為のチュートリアル",
+};
+
+先日、[ZpDIC Online API](https://zpdic.ziphil.com/api)が遂に公式実装されました！
+今回の記事では、このAPIの恩恵に最速で与るべく、Webhookを用いてZpDIC上の人工言語辞書内のランダムな単語を一定の間隔でDiscordに投稿し続けるスクリプトを構築する方法を解説していきます。
+
+## 1. 下準備
+
+このチュートリアルでは、Google Apps Script (GAS)を用いて定期投稿を実現します。[このテンプレート](https://script.google.com/home/projects/1BdZmRmLaJhT5fx6pBYi_UY5sRzOpXr7AG4jcYSM6Ol7oTT4IHb60ISMv)を開き、右上のメニューより皆さん自身のGoogleドライブにコピーを作成してから作業を始めましょう！
+
+## 2. APIキーの発行、DiscordでWebhookの作成
+
+APIキーに関しては[ZpDICのドキュメント](https://zpdic.ziphil.com/document/other/api)に詳しく記載があるので、こちらも読んでおきましょう。
+**ユーザーページ > 開発向け**と進んでZpDICのAPIキーを発行し、控えておきます。このキーは機密情報なので、くれぐれも管理は厳重に！
+
+<ScrollableImg src="/ikenolog/20250406/01.png" height={200} alt="APIキーの発行"/>
+
+続いてDiscord上で外部から単語を投稿できるように、Webhookを作成します。権限を持っているDiscordサーバーで**サーバー設定 > アプリ > 連携サービス > ウェブフック**と進むと作成できます。URLをコピーして、先程のAPIキーと同様に控えておいて下さい。
+投稿時の名前やアイコンもここで設定できるので、自分の好きなように設定してしまいましょう！
+
+<ScrollableImg src="/ikenolog/20250406/02.png" height={200} alt="Webhookを作ろう"/>
+
+## 3. スクリプトの設定
+
+ここからはいよいよ先程のテンプレートを使った作業です！
+まずは控えておいたAPIキーとWebhookのURLを、機密情報を格納するためのプロパティサービスに保存しましょう。GASの画面左側から**「プロジェクトの設定」 > スクリプト プロパティ**に進み、それぞれ下の例に倣って`API_KEY`と`DISCORD_WEBHOOK`として書き込みます。プロパティの名前も例に合わせておいて下さい。
+
+<ScrollableImg src="/ikenolog/20250406/03.png" height={200} alt="GASに書き込み"/>
+
+次に、画面左側から**エディタ > main.gs**と進み、ZpDIC上での辞書の識別子を記述します。識別子はZpDICで辞書画面を開いてURLの`dictionary/`の後ろ部分、例えば[第三期雰和辞典](https://zpdic.ziphil.com/dictionary/1197)なら「1197」です。独自に設定している辞書ではそれをお使い下さい。
+
+<ScrollableImg src="/ikenolog/20250406/04.png" height={200} alt="識別子の記述例"/>
+
+## 4. 試しに実行！
+
+ここまで完了したら、早速自動投稿を試しに実行してみましょう！コードエディタ上部の「実行」ボタンを押すとスクリプトが走ります。初回の実行ではGoogleにアクセス権限を求められるので、画面の通りに進んで許可しましょう。
+
+先ほどWebhookを設定しておいたDiscordチャンネルに無事ランダムな単語が投稿されているのを確認できれば、ひとまず成功です！
+
+<ScrollableImg src="/ikenolog/20250406/05.png" height={200} alt="Discord投稿の成功例"/>
+
+## 5. 定期実行の設定
+
+最後に、このスクリプトが定期的に実行されるように設定します！
+再び画面左側から**トリガー > トリガーを作成**と進み、各種設定を行います。実行する関数は`main`、実行するデプロイは`Head`を指定し、イベントのソースは`時間主導型`を選択してお好みの間隔を設定しましょう！（下図は1時間おきに設定する場合の例）
+
+<ScrollableImg src="/ikenolog/20250406/06.png" height={400} alt="1時間間隔の場合の設定例"/>
+
+これを保存して定期的にスクリプトが実行されるようになれば、このチュートリアルは完走です！お疲れ様でした。
+
+## あとがき
+
+最速を目指す都合上、今回のスクリプトでは訳語のみを投稿する仕様としていますが、少し手を加えて説明欄まで表示させてみても楽しいかもしれません。
+
+皆さんも、是非APIの恩恵を最大限享受しましょう！

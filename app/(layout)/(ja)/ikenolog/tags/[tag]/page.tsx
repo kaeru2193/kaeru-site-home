@@ -12,7 +12,8 @@ const Page = ({ params }: { params: { tag: string } }) => {
 
     return (
         <>
-            <h1>"{decodeURI(params.tag)}"タグの記事</h1>
+            <h1>タグ検索</h1>
+            <h2>"{decodeURI(params.tag)}"タグの記事</h2>
             <ArticleList list={result}/>
         </>
     )

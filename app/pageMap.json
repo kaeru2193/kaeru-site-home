@@ -27,12 +27,20 @@
     "title": "Ikenolog、開設！"
   },
   {
+    "route": "ikenolog/20250406",
+    "title": "ZpDICのAPIで、Discordにお手軽ランダム単語自動定期投稿チュートリアル【令和最新版】"
+  },
+  {
     "route": "ikenolog/archives",
     "title": "アーカイブ"
   },
   {
     "route": "ikenolog/tags",
     "title": "タグ"
+  },
+  {
+    "route": "links",
+    "title": "リンク集"
   },
   {
     "route": "news",
@@ -111,6 +119,10 @@
     "title": "情詞"
   },
   {
+    "route": "phunlang/grammar/all",
+    "title": "雰語文法"
+  },
+  {
     "route": "phunlang/name",
     "title": "雰名"
   },
@@ -159,6 +171,14 @@
     "title": "技術棟トップ"
   },
   {
+    "route": "tools/character-set-cp",
+    "title": "文字集合を手軽にコピペ"
+  },
+  {
+    "route": "tools/good-approx-ratio",
+    "title": "良い整数比の近似を見つける"
+  },
+  {
     "route": "tools/hilbert-writing",
     "title": "ヒルベルト曲線に沿った書記"
   },
@@ -169,6 +189,10 @@
   {
     "route": "tools/phun-pron",
     "title": "雰語を漢字翻字から表音表記化"
+  },
+  {
+    "route": "tools/phun-renderer",
+    "title": "雰字画像メーカー"
   },
   {
     "route": "tools/radix-conv",

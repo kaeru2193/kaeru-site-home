@@ -20,6 +20,7 @@ const snsData =
 const siteData = 
     [
         {name: "ijo pali Pun", desc: "toki sin Pun en ma sin Pun li lon. tenpo mute la mi pali e ni.", url: "/phun"},
+        {name: "toki Pun", desc: "mi pali e toki sin ni.", url: "/phunlang"},
         {name: "toki sin", desc: "ijo pi toki sin ante mi li lon.", url: "/conlang"},
         {name: "lipu Ikeno", desc: "lipu mi li lon.", url: "/ikenolog"},
         {name: "tomo poki", desc: "sina ken kama jo e ijo ni: tenpo pini la mi pali.", url: "/download"},
@@ -32,6 +33,7 @@ const Page = () => {
     return (
         <>
             <h1>kama pona!</h1>
+            <p className="bigText">kama pona!</p>
             
             <p>tomo ni li lipu pi akesi Kawelu. nimi mi ante li <b>kaeru2193</b>.</p>
 
@@ -46,6 +48,10 @@ const Page = () => {
                             </a>
                         </div>)
                 })}
+            </div>
+
+            <div className={style.otherLink}>
+                <a href="/links">sina ken lukin e linja ale lon ni</a>
             </div>
 
             <h2>nasin pi tomo ni</h2>

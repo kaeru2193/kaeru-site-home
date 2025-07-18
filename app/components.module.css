@@ -39,17 +39,22 @@
 
 .scrollableBox {
     overflow-x: scroll;
+    overflow-y: visible;
     -ms-overflow-style: none;
     scrollbar-width: none;
     width: 100%;
-
+    padding: 10px;
 }
 
 .imageBox {
     width: max-content;
+    box-sizing: border-box;
     margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: #00000030 0 0 10px 0;
 }
 
 .scrollableImage {
+    border-radius: 5px;
     object-fit: cover;
 }

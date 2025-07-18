@@ -23,10 +23,16 @@
             <loc>https://kaeru2193.net/ikenolog/20241102</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/ikenolog/20250406</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/ikenolog/archives</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/ikenolog/tags</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/links</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/news</loc>
@@ -86,6 +92,9 @@
             <loc>https://kaeru2193.net/phunlang/grammar/13</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/phunlang/grammar/all</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/phunlang/name</loc>
         </url>
         <url>
@@ -122,6 +131,12 @@
             <loc>https://kaeru2193.net/tools</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/tools/character-set-cp</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/tools/good-approx-ratio</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/tools/hilbert-writing</loc>
         </url>
         <url>
@@ -129,6 +144,9 @@
         </url>
         <url>
             <loc>https://kaeru2193.net/tools/phun-pron</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/tools/phun-renderer</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/tools/radix-conv</loc>
