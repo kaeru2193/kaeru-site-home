@@ -122,9 +122,10 @@ const Page = () => {
             </ul>
 
             <h2>相互リンク</h2>
-            <p>追加/削除の要望は、上の連絡先までお願いします。</p>
+            <p>敬称略。追加/削除の要望は、上の連絡先までお願いします。</p>
             <ul>
-                <li><a href="https://epikijetesantakalu.github.io">lipu epikijetesantakalu</a></li>
+                <li><a href="https://epikijetesantakalu.github.io">lipu epikijetesantakalu</a> (epikijetesantakalu)</li>
+                <li><a href="https://www.tktb-tess.dev">悠久肆方体</a> (斗琴庭暁響)</li>
             </ul>
 
             <h2>サイトバナー</h2>
