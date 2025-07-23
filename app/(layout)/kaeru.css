@@ -162,6 +162,18 @@ td {
     width: auto;
 }
 
+.youtubeEmbed {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 560 / 315;
+    margin: 0 auto;
+}
+
+.youtubeEmbed > iframe {
+    height: 100%;
+    width: 100%;
+}
+
 :not(pre) > code {
     background: #24272c;
     color: white;

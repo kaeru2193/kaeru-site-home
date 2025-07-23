@@ -13,6 +13,7 @@ const Page = () => {
                 <li><Link href="scp">『SCP財団とは』</Link></li>
                 <li><Link href="internationale">『L'Internationale』</Link></li>
                 <li><Link href="lords_prayer">『主の祈り』</Link></li>
+                <li><Link href="unicat">『unicat』</Link></li>
             </ul>
         </>
     )
