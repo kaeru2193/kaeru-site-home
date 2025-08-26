@@ -14,6 +14,8 @@ const Page = () => {
                 <li><Link href="internationale">『L'Internationale』</Link></li>
                 <li><Link href="lords_prayer">『主の祈り』</Link></li>
                 <li><Link href="unicat">『unicat』</Link></li>
+                <li><Link href="library_prayer">大図書館教の祈り</Link></li>
+                <li><Link href="end_poem">『End Poem』</Link></li>
             </ul>
         </>
     )

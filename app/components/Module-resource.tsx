@@ -15,7 +15,7 @@ const convertCode = (word: string) => word
       : ""
   )
   .filter(c => c)
-  .join("-")
+  .join(" ")
 
 export const PPron = (props: {text: string, children: React.ReactNode}) => {
   return <>
