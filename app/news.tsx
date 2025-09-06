@@ -78,4 +78,8 @@ export const newsData =
         "date": "2025-07-18",
         "desc": <><a href="/ikenolog/20250406">ZpDICのAPIで、Discordにお手軽ランダム単語自動定期投稿チュートリアル【令和最新版】</a>を再投稿</>
     },
+    {
+        "date": "2025-09-06",
+        "desc": <>サイトの対応言語に英語を追加</>
+    },
 ]

@@ -36,6 +36,9 @@ export const Header = (props: {data: langTexts}) => {
                         <li>
                             <a href="/tok"><span className="defFont">toki pona</span></a>
                         </li>
+                        <li>
+                            <a href="/en"><span className="defFont">English</span></a>
+                        </li>
                     </ul>
                 </div>
             </div>

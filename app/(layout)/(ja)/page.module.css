@@ -114,6 +114,14 @@
     font-size: 0.9rem;
 }
 
+.mutualLinkList img {
+    display: inline;
+}
+
+.kaeruBanner {
+    display: inline;
+}
+
 @media screen and (max-width: 834px) {
     .grid {
         grid-template-areas:

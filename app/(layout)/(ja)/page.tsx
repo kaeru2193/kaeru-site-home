@@ -123,14 +123,15 @@ const Page = () => {
 
             <h2>相互リンク</h2>
             <p>敬称略。追加/削除の要望は、上の連絡先までお願いします。</p>
-            <ul>
+            <ul className={style.mutualLinkList}>
                 <li><a href="https://epikijetesantakalu.github.io">lipu epikijetesantakalu</a> (epikijetesantakalu)</li>
                 <li><a href="https://www.tktb-tess.dev">悠久肆方体</a> (斗琴庭暁響)</li>
+                <li><a href="https://mikanixonable.github.io"><img src="https://mikanixonable.github.io/banner.png" width={200} height={40} alt="月面植物園" /></a> (みかぶる)</li>
             </ul>
 
             <h2>サイトバナー</h2>
             <p>当サイトはリンクフリーです。リンクを貼る際には、以下のバナーを適宜ご使用下さい。</p>
-            <a href="https://kaeru2193.net"><img src="/banner.png" width="200" height="40" alt="之機堂" /></a>
+            <a href="https://kaeru2193.net"><img className={style.kaeruBanner} src="/banner.png" width="200" height="40" alt="之機堂" /></a>
             <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner.png" width="200" height="40" alt="之機堂" /></a>`}</code></pre>
 
             <h2>更新履歴</h2>

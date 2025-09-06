@@ -75,10 +75,32 @@ export const PHUN: langTexts = {
     kiribanText: "喜伴慶！汝為###序来人在之機家！"
 }
 
+export const EN: langTexts = {
+    latin: true,
+    siteName: 'Kaeringtòn',
+    siteDescription: 'The official website of kaeru2193.',
+    topPage: "Toppage",
+    notFound: {
+        title: <>404 Not Found</>,
+        content: <>
+            <p><b>The page you are looking for may have been moved or deleted.</b></p>
+            <p><a href="/tok">Go back to Toppage</a></p>
+        </>
+    },
+    header: [
+        {url: "/phuncreation", title: "Phun Creation"},
+        {url: "/ikenolog", title: "Ikenolog"},
+        {url: "/download", title: "Warehouse"},
+        {url: "/tools", title: "Tech Annex"},
+    ],
+    kiribanText: "Congratulations! You are the ###th visitor of Kaeringtòn!"
+}
+
 export const langData: {[key: string]: langTexts} = {
     "tok": TOK,
     "ja": JA,
-    "phun": PHUN
+    "phun": PHUN,
+    "en": EN
 }
 
 export const langParse = () => {
