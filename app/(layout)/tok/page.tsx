@@ -1,5 +1,6 @@
 import style from "../(ja)/page.module.css"
 import { SiteLinkList } from "@/link"
+import { PhunClock } from "@/common"
 
 const snsData =
     [
@@ -33,6 +34,7 @@ const Page = () => {
     return (
         <>
             <h1>kama pona!</h1>
+            <PhunClock/>
             <p className="bigText">kama pona!</p>
             
             <p>tomo ni li lipu pi akesi Kawelu. nimi mi ante li <b>kaeru2193</b>.</p>

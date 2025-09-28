@@ -264,7 +264,63 @@
     }
 }
 
-@font-face {
+.clock {
+    position: absolute;
+    left: 3px;
+    top: -3px;
     font-family: "phun-num-5px";
-    src: url("https://kaeru2193.github.io/Phun-Resources/font/PhunNum5px.woff") format("woff");
+    font-size: 36px;
+    color: #ff9b28;
+    text-shadow: 0 0 5px #ff9b28;
+    line-height: 1;
+    margin: 0;
+}
+
+.clock div {
+    display: flex;
+    gap: 12px;
+}
+
+.clockBase {
+    position: relative;
+    height: 40px;
+    margin-top: 0.5rem;
+}
+
+.backboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(clamp(0, calc(100vw / 800%), 0.8));
+    
+    width: 498px;
+    height: 30px;
+    border: #202020 6px solid;
+    box-sizing: content-box;
+    background-color: #303030;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.display {
+    position: absolute;
+    z-index: 100;
+    width: 500px;
+    height: 30px;
+    background-image: radial-gradient(
+      transparent 0 2px, 
+      #202020 2px
+    );
+    background-size: 6px 6px;
+    content: '';
+}
+
+.clockBaseWidget {
+    position: relative;
+    height: auto;
+}
+
+.clockBaseWidget .backboard {
+    transform: none;
+    left: 0;
 }

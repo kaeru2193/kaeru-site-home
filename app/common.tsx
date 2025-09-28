@@ -4,6 +4,7 @@ import Link from "next/link";
 import style from "./common.module.css"
 
 import { FetchData } from "./funcs";
+import { EikyuDate } from "eikyu-clock";
 import { useState, useEffect, useRef, use } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { langTexts, langParse } from "./languages";
@@ -166,4 +167,52 @@ const AnimeIcon = (props: any) => {
             <span className={`${style.title} ${titleAnime? style.animeShow :style.animeHide}`}>{props.name}</span>
         </span>
     </div>)
+}
+
+export const PhunClock = (props: any) => {
+    return (
+        <div className={style.clockBase}>
+            <PhunClockCore/>
+        </div>
+    )
+}
+
+export const PhunClockWidget = (props: any) => {
+    return (
+        <div className={style.clockBaseWidget}>
+            <PhunClockCore/>
+        </div>
+    )
+}
+
+const PhunClockCore = (props: any) => {
+    const [clock, setClock] = useState(<></>)
+    
+    useEffect(() => {
+        window.setInterval(() => {
+            const eikyu = new EikyuDate()
+            const pf = eikyu.getPhunFormat()
+            const num: any = {"〇": "0", "〡": "1", "〢": "2", "〣": "3", "〤": "4", "〥": "5", "〦": "6", "〧": "7", "〨": "8", "〩": "9", "〹": "a", "〺": "b"}
+            
+            Object.keys(pf).forEach(k => {
+                pf[k] = ("0" + (pf[k].split("").map(c => num[c]).join(""))).slice(-2)
+            })
+
+            setClock(<div>
+                <span>{pf.yea}</span>
+                <span>{pf.poi}</span>
+                <span>{pf.day}</span>
+                <span>{pf.per}</span>
+                <span>{pf.min}</span>
+                <span>{pf.sec}</span>
+            </div>)
+        }, 10);
+    }, [])
+
+    return (
+        <div className={style.backboard}>
+            <div className={style.display}></div>
+            <p className={style.clock}>{clock}</p>
+        </div>
+    )
 }

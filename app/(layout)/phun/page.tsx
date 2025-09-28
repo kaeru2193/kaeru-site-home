@@ -1,5 +1,6 @@
 import style from "../(ja)/page.module.css"
 import { SiteLinkList } from "@/link"
+import { PhunClock } from "@/common"
 
 const snsData =
     [
@@ -33,6 +34,7 @@ const Page = () => {
     return (
         <>
             <h1>喜汝！</h1>
+            <PhunClock/>
             <p className="bigText">喜汝！</p>
             
             <p>之家為之機 （<span className="defFont">kaeru2193</span>） 含蔓処。</p>

@@ -2,6 +2,7 @@
 
 import style from "../(ja)/page.module.css"
 import { SiteLinkList } from "@/link"
+import { PhunClock } from "@/common"
 
 const snsData =
     [
@@ -35,6 +36,7 @@ const Page = () => {
     return (
         <>
             <h1>Welcome!</h1>
+            <PhunClock/>
             <p className="bigText">Welcome!</p>
             
             <p>This is the official website of kaeru2193.</p>

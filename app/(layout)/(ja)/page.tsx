@@ -2,6 +2,7 @@
 
 import style from "./page.module.css"
 import { SiteLinkList } from "@/link"
+import { PhunClock } from "@/common"
 
 import { NewsList } from "./news/news"
 import { newsData } from "@/news"
@@ -38,6 +39,8 @@ const Page = () => {
     return (
         <>
             <h1>ようこそ！</h1>
+            <PhunClock/>
+            
             <p className="bigText">ようこそ！</p>
             
             <p>ここはかえる（kaeru2193）のサイトです。</p>
