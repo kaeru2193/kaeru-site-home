@@ -187,6 +187,7 @@ export const PhunClockWidget = (props: any) => {
 
 const PhunClockCore = (props: any) => {
     const [clock, setClock] = useState(<></>)
+    const [width, setWidth] = useState(0);
     
     useEffect(() => {
         window.setInterval(() => {
@@ -207,10 +208,22 @@ const PhunClockCore = (props: any) => {
                 <span>{pf.sec}</span>
             </div>)
         }, 10);
+
+        //初回に更新、リサイズされたら更新
+        const handleResize = () => setWidth(window.innerWidth);
+        handleResize()
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, [])
 
+    const scale = width / 750 //時計の縮尺
+
     return (
-        <div className={style.backboard}>
+        <div className={style.backboard} style={{transform: `translate(-50%, -50%) scale(${scale > 0.8 ?0.8 :scale})`}}>
             <div className={style.display}></div>
             <p className={style.clock}>{clock}</p>
         </div>

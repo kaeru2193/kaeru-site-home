@@ -1,5 +1,5 @@
 
-import { PText } from "@/components/Module"
+import { PText, PPron } from "@/components/Module"
 import { ScrollableImg } from "@/components"
 
 # 音韻論
@@ -128,6 +128,37 @@ import { ScrollableImg } from "@/components"
 
 雰語の二重母音には <PText>ao</PText> <span className="ipa">/ao/</span>、<PText>ai</PText> <span className="ipa">/ai/</span>、<PText>ua</PText> <span className="ipa">/ɯa/</span>、<PText>uo</PText> <span className="ipa">/ɯo/</span>の4つが存在する。
 
+規範的には上記の発音に沿って発話されるが、砕けた口語においては<PText>ao</PText>と<PText>ai</PText>が次のように融合することも多い。
+
+<div className="tableBox"><table style={{textAlign: "center", width: "300px"}}><tbody>
+    <tr>
+        <th rowSpan={2}>二重母音</th><th rowSpan={2}>規範的</th><th colSpan={3}>口語</th>
+    </tr>
+    <tr>
+        <th>末子音なし</th><th><PText>n</PText>, <PText>m</PText>, <PText>ng</PText> の前</th><th><PText>s</PText>, <PText>l</PText> の前</th>
+    </tr>
+    <tr>
+        <th><span className="ipa">/ao/</span></th>
+        <td colSpan={2}><span className="ipa">[ao]</span></td>
+        <td><span className="ipa">[ɔː]</span></td>
+        <td><span className="ipa">[ɔ]</span></td>
+    </tr>
+    <tr>
+        <th><span className="ipa">/ai/</span></th>
+        <td colSpan={2}><span className="ipa">[ai]</span></td>
+        <td><span className="ipa">[eː]</span></td>
+        <td><span className="ipa">[e]</span></td>
+    </tr>
+    <tr>
+        <th><span className="ipa">/ua/</span></th>
+        <td colSpan={4}><span className="ipa">[ɯa]</span></td>
+    </tr>
+    <tr>
+        <th><span className="ipa">/uo/</span></th>
+        <td colSpan={4}><span className="ipa">[ɯo]</span></td>
+    </tr>
+</tbody></table></div>
+
 ## 末子音
 
 雰語では5の末子音が区別される。左側がラテン文字転写、右側がIPA表記である。
@@ -166,7 +197,7 @@ import { ScrollableImg } from "@/components"
         <th rowSpan={2}>摩擦</th>
         <th>無声</th>
         <td></td>
-        <td><PText>s</PText> <span className="ipa">/s/</span></td>
+        <td><PText>s</PText> <span className="ipa">/s/ [s(~h)]</span> <sup>*1</sup></td>
         <td></td>
         <td></td>
         <td></td>
@@ -182,12 +213,15 @@ import { ScrollableImg } from "@/components"
     <tr>
         <th colSpan={2}>側面接近</th>
         <td></td>
-        <td><PText>l</PText> <span className="ipa">/l/</span></td>
+        <td><PText>l</PText> <span className="ipa">/l/ [l\~ɫ\~ɯ]</span> <sup>*2</sup></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
 </tbody></table></div>
+
+\*1: 末子音 <span className="ipa">/s/</span> の実現には個人差・地域差がある。基本的にはどんな場面でも <span className="ipa">[s]</span> を用いる話者が多いが、特に北部地域の話者は連音規則（後述）が適用される音節以外において末子音の <span className="ipa">/s/</span> を <span className="ipa">[h]</span> で実現する傾向にある。
+\*2: 連音規則が適用される音節以外の末子音 <span className="ipa">/l/</span> は母音化する傾向にある。特に、二重母音との混同を避けるため、二重母音の末音として用いられない母音 <span className="ipa">[ɯ]</span> への弱化が好まれる。
 
 ## 声調
 
@@ -212,3 +246,23 @@ import { ScrollableImg } from "@/components"
 ## 音配列の禁則
 
 雰語の音節のうち、<PText>yi</PText> と <PText>wu</PText> を含むものは禁則であり出現しない。
+
+## 連音規則
+
+閉音節（末子音のある音節）の後ろに母音または頭子音/j/で始まる音節が続く場合、閉音節の末子音を次の音節が引き継ぐ。特に頭子音 <span className="ipa">/j/</span> で始まる音節が後続している場合には、閉音節の末子音が口蓋化した上で引き継がれる。
+
+またこの連音により、雰拼での表記上は区別される語でも、発音上では区別されなくなる場合があることに注意。
+
+- <PPron text="大弟">大弟</PPron> → <span className="ipa">[t͡ʃim˥˧.mi˨]</span> （発音上は <PText>qîmmì</PText> と区別されない）
+- <PPron text="火痛">火痛</PPron> → <span className="ipa">[taŋ˨˦.ŋɯo˨]</span>
+- <PPron text="賜善">賜善</PPron> → <span className="ipa">[d͡ʒɛl˨.lɯas˥]</span> （発音上は <PText>jèllúas</PText> と区別されない）
+- <PPron text="位処">位処</PPron> → <span className="ipa">[dɯn˨.nʲai˥]</span>
+- <PPron text="弱指">弱指</PPron> → <span className="ipa">[sɯl˨.lʲɯo˥]</span>
+
+末子音が無い開音節では主母音が長く発音され、これによって閉音節と開音節が区別される。例えば <PText>jèl'úas</PText> と <PText>jè'lúas</PText> は、母音<span className="ipa">/ɛ/</span>の持続時間によってのみ区別される。
+
+また、末子音 <span className="ipa">/s/</span> に <span className="ipa">/ʃ/</span>, <span className="ipa">/t͡ʃ/</span>, <span className="ipa">/d͡ʒ/</span> のいずれかで始まる音節が後続する場合、末子音 <span className="ipa">/s/</span> は同化して <span className="ipa">[ʃ]</span> と発音される。更に、末子音 <span className="ipa">/s/</span> に <span className="ipa">/z/</span> で始まる音節が後続すると、末子音 <span className="ipa">/s/</span> は同化して <span className="ipa">[z]</span> と発音される。
+
+- <PPron text="律知">律知</PPron> → <span className="ipa">[giʃ˥.t͡ʃai˨]</span>
+- <PPron text="建材">建材</PPron> → <span className="ipa">[ʃɛʃ˥.d͡ʒaim˥˧]</span>
+- <PPron text="天京">天京</PPron> → <span className="ipa">[βaz˥.za˥˧]</span>
