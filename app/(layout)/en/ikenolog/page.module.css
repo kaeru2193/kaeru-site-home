@@ -1,0 +1,36 @@
+.mainContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navigateTitle {
+    color: var(--phun-text);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.navigationContainer {
+    width: 30%;
+    max-width: 280px;
+    margin-right: 20px;
+}
+
+.articleContainer {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 834px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+    .navigationContainer {
+        width: 100%;
+        max-width: initial;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #808080;
+    }
+}
