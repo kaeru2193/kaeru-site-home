@@ -1,0 +1,17 @@
+.entry {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--kaeru-text);
+}
+
+.entry:first-child {
+    padding-top: 0;
+}
+
+.entry:nth-child(even) {
+    background-color: var(--kaeru-light);
+}
+
+.date {
+    font-size: 0.8rem;
+    color: var(--kaeru-text);
+}

@@ -1,0 +1,144 @@
+.articleCardContainer {
+    margin-bottom: 15px;
+}
+
+.articleCardContainer:last-child {
+    margin-bottom: 0;
+}
+
+.articleLink {
+    text-decoration: none;
+    color: initial;
+}
+
+.articleLink:hover {
+    color: initial;
+}
+
+.articleCard {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 0.2s;
+    box-shadow: 2px 2px 7px #00000040;
+}
+
+.articleCard:hover {
+    background-color: var(--kaeru-light);
+    transition: background-color 0.2s;
+}
+
+.articleTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--phun-text);
+}
+
+.articleDesc {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.topInfo {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    column-gap: 8px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-right: 5px;
+}
+
+.date span {
+    margin-left: 5px;
+}
+
+.tagLink, .yearArchive a, .monthArchive a {
+    text-decoration: none;
+    color: initial;
+}
+
+.tagLink:hover, .yearArchive a:hover, .monthArchive a:hover {
+    color: initial;
+}
+
+.tag {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-size: 0.85rem;
+    background-color: var(--kaeru-main);
+    color: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.tag span {
+    margin-left: 3px;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #00000040;
+}
+
+.tagListTag {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.9rem;
+    color: black;
+    transition: color 0.1s;
+}
+
+.tagListTag:hover {
+    color: var(--kaeru-main);
+    transition: color 0.1s;
+}
+
+.tagListTag span {
+    text-wrap: nowrap;
+}
+
+.archiveList {
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #00000040;
+}
+
+.yearArchive, .monthArchive {
+    border-bottom: 1px solid #d0d0d0;
+    background-color: white;
+    transition: background-color 0.2s;
+    padding: 7px 0 7px 12px;
+}
+
+.yearArchive:hover, .monthArchive:hover {
+    background-color: var(--kaeru-light);
+    transition: background-color 0.2s;
+}
+
+.archiveList > div:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.archiveList > div:last-child {
+    border-radius: 0 0 5px 5px;
+    border-bottom: none;
+}
+
+.yearArchive {
+    font-weight: bold;
+}
+
+.monthArchive {
+    padding-left: 20px;
+}
