@@ -11,7 +11,7 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
     const paths = props.paths.filter(p => p)
 
     const roots = paths.map((a, idx) => {
-        return [props.lang, ...paths.slice(0, idx + 1)].join("/") //ページ名の検索に使うので、ここだけ言語名を入れる
+        return (props.lang == "ja" ?"" :props.lang + "/") + paths.slice(0, idx + 1).join("/") //ページ名の検索に使うので、ここだけ言語名を入れる
     })
   
     return (
