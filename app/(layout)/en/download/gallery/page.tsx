@@ -1,7 +1,8 @@
 "use client"
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import styles from "./page.module.css"
+import style from "@/(layout)/(ja)/download/gallery/page.module.css"
+import enStyle from "./page.module.css"
 
 import { FetchData } from "@/funcs";
 
@@ -50,28 +51,28 @@ const GalleryProcess = (props: any) => {
     const json: any[] = props.data
     const images = json
         .filter(f => f.pathList[0] == "img")
-        .sort((a, b) => a.title > b.title? 1: a.title < b.title? -1: 0) //タイトル順ソートはEEEEEEEPIIIIIIIIIKUUUUUUUUUだよ
+        .sort((a, b) => a.title > b.title? 1: a.title < b.title? -1: 0) //タイトル順ソート
     return (
-        <div className={styles.imageContainer}>
+        <div className={style.imageContainer}>
             {images.map(i =>
                 {
                 const url = "https://kaeru2193.github.io/Phun-Resources/" + i.path
                 return (
-                <div className={styles.imageBox} key={i.title}>
+                <div className={style.imageBox} key={i.title}>
                     <a href={url}>
-                        <div className={styles.imageFrame}>
+                        <div className={style.imageFrame}>
                             <Image
                                 fill
                                 sizes="150"
                                 src={url}
                                 alt={i.title}
-                                className={styles.image}
+                                className={style.image}
                             />
                         </div>
-                        <div className={styles.title}>
+                        <div className={style.title}>
                             {i.title}
                         </div>
-                        <div className={styles.desc}>{i.desc}</div>
+                        <div className={style.desc}>{i.desc}</div>
                     </a>
                 </div>)}
             )}

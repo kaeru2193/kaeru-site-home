@@ -17,7 +17,7 @@ export const Header = (props: {data: langTexts}) => {
     return (
         <div className={`${style.header} ${props.data.latin && style.latinHeader}`}>
             <div className={style.content}>
-                <Link href="/" className={style.logoLink}>
+                <Link href={props.data.baseURL} className={style.logoLink}>
                     <div className={style.logoContainer}>
                         <AnimeIcon anime={isRoot} name={props.data.siteName}/>
                     </div>
@@ -50,7 +50,7 @@ export const Header = (props: {data: langTexts}) => {
 export const Footer = (props: {data: langTexts}) => {
     const [countData, setCountData]: any = useState("")
     const [kiriban, setKiriban] = useState(false)
-
+/*
     useEffect(() => {
         const access = async () => {
           try {
@@ -71,7 +71,7 @@ export const Footer = (props: {data: langTexts}) => {
     
         access()
       }, []);
-
+*/
     return (
         <div className={style.footer}>
             <p className={`${style.copyright} defFont`}>© 2021-2025 kaeru2193</p>
@@ -170,6 +170,22 @@ const AnimeIcon = (props: any) => {
 }
 
 export const PhunClock = (props: any) => {
+    const [width, setWidth] = useState(0);
+
+    useEffect(() => {
+        //初回に更新、リサイズされたら更新
+        const handleResize = () => setWidth(window.innerWidth);
+        handleResize()
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    })
+
+    const scale = width / 750 //時計の縮尺
+
     return (
         <div className={style.clockBase}>
             <PhunClockCore/>
@@ -187,7 +203,7 @@ export const PhunClockWidget = (props: any) => {
 
 const PhunClockCore = (props: any) => {
     const [clock, setClock] = useState(<></>)
-    const [width, setWidth] = useState(0);
+    
     
     useEffect(() => {
         window.setInterval(() => {
@@ -208,22 +224,12 @@ const PhunClockCore = (props: any) => {
                 <span>{pf.sec}</span>
             </div>)
         }, 10);
-
-        //初回に更新、リサイズされたら更新
-        const handleResize = () => setWidth(window.innerWidth);
-        handleResize()
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
     }, [])
 
-    const scale = width / 750 //時計の縮尺
+    
 
     return (
-        <div className={style.backboard} style={{transform: `translate(-50%, -50%) scale(${scale > 0.8 ?0.8 :scale})`}}>
+        <div className={style.backboard}>
             <div className={style.display}></div>
             <p className={style.clock}>{clock}</p>
         </div>

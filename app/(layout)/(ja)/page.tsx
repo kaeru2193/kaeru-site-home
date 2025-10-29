@@ -92,7 +92,7 @@ const Page = () => {
                         <li>プログラミング（主にTypescript、Pythonも少し）</li>
                         <li>宇宙や天文のはなし</li>
                         <li>各種ロゴなどのデザイン</li>
-                        <li>フォントとか表意文字とか</li>
+                        <li>フォントとか表語文字とか</li>
                     </ul>
                 </li>
 

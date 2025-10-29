@@ -24,10 +24,10 @@ const siteData =
     [
         {name: "Phun Creation", desc: "My main worldbuilding project centered around the Phun Language and the Phun World.", url: "/phuncreation"},
         {name: "Phun Language", desc: "The conlang that I have been creating since around 2021.", url: "/phunlang"},
-        {name: "Conlanging", desc: "Content about other conlanging activities.", url: "/conlang"},
-        {name: "Ikenolog", desc: "My miscellaneous diaries.", url: "/ikenolog"},
-        {name: "Warehouse", desc: "Download various creative works.", url: "/download"},
-        {name: "Gallery", desc: "Download creative works in image format, such as logos and emblems.", url: "/download/gallery"},
+        {name: "Conlanging", desc: "Content about other conlanging activities.", url: "./conlang"},
+        {name: "Ikenolog", desc: "My miscellaneous diaries.", url: "./ikenolog"},
+        {name: "Warehouse", desc: "Download various creative works.", url: "./download"},
+        {name: "Gallery", desc: "Download creative works in image format, such as logos and emblems.", url: "./download/gallery"},
         {name: "Tech Annex", desc: "An annex with various small web tools.", url: "/tools", reload: true},
         {name: "Junk Box", desc: "A collection of links to small works that don't fit into other categories.", url: "/various"},
     ]
@@ -55,7 +55,7 @@ const Page = () => {
             </div>
 
             <div className={style.otherLink}>
-                <a href="/links">Other links can be found here</a>
+                <a href="./links">Other links can be found here</a>
             </div>
 
             <h2>Site Navigation</h2>

@@ -9,7 +9,7 @@ export const fontData = [
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/PhunSans-latest.zip",
         "example": "我為之機、汝為何如？",
         "desc": 
-            <p>汎用的に使える雰字の丸ゴシック体フォントです。Light, Regular, Boldの3ウェイトが含まれています。</p>
+            <p>A rounded Gothic typeface that can be used for general purpose. It includes 3 weights: Light, Regular, Bold.</p>
     },
     {
         "name": "PhunWrite",
@@ -17,7 +17,7 @@ export const fontData = [
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/PhunWrite-latest.zip",
         "example": "我為之機、汝為何如？",
         "desc": 
-            <p>かえるが雰字を手書きしたフォントです。Regularの1ウェイトのみが含まれます。</p>
+            <p>A typeface handwritten by me. It includes only 1 weight.</p>
     },
     {
         "name": "PhunDot",
@@ -26,7 +26,7 @@ export const fontData = [
         "example": "我為之機、汝為何如？",
         "desc": 
             <>
-                <p>雰字の16×16ドットフォントです。1ウェイトのみが含まれます。</p>
+                <p>A 16 by 16 pixelated typeface of Phun characters. It includes only 1 weight.</p>
                 <ScrollableImg src="/font-preview/phun-dot.png" height={500} alt={"PhunDot preview"}/>
             </>
     },
@@ -36,7 +36,7 @@ export const fontData = [
         "publish": "https://kaeru2193.github.io/Phun-Resources/font-publish/Blophabet-latest.zip",
         "example": "lorem ipsum",
         "desc": 
-            <p>8等分にした正方形で構成される英字フォントです。可読性が非常に低いため、装飾用途での使用を想定しています。</p>
+            <p>A font that expresses Latin Alphabets with a grid dividing a square into 8 triangles. As it is extremely difficult to read, it is meant for decoration purposes.</p>
     },
     {
         "name": "Càgit",
@@ -46,8 +46,7 @@ export const fontData = [
         "desc": 
             <>
                 <p>
-                    <a href="https://ziphil.com">Ziphil</a>
-                    さんの製作している『シャレイア語』で用いられる『シャレイア文字』のセリフ体風フォントです。Regular, Boldの2ウェイトが含まれます。
+                    A serif-like typeface of Shaleian characters, used for the Shaleian language by <a href="https://twitter.com/Ziphil">Ziphil</a>. It includes 2 weights: Regular, Bold.
                 </p>
                 <ScrollableImg src="/font-preview/cagit.png" height={500} alt={"cagit preview"}/>
             </>
@@ -60,8 +59,7 @@ export const fontData = [
         "desc": 
             <>
                 <p>
-                    <a href="https://ziphil.com">Ziphil</a>
-                    さんの製作している『シャレイア語』で用いられる『シャレイア文字』のドットフォントです。Regular, Boldの2ウェイトが含まれます。
+                    A pixalated typeface of Shaleian characters, used for the Shaleian language by <a href="https://twitter.com/Ziphil">Ziphil</a>. It includes 2 weights: Regular, Bold.
                 </p>
                 <ScrollableImg src="/font-preview/bosval.png" height={500} alt={"bosval preview"}/>
             </>

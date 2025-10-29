@@ -1,9 +1,10 @@
 import articles from './articles.json'
-import style from "./page.module.css"
+import style from "@/(layout)/(ja)/ikenolog/page.module.css"
+import enStyle from "./page.module.css"
 
-import { ArticleList } from './components'
-import { TagList } from './components'
-import { ArchiveList } from './components'
+import { ArticleList } from '@/(layout)/(ja)/ikenolog/components'
+import { TagList } from '@/(layout)/(ja)/ikenolog/components'
+import { ArchiveList } from '@/(layout)/(ja)/ikenolog/components'
 
 const Page = () => {
     return (

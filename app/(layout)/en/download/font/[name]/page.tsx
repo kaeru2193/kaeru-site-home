@@ -7,7 +7,8 @@ import { DownloadButton } from "@/components"
 
 import { fontData } from "./fontData"
 
-import style from "./page.module.css"
+import style from "@/(layout)/(ja)/download/font/[name]/page.module.css"
+import enStyle from "./page.module.css"
 
 
 const Page = ({ params }: { params: { name: string } }) => {

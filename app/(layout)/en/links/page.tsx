@@ -15,8 +15,8 @@ const Page = () => {
             <h2>Discord</h2>
             <ul>
                 <li><a href="https://discord.com/users/896664884186607706">Discord user page</a></li>
-                <li><a href="https://discord.gg/tHhA4bBYap">雷家向雰民</a> … The Discord community for Phun creation</li>
-                <li><a href="https://discord.gg/YQN62zxNyE">地球語くらぶ</a> … An unofficial Discord commyunity for <a href="https://www.earthlanguage.org/jWhat.htm">Earth Language</a>.</li>
+                <li><a href="https://discord.gg/tHhA4bBYap">雷家向雰民 (Màinbé Vû Fúnzôm)</a> … The Discord community for Phun creation</li>
+                <li><a href="https://discord.gg/YQN62zxNyE">地球語くらぶ</a> … An unofficial Discord commyunity for <a href="https://www.earthlanguage.org/jWhat.htm">Earth Language</a></li>
             </ul>
             <h2>Other SNS</h2>
             <ul>
@@ -24,13 +24,13 @@ const Page = () => {
                 <li><a href="https://www.reddit.com/user/kaeru2193">Reddit</a></li>
                 <li><a href="https://vrchat.com/home/user/usr_d176c0ff-0f24-4aff-ba50-75a777165334">VRChat</a></li>
             </ul>
-            <h2>Things Related to the Japanese Conlanging Community</h2>
+            <h2>Links Related to the Japanese Conlanging Community</h2>
             <ul>
                 <li><a href="https://migdal.jp/kaeru2193">Migdal</a></li>
                 <li><a href="https://zpdic.ziphil.com/user/kaeru">ZpDIC</a></li>
-                <li><a href="https://wiki.conlinguistics.jp/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru2193">人工言語学Wiki</a></li>
+                <li><a href="https://wiki.conlinguistics.jp/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru2193">Conlinguistics Wiki</a></li>
             </ul>
-            <h2>Things Related to Technology</h2>
+            <h2>Links Related to IT</h2>
             <ul>
                 <li><a href="https://github.com/kaeru2193">Github</a></li>
                 <li><a href="https://qiita.com/kaeru2193">Qiita</a></li>

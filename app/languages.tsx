@@ -1,6 +1,7 @@
 import { usePathname } from "next/navigation"
 
 export type langTexts = {
+    baseURL: string,
     latin?: boolean,
     siteName: string,
     siteDescription: string,
@@ -14,6 +15,7 @@ export type langTexts = {
 }
 
 export const JA: langTexts = {
+    baseURL: "/",
     siteName: '之機堂',
     siteDescription: 'かえるのホームページです。',
     topPage: "トップページ",
@@ -35,6 +37,7 @@ export const JA: langTexts = {
 }
 
 export const TOK: langTexts = {
+    baseURL: "/tok",
     latin: true,
     siteName: 'tomo Kawelu',
     siteDescription: 'ni li lipu pi akesi Kawelu.',
@@ -56,6 +59,7 @@ export const TOK: langTexts = {
 }
 
 export const PHUN: langTexts = {
+    baseURL: "/phun",
     siteName: '之機家',
     siteDescription: '之為之機含蔓処。',
     topPage: "開雷記",
@@ -76,6 +80,7 @@ export const PHUN: langTexts = {
 }
 
 export const EN: langTexts = {
+    baseURL: "/en",
     latin: true,
     siteName: 'Kaeringtòn',
     siteDescription: 'The official website of kaeru2193.',
@@ -84,13 +89,13 @@ export const EN: langTexts = {
         title: <>404 Not Found</>,
         content: <>
             <p><b>The page you are looking for may have been moved or deleted.</b></p>
-            <p><a href="/tok">Go back to Toppage</a></p>
+            <p><a href="/en">Go back to Toppage</a></p>
         </>
     },
     header: [
         {url: "/phuncreation", title: "Phun Creation"},
-        {url: "/ikenolog", title: "Ikenolog"},
-        {url: "/download", title: "Warehouse"},
+        {url: "/en/ikenolog", title: "Ikenolog"},
+        {url: "/en/download", title: "Warehouse"},
         {url: "/tools", title: "Tech Annex"},
     ],
     kiribanText: "Congratulations! You are the ###th visitor of Kaeringtòn!"
