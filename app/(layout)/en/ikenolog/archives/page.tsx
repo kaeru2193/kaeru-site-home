@@ -1,5 +1,5 @@
-import articles from "../articles.json"
-import { ArchiveList } from "../components"
+import articles from "@/(layout)/(ja)/ikenolog/articles.json"
+import { ArchiveList } from "@/(layout)/(ja)/ikenolog/components"
 
 const Page = () => {
     return (
