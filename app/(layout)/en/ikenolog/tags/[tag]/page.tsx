@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
-import { ArticleList } from "../../components"
-import { tagSearch } from "../../components"
+import { ArticleList } from "@/(layout)/(ja)/ikenolog/components"
+import { tagSearch } from "@/(layout)/(ja)/ikenolog/components"
 
-import articles from '../../articles.json'
+import articles from '@/(layout)/(ja)/ikenolog/articles.json'
 
 const Page = ({ params }: { params: { tag: string } }) => {
     const result = tagSearch(articles, decodeURI(params.tag))

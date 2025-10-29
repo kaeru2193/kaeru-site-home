@@ -92,9 +92,6 @@
             <loc>https://kaeru2193.net/phunlang/grammar/13</loc>
         </url>
         <url>
-            <loc>https://kaeru2193.net/phunlang/grammar/all</loc>
-        </url>
-        <url>
             <loc>https://kaeru2193.net/phunlang/name</loc>
         </url>
         <url>
@@ -107,7 +104,13 @@
             <loc>https://kaeru2193.net/phunlang/texts/babel</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/phunlang/texts/end_poem</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/phunlang/texts/internationale</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/phunlang/texts/library_prayer</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/phunlang/texts/lords_prayer</loc>
@@ -116,7 +119,37 @@
             <loc>https://kaeru2193.net/phunlang/texts/scp</loc>
         </url>
         <url>
+            <loc>https://kaeru2193.net/phunlang/texts/unicat</loc>
+        </url>
+        <url>
             <loc>https://kaeru2193.net/various</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/conlang</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/download</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/download/font</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/download/gallery</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/ikenolog</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/ikenolog/archives</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/ikenolog/tags</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/en/links</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/phun</loc>
@@ -126,6 +159,9 @@
         </url>
         <url>
             <loc>https://kaeru2193.net/clock</loc>
+        </url>
+        <url>
+            <loc>https://kaeru2193.net/clock-widget</loc>
         </url>
         <url>
             <loc>https://kaeru2193.net/tools</loc>

@@ -1,5 +1,5 @@
-import articles from "../articles.json"
-import { TagList } from "../components"
+import articles from "@/(layout)/(ja)/ikenolog/articles.json"
+import { TagList } from "@/(layout)/(ja)/ikenolog/components"
 
 const Page = () => {
     return (

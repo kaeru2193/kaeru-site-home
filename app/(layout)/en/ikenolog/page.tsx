@@ -1,4 +1,4 @@
-import articles from './articles.json'
+import articles from '@/(layout)/(ja)/ikenolog/articles.json'
 import style from "@/(layout)/(ja)/ikenolog/page.module.css"
 import enStyle from "./page.module.css"
 

@@ -11,7 +11,7 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
     const paths = props.paths.filter(p => p)
 
     const roots = paths.map((a, idx) => {
-        return paths.slice(0, idx + 1).join("/")
+        return [props.lang, ...paths.slice(0, idx + 1)].join("/") //ページ名の検索に使うので、ここだけ言語名を入れる
     })
   
     return (
@@ -26,7 +26,7 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
             p.route == roots[idx]
           )[0]
 
-          const link = idx != roots.length - 1
+          const link = idx != roots.length - 1 //現在いるページかどうか
           const linkTitle = title? title.title: d //登録されていればそれを、されていなければURLから取得して表示
 
           return (

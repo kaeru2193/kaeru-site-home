@@ -119,10 +119,6 @@
     "title": "情詞"
   },
   {
-    "route": "phunlang/grammar/all",
-    "title": "雰語文法"
-  },
-  {
     "route": "phunlang/name",
     "title": "雰名"
   },
@@ -139,8 +135,16 @@
     "title": "バベルの塔"
   },
   {
+    "route": "phunlang/texts/end_poem",
+    "title": "End Poem"
+  },
+  {
     "route": "phunlang/texts/internationale",
     "title": "L'Internationale"
+  },
+  {
+    "route": "phunlang/texts/library_prayer",
+    "title": "大図書館教の祈り"
   },
   {
     "route": "phunlang/texts/lords_prayer",
@@ -151,8 +155,48 @@
     "title": "SCP財団とは"
   },
   {
+    "route": "phunlang/texts/unicat",
+    "title": "unicat"
+  },
+  {
     "route": "various",
     "title": "がらくた箱"
+  },
+  {
+    "route": "en",
+    "title": "Welcome!"
+  },
+  {
+    "route": "en/conlang",
+    "title": "Conlanging"
+  },
+  {
+    "route": "en/download",
+    "title": "Warehouse"
+  },
+  {
+    "route": "en/download/font",
+    "title": "Fonts"
+  },
+  {
+    "route": "en/download/gallery",
+    "title": "Gallery"
+  },
+  {
+    "route": "en/ikenolog",
+    "title": "Ikenolog"
+  },
+  {
+    "route": "en/ikenolog/archives",
+    "title": "Archives"
+  },
+  {
+    "route": "en/ikenolog/tags",
+    "title": "Tags"
+  },
+  {
+    "route": "en/links",
+    "title": "Links"
   },
   {
     "route": "phun",
@@ -165,6 +209,10 @@
   {
     "route": "clock",
     "title": "永球時計"
+  },
+  {
+    "route": "clock-widget",
+    "title": "配信用雰時計"
   },
   {
     "route": "tools",

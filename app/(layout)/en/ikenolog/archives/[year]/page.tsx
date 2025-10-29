@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
-import { ArticleList } from "../../components"
-import { yearSearch } from "../../components"
+import { ArticleList } from "@/(layout)/(ja)/ikenolog/components"
+import { yearSearch } from "@/(layout)/(ja)/ikenolog/components"
 
-import articles from '../../articles.json'
+import articles from '@/(layout)/(ja)/ikenolog/articles.json'
 
 const Page = ({ params }: { params: { year: string } }) => {
     const result = yearSearch(articles, params.year)

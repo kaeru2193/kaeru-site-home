@@ -50,7 +50,7 @@ export const Header = (props: {data: langTexts}) => {
 export const Footer = (props: {data: langTexts}) => {
     const [countData, setCountData]: any = useState("")
     const [kiriban, setKiriban] = useState(false)
-/*
+
     useEffect(() => {
         const access = async () => {
           try {
@@ -71,7 +71,7 @@ export const Footer = (props: {data: langTexts}) => {
     
         access()
       }, []);
-*/
+
     return (
         <div className={style.footer}>
             <p className={`${style.copyright} defFont`}>© 2021-2025 kaeru2193</p>

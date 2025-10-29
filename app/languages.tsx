@@ -112,7 +112,7 @@ export const langParse = () => {
     const paths = usePathname().slice(1).split("/").filter(l => l)
     const [lang, pagePath] = Object.hasOwn(langData, paths[0]) //URLを見て言語版を判断
       ?[paths[0], paths.slice(1)]
-      :["ja", paths]
+      :["", paths]
 
     return {
         lang,
