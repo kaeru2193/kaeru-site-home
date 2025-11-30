@@ -1,8 +1,8 @@
+import "./global.css"
+
 import { MetaOGP } from "./layout.ogp"
 
 export const dynamic = 'force-dynamic'
-
-import "./global.css"
 
 const url = 'https://kaeru2193.net/';
 

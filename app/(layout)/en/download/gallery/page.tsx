@@ -69,7 +69,7 @@ const GalleryProcess = (props: any) => {
                                 className={style.image}
                             />
                         </div>
-                        <div className={style.title}>
+                        <div className={style.title + " bold"}>
                             {i.title}
                         </div>
                         <div className={style.desc}>{i.desc}</div>

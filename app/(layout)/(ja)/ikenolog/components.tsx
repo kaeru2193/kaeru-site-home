@@ -17,7 +17,7 @@ export const ArticleList = (props: {list: any[]}) => props.list.map(a =>
     <div className={style.articleCardContainer} key={a.id}>
         <Link className={style.articleLink} href={`/ikenolog/${a.id}`}>
             <div className={style.articleCard}>
-                <div className={style.articleTitle}>{a.data.title}</div>
+                <div className={style.articleTitle + " bold"}>{a.data.title}</div>
                 <TopInfo date={a.data.date} tags={a.data.tags} disableLink/>
                 <div className={style.articleDesc}>{a.data.outline}</div>
             </div>
@@ -129,7 +129,7 @@ export const ArchiveList = (props: {list: any[]}) => {
     return <div className={style.archiveList}>
         {sorted.map(y =>
             <>
-            <div className={style.yearArchive}><Link href={`/ikenolog/archives/${y.name}`} key={y.name}>
+            <div className={style.yearArchive + " bold"}><Link href={`/ikenolog/archives/${y.name}`} key={y.name}>
                 <div>{y.name} ({y.count})</div>
             </Link></div>
             {y.list.map((m: any) =>

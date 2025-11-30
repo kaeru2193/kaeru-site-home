@@ -6,10 +6,10 @@ import { langParse } from "./languages"
 
 export const NotFound = (props: {message: any}) => {
     return (
-        <div className={style.mainContainer}>
+        <div className={style.mainContainer + " marugothic"}>
             <div className={style.box}>
                 <Image className={style.icon} src="/kaeru_logo.svg" alt="logo" height={100} width={100}/>
-                <h1 className={style.title}>{props.message.title}</h1>
+                <h1 className={style.title + " bold"}>{props.message.title}</h1>
                 {props.message.content}
             </div>
         </div>

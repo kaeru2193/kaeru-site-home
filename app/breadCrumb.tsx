@@ -36,7 +36,7 @@ export const BreadCrumb = (props: {lang: string, paths: string[]}) => {
                 
                 {link
                   ? <Link className={style.link} href={`/${roots[idx]}`}>{decodeURI(linkTitle!)}</Link>
-                  : <span className={style.presentPage}>{decodeURI(linkTitle!)}</span>
+                  : <span className={style.presentPage + " bold"}>{decodeURI(linkTitle!)}</span>
                 }
               </span>
             </>

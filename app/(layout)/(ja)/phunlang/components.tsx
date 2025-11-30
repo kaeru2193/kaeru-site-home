@@ -123,7 +123,7 @@ const DictContent = (props: any) => {
     return (
         <>
             <span className={style.popTop}>
-                <span className={style.popEntry}>{info.word}</span>
+                <span className={style.popEntry + " bold"}>{info.word}</span>
                 <span className={style.popKanji}>【{info.word}】</span>
                 <span className={style.popPron}>{info.latinPron}</span>
             </span>

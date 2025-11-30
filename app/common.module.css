@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;900&display=swap');
+
 .header {
     width: 100%;
     background-color: var(--kaeru-main);

@@ -23,22 +23,22 @@ export const Header = (props: {data: langTexts}) => {
                     </div>
                 </Link>
                 <div className={style.topLinks}>
-                    {props.data.header.map(l => <a href={l.url}><div>{l.title}</div></a>)}
+                    {props.data.header.map(l => <a className="bold" href={l.url}><div>{l.title}</div></a>)}
                 </div>
                 <div className={style.langSelect}>
                     <BsGlobe />
                     <ul className={style.langList}>
                         <li>
-                            <a href="/"><span className="defFont">日本語</span></a>
+                            <a href="/"><span className="marugothic">日本語</span></a>
                         </li>
                         <li>
                             <a href="/phun"><span className="phun">栄言</span></a>
                         </li>
                         <li>
-                            <a href="/tok"><span className="defFont">toki pona</span></a>
+                            <a href="/tok"><span className="zenMarugothic">toki pona</span></a>
                         </li>
                         <li>
-                            <a href="/en"><span className="defFont">English</span></a>
+                            <a href="/en"><span className="zenMarugothic">English</span></a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +77,7 @@ export const Footer = (props: {data: langTexts}) => {
             <p className={`${style.copyright} defFont`}>© 2021-2025 kaeru2193</p>
             <div className={style.count}>
                 {kiriban
-                    ? <div className={style.message}>
+                    ? <div className={style.message + " bold"}>
                         {reactStringReplace(
                             props.data.kiribanText,
                             /(###)/g,
@@ -98,7 +98,7 @@ const AnimeIcon = (props: any) => {
         return <div className={style.animeIconBox}>
             <Image className={style.icon} src="/kaeru_logo.svg" height={60} width={60} alt="kaeru icon"/>
             <span className={style.titleBox}>
-                <span className={style.title}>{props.name}</span>
+                <span className={style.title + " bold"}>{props.name}</span>
             </span>
         </div>
     }
@@ -164,7 +164,7 @@ const AnimeIcon = (props: any) => {
         <defs/>
     </svg></span>
         <span className={style.titleBox}>
-            <span className={`${style.title} ${titleAnime? style.animeShow :style.animeHide}`}>{props.name}</span>
+            <span className={`${style.title + " bold"} ${titleAnime? style.animeShow :style.animeHide}`}>{props.name}</span>
         </span>
     </div>)
 }
@@ -184,11 +184,11 @@ export const PhunClock = (props: any) => {
         };
     })
 
-    const scale = width / 750 //時計の縮尺
+    const scale = width / 680 //時計の縮尺
 
     return (
-        <div className={style.clockBase}>
-            <PhunClockCore/>
+        <div className={style.clockBase} style={{transform: `scale(${scale > 0.8 ?0.8 :scale})`}}>
+            <a href="/clock"><PhunClockCore/></a>
         </div>
     )
 }

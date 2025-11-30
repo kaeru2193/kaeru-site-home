@@ -1,7 +1,7 @@
 "use client"
 
 import style from "./page.module.css"
-import { SiteLinkList } from "@/link"
+import { SiteLinkList, MutualLink } from "@/link"
 import { PhunClock } from "@/common"
 
 import { NewsList } from "./news/news"
@@ -114,7 +114,7 @@ const Page = () => {
             </ul>
 
             <h3>連絡先</h3>
-            <p>かえるへの最も早く確実な連絡先はDiscordのDMです。</p>
+            <p>かえるへの最も早く確実な連絡方法はDiscordのDMです。</p>
             <ul>
                 <li>Discord: @kaeru2193</li>
                 <li>X/Twitter: @kaeru2193</li>
@@ -127,9 +127,21 @@ const Page = () => {
             <h2>相互リンク</h2>
             <p>敬称略。追加/削除の要望は、上の連絡先までお願いします。</p>
             <ul className={style.mutualLinkList}>
-                <li><a href="https://epikijetesantakalu.github.io">lipu epikijetesantakalu</a> (epikijetesantakalu)</li>
-                <li><a href="https://www.tktb-tess.dev">悠久肆方体</a> (斗琴庭暁響)</li>
-                <li><a href="https://mikanixonable.github.io"><img src="https://mikanixonable.github.io/banner.png" width={200} height={40} alt="月面植物園" /></a> (みかぶる)</li>
+                <li>
+                    <a href="https://epikijetesantakalu.github.io">
+                        <MutualLink name="lipu epikijetesantakalu" size={1}/>
+                    </a><span>(epikijetesantakalu)</span>
+                </li>
+                <li>
+                    <a href="https://www.tktb-tess.dev">
+                        <MutualLink name="悠久肆方体" size={1.3}/>
+                    </a><span>(斗琴庭暁響)</span>
+                </li>
+                <li>
+                    <a href="https://mikanixonable.github.io">
+                        <img src="https://mikanixonable.github.io/banner.png" width={200} height={40} alt="月面植物園" />
+                    </a><span>(みかぶる)</span>
+                </li>
             </ul>
 
             <h2>サイトバナー</h2>

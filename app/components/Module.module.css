@@ -1,14 +1,14 @@
-.phunPron {
+.phunPron, .phunPron * {
     font-size: 0.8rem;
     font-family: 'Noto Serif JP', serif;
     padding-left: 5px;
 }
 
-.phunText {
+.phunText, .phunText * {
     font-family: 'Noto Serif JP', serif;
 }
 
-.phunMisqo {
+.phunMisqo, .phunMisqo * {
     font-family: 'Phun-Sans', 'Noto Serif JP', serif;
     font-size: 0.9rem;
 }

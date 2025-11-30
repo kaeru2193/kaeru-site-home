@@ -23,6 +23,7 @@ const Page = () => {
                 <li><a href="https://www.youtube.com/@kaeru2193">Youtube</a></li>
                 <li><a href="https://www.reddit.com/user/kaeru2193">Reddit</a></li>
                 <li><a href="https://vrchat.com/home/user/usr_d176c0ff-0f24-4aff-ba50-75a777165334">VRChat</a></li>
+                <li><a href="https://bookmeter.com/users/1645635">読書メーター</a></li>
             </ul>
             <h2>人工言語界隈関連</h2>
             <ul>

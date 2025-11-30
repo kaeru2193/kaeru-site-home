@@ -1,5 +1,5 @@
 import Link from "next/link"
-import linkCSS from "./link.module.css"
+import style from "./link.module.css"
 import { usePathname } from "next/navigation";
 
 export const RelativeLink = (props: {href: string}) => {
@@ -11,19 +11,19 @@ export const SiteLink = (props: any) => {
     
     if (props.reload) {
         linkElem =
-            <a href={props.url} className={linkCSS.link}>
-                <div className={linkCSS.title}>{props.title}</div>
-                <div className={linkCSS.desc}>{props.desc}</div>
+            <a href={props.url} className={style.link}>
+                <div className={style.title + " bold"}>{props.title}</div>
+                <div className={style.desc}>{props.desc}</div>
             </a>
     } else {
         linkElem =
-            <Link href={props.url} className={linkCSS.link}>
-                <div className={linkCSS.title}>{props.title}</div>
-                <div className={linkCSS.desc}>{props.desc}</div>
+            <Link href={props.url} className={style.link}>
+                <div className={style.title + " bold"}>{props.title}</div>
+                <div className={style.desc}>{props.desc}</div>
             </Link>
     }
     return (
-        <div className={linkCSS.card}>
+        <div className={style.card}>
             {linkElem}
         </div>
     )
@@ -36,5 +36,15 @@ export const SiteLinkList = (props: any) => {
                 return <SiteLink title={e.name} desc={e.desc} url={e.url} key={e.name} reload={e.reload}/>
             })}
         </div>
+    )
+}
+
+export const MutualLink = (props: {name: string, size: number})  => {
+    return (
+        <span className={style.mutualLink}
+            style={{fontSize: `${props.size}rem`}}
+        >
+            {props.name}
+        </span>
     )
 }

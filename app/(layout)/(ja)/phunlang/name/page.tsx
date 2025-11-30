@@ -10,7 +10,7 @@ const Page = () => {
                 現代における雰名は、「家名 + 小名」の2部分で構成される。家名は家系ごとに共通して使用されるもので、一字のものが多数を占める。二字の家名も小数だがある程度は存在し、割合は漢姓のそれよりも多い。三字以上の家名はほぼ全てが雰民族以外に由来するものであり、雰人の姓として存在することは滅多に無い。
             </p>
             <p>
-                雰天国内で多い家名には上位から<span className="phun">広</span> (広 Dúa)、<span className="phun">青</span> (青 Qâi)、<span className="phun">明</span> (明 Nú)などがある。上位100位までの家名が総人口の7割を占めるとされる。
+                雰天国内で多い家名には上位から<span className="phun">広</span> (<span className="serif">広 Dúa</span>)、<span className="phun">青</span> (<span className="serif">青 Qâi</span>)、<span className="phun">明</span> (明 Nú)などがある。上位100位までの家名が総人口の7割を占めるとされる。
             </p>
             <p>
                 小名は個人ごとに与えられる名であり、比較的自由度が高い。古代には小名に当たる部分は一字である事が原則であったが、現代では二字が主流になっている。小名には植物や自然に関連する雰字が用いられることも多い。
@@ -100,7 +100,7 @@ const Page = () => {
                         <td><span className="phun">桜 晴葉</span></td>
                         <td><span className="serif">桜 晴葉</span></td>
                         <td><span className="serif">Túo Zênpûa</span></td>
-                        <td><Link href="https://x.com/jan__Keta">epikijetesantakalu Keta</Link></td>
+                        <td><Link href="https://epiku.net">epikijetesantakalu Lili</Link></td>
                         <td>2024/10/24</td>
                     </tr>
                     <tr>

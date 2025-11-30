@@ -118,6 +118,19 @@
     display: inline;
 }
 
+.mutualLinkList span {
+    text-wrap: nowrap;
+}
+
+.mutualLinkList a {
+    margin-right: 10px;
+    transition: opacity 0.2s;
+}
+
+.mutualLinkList a:hover {
+    opacity: 0.8;
+}
+
 .kaeruBanner {
     display: inline;
 }

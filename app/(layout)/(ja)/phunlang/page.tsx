@@ -5,7 +5,7 @@ const Page = () => {
     return (
         <>
             <h1>雰語</h1>
-            <p className={`${style.phunText} phun`}>栄言為、現書使我然之言。</p>
+            <p className={`${style.phunText} bold phun`}>栄言為、現書使我然之言。</p>
             <p><b>雰語</b>（ふんご、雰：<span className="phun">栄字</span>、雰音：fúnbùn、英：Phun Language）は、かえるにより2021/1/13から制作されている人工言語である。</p>
             <h2>主要な特徴</h2>
             <ul>

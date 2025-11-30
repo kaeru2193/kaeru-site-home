@@ -11,9 +11,9 @@ const Page = () => {
             <h1>池ノ録</h1>
             <div className={style.mainContainer}>
                 <div className={style.navigationContainer}>
-                    <div className={style.navigateTitle}>タグ</div>
+                    <div className={style.navigateTitle + " bold"}>タグ</div>
                     <TagList list={articles}/>
-                    <div className={style.navigateTitle}>アーカイブ</div>
+                    <div className={style.navigateTitle + " bold"}>アーカイブ</div>
                     <ArchiveList list={articles}/>
                 </div>
                 <div className={style.articleContainer}>
