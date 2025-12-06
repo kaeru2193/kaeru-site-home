@@ -3,6 +3,7 @@
 import style from "../(ja)/page.module.css"
 import { SiteLinkList } from "@/link"
 import { PhunClock } from "@/common"
+import Link from "next/link"
 
 const snsData =
     [
@@ -13,11 +14,11 @@ const snsData =
         {id: "gih", name: "Github", url: "https://github.com/kaeru2193"},
         {id: "ste", name: "Steam", url: "https://steamcommunity.com/profiles/76561199224206180/"},
         {id: "bls", name: "Bluesky", url: "https://bsky.app/profile/kaeru2193.net"},
-        {id: "bmc", name: "Buy Me a Coffee", url: "https://www.buymeacoffee.com/kaeru2193"},
-        {id: "plx", name: "Phun Wordbot", url: "https://twitter.com/PhunLanguage"},
         {id: "rdi", name: "Reddit", url: "https://www.reddit.com/user/kaeru2193"},
         {id: "mig", name: "Migdal", url: "https://migdal.jp/kaeru2193"},
         {id: "bga", name: "BGA", url: "https://boardgamearena.com/player?name=kaeru2193"},
+        {id: "zpd", name: "ZpDIC", url: "https://zpdic.ziphil.com/user/kaeru"},
+        {id: "oth", name: "Other links", url: "./links"}
     ]
 
 const siteData = 
@@ -47,15 +48,15 @@ const Page = () => {
                 {snsData.map(e => {
                     return (
                         <div className={`${style.item} ${style[e.id]}`} key={e.id}>
-                            <a className={style.link} href={e.url} target="_blank">
+                            {e.id == "oth"
+                            ? <Link className={style.link} href={e.url}>
                                 {e.name}
-                            </a>
+                            </Link>
+                            : <a className={style.link} href={e.url} target="_blank">
+                                {e.name}
+                            </a>}
                         </div>)
                 })}
-            </div>
-
-            <div className={style.otherLink}>
-                <a href="./links">Other links can be found here</a>
             </div>
 
             <h2>Site Navigation</h2>

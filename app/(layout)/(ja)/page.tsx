@@ -6,6 +6,7 @@ import { PhunClock } from "@/common"
 
 import { NewsList } from "./news/news"
 import { newsData } from "@/news"
+import Link from "next/link"
 
 const snsData =
     [
@@ -16,11 +17,11 @@ const snsData =
         {id: "gih", name: "Github", url: "https://github.com/kaeru2193"},
         {id: "ste", name: "Steam", url: "https://steamcommunity.com/profiles/76561199224206180/"},
         {id: "bls", name: "Bluesky", url: "https://bsky.app/profile/kaeru2193.net"},
-        {id: "bmc", name: "Buy Me a Coffee", url: "https://www.buymeacoffee.com/kaeru2193"},
-        {id: "plx", name: "雰言訓機", url: "https://twitter.com/PhunLanguage"},
         {id: "rdi", name: "Reddit", url: "https://www.reddit.com/user/kaeru2193"},
         {id: "mig", name: "Migdal", url: "https://migdal.jp/kaeru2193"},
         {id: "bga", name: "BGA", url: "https://boardgamearena.com/player?name=kaeru2193"},
+        {id: "zpd", name: "ZpDIC", url: "https://zpdic.ziphil.com/user/kaeru"},
+        {id: "oth", name: "その他のリンク", url: "/links"}
     ]
 
 const siteData = 
@@ -51,15 +52,15 @@ const Page = () => {
                 {snsData.map(e => {
                     return (
                         <div className={`${style.item} ${style[e.id]}`} key={e.id}>
-                            <a className={style.link} href={e.url} target="_blank">
+                            {e.id == "oth"
+                            ? <Link className={style.link} href={e.url}>
                                 {e.name}
-                            </a>
+                            </Link>
+                            : <a className={style.link} href={e.url} target="_blank">
+                                {e.name}
+                            </a>}
                         </div>)
                 })}
-            </div>
-
-            <div className={style.otherLink}>
-                <a href="/links">他のリンクはこちらから</a>
             </div>
 
             <h2>館内案内</h2>
@@ -128,8 +129,8 @@ const Page = () => {
             <p>敬称略。追加/削除の要望は、上の連絡先までお願いします。</p>
             <ul className={style.mutualLinkList}>
                 <li>
-                    <a href="https://epikijetesantakalu.github.io">
-                        <MutualLink name="lipu epikijetesantakalu" size={1}/>
+                    <a href="https://epiku.net/">
+                        <img src="https://epiku.net/sitelen/88x31.gif" height="70px" alt="epiku.net"/>
                     </a><span>(epikijetesantakalu)</span>
                 </li>
                 <li>

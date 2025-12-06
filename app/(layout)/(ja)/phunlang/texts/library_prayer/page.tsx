@@ -19,7 +19,7 @@ const Page = () => {
             <h1>大図書館教の祈り</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>大図書館教の祈り</b>（雰題：<span className="phun"><b>集帳家在時端然祈言</b></span>）</p>
+            <p><b>大図書館教の祈り</b>（雰題：<b><span className="phun">集帳家在時端然祈言</span></b>）</p>
 
             <p><a href="https://bsky.app/profile/licjar.bsky.social/post/3lpli5uo2k22i">りちゃさんの2025/05/20の投稿</a>より。みかぶるさんの<a href="https://mikanixonable.github.io/184.html">この世の終わりの大図書館教</a>の祈り。</p>
 

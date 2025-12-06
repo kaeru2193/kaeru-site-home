@@ -22,7 +22,7 @@ const Page = () => {
             <h1>主の祈り</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『主の祈り』</b>（雰題：<span className="phun"><b>天祈言</b></span>）</p>
+            <p><b>『主の祈り』</b>（雰題：<b><span className="phun">天祈言</span></b>）</p>
 
             <h2>訳文</h2>
             <DictPop text={content} use={useDict}/>

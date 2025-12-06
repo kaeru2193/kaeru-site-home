@@ -5,8 +5,8 @@
     margin: 15px auto;
     grid-template-areas:
         "dis bga bls ste"
-        "plx twi gih mig"
-        "mis bmc rdi you";
+        "mis twi gih mig"
+        "zpd rdi you oth";
 }
 
 .item {
@@ -80,10 +80,9 @@
     background-color: #1083fe;
 }
 
-.bmc {
-    grid-area: bmc;
-    background-color: #ffdd00;
-    color: black;
+.zpd {
+    grid-area: zpd;
+    background-color: #7a4109;
 }
 
 .plx {
@@ -106,16 +105,15 @@
     background-color: #457ece;
 }
 
-.otherLink {
-    text-align: right;
-}
-
-.otherLink a {
-    font-size: 0.9rem;
+.oth {
+    grid-area: oth;
+    background-color: #c0c0c0;
+    color: black
 }
 
 .mutualLinkList img {
-    display: inline;
+    display: inline-block;
+    height: 40px;
 }
 
 .mutualLinkList span {
@@ -138,10 +136,10 @@
 @media screen and (max-width: 834px) {
     .grid {
         grid-template-areas:
-            "mis plx dis"
-            "bmc twi bga"
-            "rdi gih bls"
-            "you mig ste";
+            "dis mis zpd"
+            "bga twi rdi"
+            "bls gih you"
+            "ste mig oth";
     }
 }
 
@@ -150,10 +148,10 @@
         grid-template-areas:
             "dis bga"
             "bls ste"
-            "plx twi"
+            "mis twi"
             "gih mig"
-            "mis bmc"
-            "rdi you";
+            "zpd rdi"
+            "you oth";
     }
 }
 
@@ -165,14 +163,14 @@
             "bga"
             "bls"
             "ste"
-            "plx"
+            "mis"
             "twi"
             "gih"
-            "mis"
             "mig"
-            "bmc"
+            "zpd"
             "rdi"
-            "you";
+            "you"
+            "oth";
     }
 
     .item {
@@ -182,11 +180,11 @@
         border-radius: 0;
     }
 
-    .item:has( a[href*="discord"] ) {
+    .dis {
         border-radius: 0.5rem 0.5rem 0 0;
     }
 
-    .item:has( a[href*="youtube"] ) {
+    .oth {
         border-radius: 0 0 0.5rem 0.5rem;
     }
 }

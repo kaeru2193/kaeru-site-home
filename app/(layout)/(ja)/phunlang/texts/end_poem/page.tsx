@@ -90,7 +90,7 @@ const Page = () => {
             <h1>End Poem</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『End Poem』</b>（エンド・ポエム、雰題：<span className="phun"><b>後端然話</b></span>）</p>
+            <p><b>『End Poem』</b>（エンド・ポエム、雰題：<b><span className="phun">後端然話</span></b>）</p>
             <p>ゲーム『Minecraft』で、クリア後に流れる一連の文章。</p>
             <p><a href="https://theendpoem.com">原文（公式サイト）</a></p>
 

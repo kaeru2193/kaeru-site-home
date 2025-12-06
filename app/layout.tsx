@@ -27,6 +27,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </head>
       <body>
+        <div itemScope itemType="https://schema.org/WebSite"> {/*google検索用にサイト名を指定*/}
+          <link itemProp="url" href="https://kaeru2193.net" />
+          <meta itemProp="name" content="之機堂"/>
+        </div>
         {children}
       </body>
     </html>

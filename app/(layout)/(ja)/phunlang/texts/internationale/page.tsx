@@ -26,7 +26,7 @@ const Page = () => {
             <h1>L'Internationale</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『L'Internationale』</b>（インターナショナル、雰題：<span className="phun"><b>万国歌</b></span>）</p>
+            <p><b>『L'Internationale』</b>（インターナショナル、雰題：<b><span className="phun">万国歌</span></b>）</p>
 
             <h2>訳文</h2>
             <DictPop text={content} use={useDict}/>

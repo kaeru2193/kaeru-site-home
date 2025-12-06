@@ -29,7 +29,7 @@ const Page = () => {
             <ul>
                 <li><a href="https://migdal.jp/kaeru2193">Migdal</a></li>
                 <li><a href="https://zpdic.ziphil.com/user/kaeru">ZpDIC</a></li>
-                <li><a href="https://wiki.conlinguistics.jp/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru2193">人工言語学Wiki</a></li>
+                <li><a href="https://wiki.conlinguistics.jp/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru2193">人工言語学Wiki利用者ページ</a></li>
             </ul>
             <h2>技術関連</h2>
             <ul>
@@ -38,10 +38,12 @@ const Page = () => {
             </ul>
             <h2>その他</h2>
             <ul>
+                <li><a href="https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru-2193">Wikipedia利用者ページ</a></li>
                 <li><a href="https://suzuri.jp/kaeru2193">SUZURI</a></li>
                 <li><a href="https://buymeacoffee.com/kaeru2193">Buy me a coffee</a></li>
                 <li><a href="https://steamcommunity.com/profiles/76561199224206180/">Steam</a></li>
                 <li><a href="https://boardgamearena.com/player?name=kaeru2193">Board Game Arena</a></li>
+                <li><a href="https://www.duolingo.com/profile/kaeru2193">Duolingo</a></li>
             </ul>
         </>
     )

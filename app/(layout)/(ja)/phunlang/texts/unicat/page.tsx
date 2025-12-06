@@ -24,7 +24,7 @@ const Page = () => {
             <h1>unicat</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『unicat』</b>（雰題：<span className="phun"><b>猫天慶</b></span>）</p>
+            <p><b>『unicat』</b>（雰題：<b><span className="phun">猫天慶</span></b>）</p>
             <p><a href="https://conlinguistics.org/arka/works_lem_5_4_1.html">原詞（人工言語アルカ公式サイト）</a></p>
 
             <h2>訳文</h2>

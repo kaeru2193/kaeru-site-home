@@ -23,7 +23,7 @@ const Page = () => {
             <h1>バベルの塔</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『バベルの塔』</b>（雰題：<span className="phun"><b>領家基高家</b></span>）</p>
+            <p><b>『バベルの塔』</b>（雰題：<b><span className="phun">領家基高家</span></b>）</p>
 
             <h2>訳文</h2>
             <DictPop text={content} use={useDict}/>

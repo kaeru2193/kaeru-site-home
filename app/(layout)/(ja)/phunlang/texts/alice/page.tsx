@@ -22,7 +22,7 @@ const Page = () => {
             <h1>Alice's Adventures in Wonderland</h1>
             <DictCheckBox use={useDict} setUse={setUseDict}/>
 
-            <p><b>『Alice's Adventures in Wonderland』</b>（雰題：<span className="phun"><b>竹六遊領奇録</b></span>）</p>
+            <p><b>『Alice's Adventures in Wonderland』</b>（雰題：<b><span className="phun">竹六遊領奇録</span></b>）</p>
 
             <h2>訳文</h2>
             <DictPop text={content} use={useDict}/>

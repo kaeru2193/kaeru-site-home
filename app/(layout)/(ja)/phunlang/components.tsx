@@ -81,7 +81,7 @@ const DictPopPanel = (props: any) => {
     }
 
     return (
-        <span className={style.word}>
+        <span className={`${style.word} defFont`}>
             <span
                 className={style.dictPop}
                 ref={popUp}
@@ -123,9 +123,9 @@ const DictContent = (props: any) => {
     return (
         <>
             <span className={style.popTop}>
-                <span className={style.popEntry + " bold"}>{info.word}</span>
-                <span className={style.popKanji}>【{info.word}】</span>
-                <span className={style.popPron}>{info.latinPron}</span>
+                <span className={`${style.popEntry} bold`}>{info.word}</span>
+                <span className={`${style.popKanji} serif`}>【{info.word}】</span>
+                <span className={`${style.popPron} serif`}>{info.latinPron}</span>
             </span>
             <span className={style.popContent}>
                 {info.mean.map((m: any, idx: number) => <span className={style.popMeanRow} key={idx}>

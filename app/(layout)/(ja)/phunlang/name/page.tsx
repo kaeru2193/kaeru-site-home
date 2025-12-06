@@ -10,7 +10,7 @@ const Page = () => {
                 現代における雰名は、「家名 + 小名」の2部分で構成される。家名は家系ごとに共通して使用されるもので、一字のものが多数を占める。二字の家名も小数だがある程度は存在し、割合は漢姓のそれよりも多い。三字以上の家名はほぼ全てが雰民族以外に由来するものであり、雰人の姓として存在することは滅多に無い。
             </p>
             <p>
-                雰天国内で多い家名には上位から<span className="phun">広</span> (<span className="serif">広 Dúa</span>)、<span className="phun">青</span> (<span className="serif">青 Qâi</span>)、<span className="phun">明</span> (明 Nú)などがある。上位100位までの家名が総人口の7割を占めるとされる。
+                雰天国内で多い家名には上位から<span className="phun">広</span> (<span className="serif">広 Dúa</span>)、<span className="phun">青</span> (<span className="serif">青 Qâi</span>)、<span className="phun">明</span> (<span className="serif">明 Nú</span>)などがある。上位100位までの家名が総人口の7割を占めるとされる。
             </p>
             <p>
                 小名は個人ごとに与えられる名であり、比較的自由度が高い。古代には小名に当たる部分は一字である事が原則であったが、現代では二字が主流になっている。小名には植物や自然に関連する雰字が用いられることも多い。
@@ -21,7 +21,7 @@ const Page = () => {
             </p>
             <h2>雰名保持者一覧</h2>
             <p>
-                2025年02月現在、14名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
+                2025年02月現在、17名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
             </p>
 
             <div className="tableBox"><table>
@@ -123,6 +123,27 @@ const Page = () => {
                         <td><span className="serif">Xûyâo Zùngwíl</span></td>
                         <td><Link href="https://tktb-tess.github.io/">斗琴庭暁響</Link></td>
                         <td>2025/02/01</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">月 饅芋</span></td>
+                        <td><span className="serif">月 饅芋</span></td>
+                        <td><span className="serif">Vò Gáongsùa</span></td>
+                        <td><Link href="https://x.com/imomo_ti">いももち</Link></td>
+                        <td>2025/12/06</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">幕 南航</span></td>
+                        <td><span className="serif">幕 南航</span></td>
+                        <td><span className="serif">Làn Jîngtûm</span></td>
+                        <td><Link href="https://x.com/KateOgaki">大垣藝斗</Link></td>
+                        <td>2025/12/06</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">澄 水宇</span></td>
+                        <td><span className="serif">澄 水宇</span></td>
+                        <td><span className="serif">Núang Sôdúo</span></td>
+                        <td><Link href="https://x.com/soran0831">soran0831</Link></td>
+                        <td>2025/12/06</td>
                     </tr>
                 </tbody>
             </table></div>

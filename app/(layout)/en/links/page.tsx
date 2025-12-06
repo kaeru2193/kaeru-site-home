@@ -9,14 +9,14 @@ const Page = () => {
                 <li><a href="https://x.com/kaeru2193">X / Twitter</a></li>
                 <li><a href="https://bsky.app/profile/kaeru2193.net">Bluesky</a></li>
                 <li><a href="https://misskey.io/@kaeru2193">Misskey</a></li>
-                <li><a href="https://x.com/PhunLanguage">雰言訓機 (X)</a> … A bot that posts Phun language words every hour</li>
-                <li><a href="https://bsky.app/profile/phunlanguage.bsky.social">雰言訓機 (Bluesky)</a> … The Bluesky version of the aforementioned bot</li>
+                <li><a href="https://x.com/PhunLanguage">Phun Wordbot (X)</a> … A bot that posts Phun language words every hour</li>
+                <li><a href="https://bsky.app/profile/phunlanguage.bsky.social">Phun Wordbot (Bluesky)</a> … The Bluesky version of the aforementioned bot</li>
             </ul>
             <h2>Discord</h2>
             <ul>
                 <li><a href="https://discord.com/users/896664884186607706">Discord user page</a></li>
-                <li><a href="https://discord.gg/tHhA4bBYap">雷家向雰民 (Màinbé Vû Fúnzôm)</a> … The Discord community for Phun creation</li>
-                <li><a href="https://discord.gg/YQN62zxNyE">地球語くらぶ</a> … An unofficial Discord commyunity for <a href="https://www.earthlanguage.org/jWhat.htm">Earth Language</a></li>
+                <li><a href="https://discord.gg/tHhA4bBYap">Màinbé Vû Fúnzôm (雷家向雰民)</a> … The Discord community for Phun creation</li>
+                <li><a href="https://discord.gg/YQN62zxNyE">Earth Language Club (地球語くらぶ)</a> … An unofficial Discord commyunity for <a href="https://www.earthlanguage.org/english/EnWhat.htm">Earth Language</a></li>
             </ul>
             <h2>Other SNS</h2>
             <ul>
@@ -37,10 +37,12 @@ const Page = () => {
             </ul>
             <h2>Other</h2>
             <ul>
+                <li><a href="https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Kaeru-2193">Wikipedia</a></li>
                 <li><a href="https://suzuri.jp/kaeru2193">SUZURI</a></li>
                 <li><a href="https://buymeacoffee.com/kaeru2193">Buy me a coffee</a></li>
                 <li><a href="https://steamcommunity.com/profiles/76561199224206180/">Steam</a></li>
                 <li><a href="https://boardgamearena.com/player?name=kaeru2193">Board Game Arena</a></li>
+                <li><a href="https://www.duolingo.com/profile/kaeru2193">Duolingo</a></li>
             </ul>
         </>
     )
