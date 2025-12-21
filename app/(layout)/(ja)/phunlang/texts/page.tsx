@@ -16,6 +16,7 @@ const Page = () => {
                 <li><Link href="unicat">『unicat』</Link></li>
                 <li><Link href="library_prayer">大図書館教の祈り</Link></li>
                 <li><Link href="end_poem">『End Poem』</Link></li>
+                <li><Link href="iwashi">『イワシがつちからはえてくるんだ』</Link></li>
             </ul>
         </>
     )
