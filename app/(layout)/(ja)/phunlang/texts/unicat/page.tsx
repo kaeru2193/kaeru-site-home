@@ -37,7 +37,7 @@ const Page = () => {
             <LatinPron text={content}/>
 
             <h2>歌唱</h2>
-            <p>以下の動画で、Synthesizer Vによる楽曲の歌唱を試聴することができます。</p>
+            <p>以下の動画で、雰語歌詞によるCoverを試聴することができます。</p>
             <div className="youtubeEmbed">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-6N8O15SbXQ?si=HU-INat7rEniJtc3" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
