@@ -19,9 +19,12 @@ const Page = () => {
             <p>
                 本来雰名を持たない者が雰風の名義を創作する場合、家名にはその人物の象徴となるような自然物・植物・色彩・概念などを、小名にはその人物の気質や性格、また家名から連想される概念、更に誕生日などから五材に関わる字などを用いることが好まれる。また、親族が既に雰名保持者である場合にはそこから派生した雰名を付けることもある。
             </p>
-            <h2>雰名保持者一覧</h2>
             <p>
-                2025年02月現在、17名が公式の雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
+                現界においては、かえるにより雰名の贈名が行われている。これらは現界で完結するものであって、雰界には何ら影響を及ぼさないため、<Link href={"/phuncreation/#理念"}>雰界創作の理念</Link>には反していない。
+            </p>
+            <h2>贈名一覧</h2>
+            <p>
+                2025年02月現在、20名がかえるにより贈名された雰名（雰風名義）を保持している。以下で付与年月日の古い順に雰名保持者を示す。（敬称略）
             </p>
 
             <div className="tableBox"><table>
@@ -144,6 +147,27 @@ const Page = () => {
                         <td><span className="serif">Núang Sôdúo</span></td>
                         <td><Link href="https://x.com/soran0831">soran0831</Link></td>
                         <td>2025/12/06</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">光 希雪</span></td>
+                        <td><span className="serif">光 希雪</span></td>
+                        <td><span className="serif">Mâm Yûalnán</span></td>
+                        <td><Link href="https://www.nicovideo.jp/user/129689788">yuzuru_sofia</Link></td>
+                        <td>2025/12/30</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">秋 鰻彩</span></td>
+                        <td><span className="serif">秋 鰻彩</span></td>
+                        <td><span className="serif">Mél Dùanggûo</span></td>
+                        <td>きゃん</td>
+                        <td>2026/01/08</td>
+                    </tr>
+                    <tr>
+                        <td><span className="phun">蝦 柳羽</span></td>
+                        <td><span className="serif">蝦 柳羽</span></td>
+                        <td><span className="serif">Kûang Xáillèng</span></td>
+                        <td><Link href="https://x.com/saltsaltsaltaa">かばやなぎ/S.</Link></td>
+                        <td>2026/01/18</td>
                     </tr>
                 </tbody>
             </table></div>
