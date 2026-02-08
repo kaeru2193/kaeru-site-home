@@ -6,6 +6,10 @@ const Page = () => {
         <>
             <h1>雰語文庫</h1>
             <p>雰語によるテキストを閲覧できます。</p>
+            <h2>創作</h2>
+            <ul>
+                <li><Link href="xesbun">『建言』</Link></li>
+            </ul>
             <h2>翻訳</h2>
             <ul>
                 <li><Link href="alice">『Alice's Adventures in Wonderland』</Link></li>
