@@ -69,9 +69,9 @@ const Page = () => {
             <h3>Names</h3>
             <ul>
                 <li>かえる / Kaeru (kaeru2193)</li>
-                <li><span className="phun">之機</span> / Kúaàil (<a href="/phunlang">Phun</a> name)
+                <li><span className="phun">之機</span> / Kúaèl (<a href="/phunlang">Phun</a> name)
                     <ul>
-                        <li><span className="ipa">[kɯa˥.ail˨]</span> or <span className="ipa">[kʰə˧˥.ɛl˩˧]</span></li>
+                        <li><span className="ipa">[kɯa˥.ɛl˨]</span> or <span className="ipa">[kʰə˧˥.ʔel˨]</span></li>
                     </ul>
                 </li>
                 <li>akesi Kawelu (<a href="https://tokipona.org">Toki Pona</a> name)</li>
@@ -124,6 +124,11 @@ const Page = () => {
             <p>This site is link-free. Please feel free to use the banner below when linking to this site.</p>
             <a href="https://kaeru2193.net"><img src="/banner.png" width="200" height="40" alt="之機堂" /></a>
             <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner.png" width="200" height="40" alt="之機堂" /></a>`}</code></pre>
+
+            <h2>Special Thanks</h2>
+            <ul>
+                <li><Link href="https://epiku.net">epikijetesantakalu Lili</Link> – For contributing to the English translation</li>
+            </ul>
         </>
     )
 }

@@ -31,6 +31,10 @@
     "title": "ZpDICのAPIで、Discordにお手軽ランダム単語自動定期投稿チュートリアル【令和最新版】"
   },
   {
+    "route": "ikenolog/20260315",
+    "title": "雰語の音韻改定総括（2026年3月）"
+  },
+  {
     "route": "ikenolog/archives",
     "title": "アーカイブ"
   },
@@ -143,6 +147,10 @@
     "title": "L'Internationale"
   },
   {
+    "route": "phunlang/texts/iwashi",
+    "title": "イワシがつちからはえてくるんだ"
+  },
+  {
     "route": "phunlang/texts/library_prayer",
     "title": "大図書館教の祈り"
   },
@@ -157,6 +165,10 @@
   {
     "route": "phunlang/texts/unicat",
     "title": "unicat"
+  },
+  {
+    "route": "phunlang/texts/xesbun",
+    "title": "建言"
   },
   {
     "route": "various",

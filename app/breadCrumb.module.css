@@ -31,6 +31,11 @@
 
 .link {
     text-decoration: none;
+    border: none;
+}
+
+.homeLink {
+    border: none;
 }
 
 .presentPage {

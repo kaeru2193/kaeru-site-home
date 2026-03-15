@@ -1,0 +1,214 @@
+import { ScrollableImg } from "@/components"
+
+export const meta = {
+    title: "雰語の音韻改定総括（2026年3月）",
+    tags: ["雰語"],
+    date: new Date("2026-03-15T00:00:00+09:00"),
+    outline: "2026年初頭の雰語音韻改定のまとめ",
+};
+
+2026年の1月から3月にかけて、[上古雰語](https://phunworld.miraheze.org/wiki/%E4%B8%8A%E5%8F%A4%E9%9B%B0%E8%AA%9E)の時代まで遡る音韻変化史がようやくある程度確定したため、それに伴って現代標準雰語においても大規模な音韻改定を行う必要が生じた。今までの体系は2023年初頭から引き継いでいたものであったため、これほど大きな改定を行うのは3年ぶりであることになる。
+
+この記事で、今回の改定における旧来の体系からの変更点を総括する。
+
+## 音節の制限
+旧来の体系では、頭子音・母音・末子音・声調を殆ど制限なく自由に組み合わせることが可能であり、/wu/ と /yi/ の例外を除いた合計3330種類の音節が存在可能であった。新しい体系では音韻変化史を考慮すると現れ得ないような音節が多くなり、可能な音節の数は2760にまで減少した。以下が新しい体系の現代雰語で現れ得る音節の一覧である。
+
+なお、今回の改定では現代語の音素そのものは変更されていない。
+
+<ScrollableImg src="/ikenolog/20260315/01.png" height={600} alt="音節表"/>
+
+また、旧来の体系では各音素の出現頻度については特に規定が無かったが、新しい体系では上古雰語における音素の出現頻度が確定したことで、現代語についても以下の音素出現頻度が得られた。
+
+<ScrollableImg src="/ikenolog/20260315/02.png" height={400} alt="音素の出現頻度"/>
+
+全体的な傾向として、
+- 介音に由来する口蓋音と唇音 (x, q, j, f, v) は現れづらい。
+- 3つの子音が合流した w の頻度が高い。
+- 母音が多く合流した ua の頻度も高い。
+
+などが観察できる。
+
+## 語形の改定
+音節の削減によって存在できなくなった語形を入れ替え、また音素の出現頻度を調整するため、旧来の体系で作られた雰字674字の内、151字の読みが変更された。基本は声調と頭子音の変更にとどめ、韻は崩さない方針で改定を行ったが、幾つかの文字には全く新しい語形が割り当てられている。
+
+以下が、読みが変更された雰字の一覧である。
+
+<table>
+    <thead>
+        <tr><th>漢字転写</th><th>旧発音</th><th>新発音</th></tr>
+    </thead>
+    <tbody className="serif">
+        <tr><td>大</td><td>qim3</td><td>qem3</td></tr>
+        <tr><td>土</td><td>ao3</td><td>wao2</td></tr>
+        <tr><td>赤</td><td>vuos1</td><td>was1</td></tr>
+        <tr><td>去</td><td>fes2</td><td>ma2</td></tr>
+        <tr><td>一</td><td>vi1</td><td>wi1</td></tr>
+        <tr><td>三</td><td>gaol3</td><td>gal3</td></tr>
+        <tr><td>晴</td><td>zen3</td><td>jen3</td></tr>
+        <tr><td>皇</td><td>juan1</td><td>tuan1</td></tr>
+        <tr><td>左</td><td>vuo2</td><td>wo1</td></tr>
+        <tr><td>行</td><td>yaom1</td><td>yam1</td></tr>
+        <tr><td>目<sup>*1</sup></td><td>ke1</td><td>ke1 / ke2</td></tr>
+        <tr><td>居</td><td>baim3</td><td>bem3</td></tr>
+        <tr><td>神</td><td>xo2</td><td>to2</td></tr>
+        <tr><td>其</td><td>cen1</td><td>ce1</td></tr>
+        <tr><td>燃</td><td>lus3</td><td>lis1</td></tr>
+        <tr><td>現</td><td>vaim1</td><td>vam1</td></tr>
+        <tr><td>昼</td><td>jai2</td><td>tas2</td></tr>
+        <tr><td>歩</td><td>qai1</td><td>kua1</td></tr>
+        <tr><td>向</td><td>vu3</td><td>mu3</td></tr>
+        <tr><td>刈</td><td>mong2</td><td>maong2</td></tr>
+        <tr><td>都</td><td>cel2</td><td>tal2</td></tr>
+        <tr><td>字</td><td>qo3</td><td>qo1</td></tr>
+        <tr><td>制</td><td>bom1</td><td>baom2</td></tr>
+        <tr><td>生</td><td>zai3</td><td>dai1</td></tr>
+        <tr><td>開</td><td>ve1</td><td>we1</td></tr>
+        <tr><td>紙</td><td>ye2</td><td>nuas2</td></tr>
+        <tr><td>政</td><td>pe2</td><td>pel2</td></tr>
+        <tr><td>好</td><td>e3</td><td>wam3</td></tr>
+        <tr><td>元</td><td>xo3</td><td>sua3</td></tr>
+        <tr><td>獣</td><td>yol1</td><td>mul1</td></tr>
+        <tr><td>年</td><td>vais2</td><td>wais2</td></tr>
+        <tr><td>男</td><td>i1</td><td>ti1</td></tr>
+        <tr><td>狩</td><td>fe2</td><td>ku2</td></tr>
+        <tr><td>立</td><td>quo3</td><td>qai1</td></tr>
+        <tr><td>走</td><td>yem2</td><td>wem2</td></tr>
+        <tr><td>越</td><td>vua1</td><td>kua2</td></tr>
+        <tr><td>乗</td><td>qang3</td><td>wang2</td></tr>
+        <tr><td>代</td><td>yao3</td><td>yo2</td></tr>
+        <tr><td>画</td><td>xao3</td><td>sao1</td></tr>
+        <tr><td>能</td><td>ail1</td><td>wal1</td></tr>
+        <tr><td>森</td><td>yon1</td><td>yuon1</td></tr>
+        <tr><td>七</td><td>jaim1</td><td>dam2</td></tr>
+        <tr><td>零</td><td>bao1</td><td>bao2</td></tr>
+        <tr><td>清</td><td>jai1</td><td>su1</td></tr>
+        <tr><td>泡</td><td>se3</td><td>se1</td></tr>
+        <tr><td>黄</td><td>vao2</td><td>da2</td></tr>
+        <tr><td>固</td><td>nail2</td><td>nual1</td></tr>
+        <tr><td>骨</td><td>nais2</td><td>nes2</td></tr>
+        <tr><td>痛</td><td>uo2</td><td>muo2</td></tr>
+        <tr><td>薬</td><td>vain3</td><td>wain3</td></tr>
+        <tr><td>糞</td><td>ja3</td><td>ga3</td></tr>
+        <tr><td>歯</td><td>il3</td><td>wil3</td></tr>
+        <tr><td>重</td><td>an3</td><td>wan3</td></tr>
+        <tr><td>乙</td><td>vul1</td><td>wal1</td></tr>
+        <tr><td>琥</td><td>ai2</td><td>kai1</td></tr>
+        <tr><td>車</td><td>ye3</td><td>te1</td></tr>
+        <tr><td>機</td><td>ail2</td><td>el2</td></tr>
+        <tr><td>席</td><td>os3</td><td>wos2</td></tr>
+        <tr><td>温</td><td>qain1</td><td>tuan2</td></tr>
+        <tr><td>報</td><td>vul3</td><td>wal3</td></tr>
+        <tr><td>結</td><td>juo1</td><td>muang1</td></tr>
+        <tr><td>与</td><td>qil2</td><td>tual2</td></tr>
+        <tr><td>湛</td><td>qao1</td><td>tuas1</td></tr>
+        <tr><td>多</td><td>jo3</td><td>dua2</td></tr>
+        <tr><td>奏</td><td>cail1</td><td>qail1</td></tr>
+        <tr><td>態</td><td>xos2</td><td>tus2</td></tr>
+        <tr><td>遍</td><td>quom2</td><td>kam2</td></tr>
+        <tr><td>後</td><td>yuas3</td><td>tuas2</td></tr>
+        <tr><td>肌</td><td>fua2</td><td>mua2</td></tr>
+        <tr><td>睫</td><td>ve3</td><td>we3</td></tr>
+        <tr><td>耳</td><td>me2</td><td>ga2</td></tr>
+        <tr><td>唇</td><td>fail1</td><td>pual1</td></tr>
+        <tr><td>頤</td><td>ji3</td><td>ji1</td></tr>
+        <tr><td>顎</td><td>fao2</td><td>puas2</td></tr>
+        <tr><td>毛</td><td>bais3</td><td>bes3</td></tr>
+        <tr><td>茎</td><td>yo3</td><td>wo1</td></tr>
+        <tr><td>奶</td><td>qe3</td><td>ku3</td></tr>
+        <tr><td>涙</td><td>ke2</td><td>kam1</td></tr>
+        <tr><td>悪</td><td>qon1</td><td>dun1</td></tr>
+        <tr><td>入</td><td>juom1</td><td>kuam1</td></tr>
+        <tr><td>吸</td><td>o3</td><td>wo3</td></tr>
+        <tr><td>庵</td><td>xing1</td><td>tang1</td></tr>
+        <tr><td>活</td><td>vu2</td><td>bu2</td></tr>
+        <tr><td>父</td><td>yaos3</td><td>yais3</td></tr>
+        <tr><td>針</td><td>vo1</td><td>wa1</td></tr>
+        <tr><td>酒</td><td>ais1</td><td>wes1</td></tr>
+        <tr><td>味</td><td>uo3</td><td>nuo3</td></tr>
+        <tr><td>集</td><td>naim2</td><td>nem2</td></tr>
+        <tr><td>敬</td><td>vung3</td><td>wang3</td></tr>
+        <tr><td>焉</td><td>del1</td><td>da1</td></tr>
+        <tr><td>花</td><td>xaos1</td><td>xas1</td></tr>
+        <tr><td>冬</td><td>xon2</td><td>son2</td></tr>
+        <tr><td>弓</td><td>yos2</td><td>yus2</td></tr>
+        <tr><td>弩</td><td>sai3</td><td>sai1</td></tr>
+        <tr><td>西</td><td>vu1</td><td>hu1</td></tr>
+        <tr><td>南</td><td>jing3</td><td>zing3</td></tr>
+        <tr><td>返</td><td>vuo1</td><td>buo1</td></tr>
+        <tr><td>季</td><td>vai3</td><td>wai3</td></tr>
+        <tr><td>旬</td><td>gaos1</td><td>gaos2</td></tr>
+        <tr><td>矢</td><td>ke3</td><td>ka3</td></tr>
+        <tr><td>茶</td><td>jil1</td><td>zil1</td></tr>
+        <tr><td>従</td><td>cai3</td><td>cai1</td></tr>
+        <tr><td>傾</td><td>va1</td><td>ta1</td></tr>
+        <tr><td>備</td><td>cen2</td><td>can2</td></tr>
+        <tr><td>和</td><td>om2</td><td>wom2</td></tr>
+        <tr><td>赦</td><td>qua2</td><td>muas2</td></tr>
+        <tr><td>函</td><td>yai3</td><td>mai3</td></tr>
+        <tr><td>掘</td><td>zel1</td><td>zol1</td></tr>
+        <tr><td>北</td><td>pon2</td><td>po2</td></tr>
+        <tr><td>尾</td><td>mol1</td><td>mul1</td></tr>
+        <tr><td>端</td><td>zeng1</td><td>zing1</td></tr>
+        <tr><td>糊</td><td>aom1</td><td>wam1</td></tr>
+        <tr><td>煙</td><td>vail2</td><td>wail2</td></tr>
+        <tr><td>太</td><td>te2</td><td>to2</td></tr>
+        <tr><td>阻</td><td>zem1</td><td>zuam1</td></tr>
+        <tr><td>廻</td><td>fang1</td><td>wang1</td></tr>
+        <tr><td>奇</td><td>us1</td><td>tus1</td></tr>
+        <tr><td>原</td><td>jen3</td><td>zan3</td></tr>
+        <tr><td>幹</td><td>von2</td><td>man2</td></tr>
+        <tr><td>具</td><td>fai3</td><td>pai2</td></tr>
+        <tr><td>飾</td><td>pom1</td><td>pum1</td></tr>
+        <tr><td>投</td><td>xil3</td><td>cil3</td></tr>
+        <tr><td>習</td><td>fuas1</td><td>muas1</td></tr>
+        <tr><td>衝</td><td>sain3</td><td>suan2</td></tr>
+        <tr><td>撃</td><td>ji2</td><td>ta2</td></tr>
+        <tr><td>凝</td><td>qao3</td><td>wa3</td></tr>
+        <tr><td>灯</td><td>feng3</td><td>puang3</td></tr>
+        <tr><td>磁</td><td>vuol2</td><td>kual2</td></tr>
+        <tr><td>沙</td><td>fum1</td><td>wam2</td></tr>
+        <tr><td>様</td><td>jom3</td><td>tuam3</td></tr>
+        <tr><td>標</td><td>xaon1</td><td>dai1</td></tr>
+        <tr><td>斉</td><td>vuang1</td><td>vang2</td></tr>
+        <tr><td>城</td><td>as2</td><td>was2</td></tr>
+        <tr><td>折</td><td>vuong2</td><td>kuang2</td></tr>
+        <tr><td>塵</td><td>sain2</td><td>sin2</td></tr>
+        <tr><td>葱</td><td>yaong1</td><td>wong1</td></tr>
+        <tr><td>哀</td><td>vi2</td><td>wi2</td></tr>
+        <tr><td>浸</td><td>bol2</td><td>bal1</td></tr>
+        <tr><td>焦</td><td>ai1</td><td>wai1</td></tr>
+        <tr><td>敏</td><td>fain2</td><td>pun2</td></tr>
+        <tr><td>混</td><td>fe3</td><td>pu3</td></tr>
+        <tr><td>沸</td><td>xil1</td><td>mual1</td></tr>
+        <tr><td>尖</td><td>quo2</td><td>wa2</td></tr>
+        <tr><td>摩</td><td>faol1</td><td>pul1</td></tr>
+        <tr><td>劈</td><td>huo2</td><td>kuo2</td></tr>
+        <tr><td>緻</td><td>fa3</td><td>pa3</td></tr>
+        <tr><td>饅</td><td>gaong1</td><td>gong2</td></tr>
+        <tr><td>縮</td><td>el1</td><td>kuas1</td></tr>
+        <tr><td>瓦</td><td>veng3</td><td>weng3</td></tr>
+        <tr><td>嵌</td><td>vun2</td><td>mun2</td></tr>
+        <tr><td>抱</td><td>me3</td><td>mao3</td></tr>
+    </tbody>
+</table>
+
+*1: 「目」の意味では ke1 、「見る」の意味では ke2 と読む多音字になった。
+
+### 雰名への影響
+[雰名](/phunlang/name/)のうち、以上に挙げた文字を含むものは読みが変更されている。
+
+<table>
+    <thead>
+        <tr><th>漢字転写</th><th>旧発音</th><th>新発音</th></tr>
+    </thead>
+    <tbody className="serif">
+        <tr><td>之機</td><td>Kúaàil</td><td>Kúaèl</td></tr>
+        <tr><td>慶宇 川奏</td><td>Nûdúo Hùocáil</td><td>Nûdúo Hùoqáil</td></tr>
+        <tr><td>蔔 冬燦</td><td>Nòm Xòncâl</td><td>Nòm Sòncâl</td></tr>
+        <tr><td>桜 晴葉</td><td>Túo Zênpûa</td><td>Túo Jênpûa</td></tr>
+        <tr><td>常代 方累</td><td>Xûyâo Zùngwíl</td><td>Xûyò Zùngwíl</td></tr>
+        <tr><td>月 饅芋</td><td>Vò Gáongsùa</td><td>Vò Gòngsùa</td></tr>
+        <tr><td>幕 南航</td><td>Làn Jîngtûm</td><td>Làn Zîngtûm</td></tr>
+    </tbody>
+</table>

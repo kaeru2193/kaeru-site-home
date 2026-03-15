@@ -74,9 +74,9 @@ const Page = () => {
             <ul>
                 <li>かえる / kaeru2193</li>
                 
-                <li><span className="phun">之機</span> / Kúaàil (<a href="/phunlang">雰</a>名)
+                <li><span className="phun">之機</span> / Kúaèl (<a href="/phunlang">雰</a>名)
                     <ul>
-                        <li><span className="ipa">[kɯa˥.ail˨]</span> または <span className="ipa">[kʰə˧˥.ɛl˩˧]</span></li>
+                        <li><span className="ipa">[kɯa˥.ɛl˨]</span> または <span className="ipa">[kʰə˧˥.ʔel˨]</span></li>
                     </ul>
                 </li>
                 <li>akesi Kawelu (<a href="https://tokipona.org">トキポナ</a>名)</li>

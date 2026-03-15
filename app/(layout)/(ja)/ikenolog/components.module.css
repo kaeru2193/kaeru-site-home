@@ -8,6 +8,7 @@
 
 .articleLink {
     text-decoration: none;
+    border: none;
     color: initial;
 }
 
@@ -60,6 +61,7 @@
 
 .tagLink, .yearArchive a, .monthArchive a {
     text-decoration: none;
+    border: none;
     color: initial;
 }
 

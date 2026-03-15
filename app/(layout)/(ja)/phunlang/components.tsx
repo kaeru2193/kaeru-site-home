@@ -5,7 +5,11 @@ import { getPhunPron, FetchData } from "@/funcs"
 
 export const KanjiText = (pron: {text: string[]}) => <div className={style.kanjiText}>
     {pron.text.map((p, idx) => 
-        <p key={idx}>{p.replace(/\./g, "")}</p>
+        <p key={idx}>
+            {p.split(".")
+                .map(w => w.replace(/\:\d+/, "")) //発音指定は取り除く
+                .join("")}
+        </p>
     )}
 </div>
 
@@ -48,8 +52,11 @@ export const DictPop = (props: any) => {
         <div>
             {content.map((c, idx) => {
                 const words = c.split(".").map((w, idx) => {
-                    const content = props.use? searchDict(dict, w): false //ポップアップ辞書がOFFの場合は表示させない
-                    return (content? <DictPopPanel info={content} key={idx}>{w}</DictPopPanel>: <span className={`${style.word} phun`}>{w}</span>)
+                    const displayWord = w.replace(/\:\d+/, "") //発音指定は取り除く
+                    const content = props.use ?searchDict(dict, displayWord) :false //ポップアップ辞書がOFFの場合は表示させない
+                    return (content
+                        ? <DictPopPanel info={content} key={idx}>{displayWord}</DictPopPanel>
+                        : <span className={`${style.word} phun`}>{displayWord}</span>)
                 })
                 return (<p key={idx}>{words}</p>)
             })}
@@ -140,6 +147,9 @@ const DictContent = (props: any) => {
                                 {m.explanation.length > 1
                                     ? <span className={style.popMeanTransNum}>{meanNum[idx]}</span>
                                     : <></>}
+                                {t.pron
+                                    ? `(${t.pron}と読み)`
+                                    :""}
                                 {t.translate}
                                 {t.meaning
                                     ? <span className={style.popMeanExp}>

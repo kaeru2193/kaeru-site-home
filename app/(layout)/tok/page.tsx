@@ -67,9 +67,9 @@ const Page = () => {
             <ul>
                 <li>akesi Kawelu / kaeru2193</li>
                 
-                <li><span className="phun">之機</span> / Kúaàil (nimi pi toki Pun)
+                <li><span className="phun">之機</span> / Kúaèl (nimi pi toki Pun)
                     <ul>
-                        <li>nasin sitelen IPA la kalama pi nimi ni li <span className="ipa">[kɯa˥.ail˨]</span> anu <span className="ipa">[kʰə˧˥.ɛl˩˧]</span></li>
+                        <li>nasin sitelen IPA la kalama pi nimi ni li <span className="ipa">[kɯa˥.ɛl˨]</span> anu <span className="ipa">[kʰə˧˥.ʔel˨]</span></li>
                     </ul>
                 </li>
                 <li>ʻkáles-ʻcolfomas (nimi pi <a href="https://ziphil.com/conlang/document/16.html">toki Sale</a>)</li>

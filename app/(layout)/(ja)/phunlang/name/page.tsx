@@ -39,7 +39,7 @@ const Page = () => {
                     <tr>
                         <td>(<span className="phun">之機</span>)<sup>*1</sup></td>
                         <td>(<span className="serif">之機</span>)</td>
-                        <td>(<span className="serif">Kúaàil</span>)</td>
+                        <td>(<span className="serif">Kúaèl</span>)</td>
                         <td><Link href="https://kaeru2193.net/">かえる</Link></td>
                         <td>2023/04頃</td>
                     </tr>
@@ -67,7 +67,7 @@ const Page = () => {
                     <tr>
                         <td><span className="phun">慶宇 川奏</span></td>
                         <td><span className="serif">慶宇 川奏</span></td>
-                        <td><span className="serif">Nûdúo Hùocáil</span></td>
+                        <td><span className="serif">Nûdúo Hùoqáil</span></td>
                         <td><Link href="https://ja.pronouns.page/@nsopikha">ンソピハ</Link></td>
                         <td>2023/10/15</td>
                     </tr>
@@ -95,14 +95,14 @@ const Page = () => {
                     <tr>
                         <td><span className="phun">蔔 冬燦</span></td>
                         <td><span className="serif">蔔 冬燦</span></td>
-                        <td><span className="serif">Nòm Xòncâl</span></td>
+                        <td><span className="serif">Nòm Sòncâl</span></td>
                         <td><Link href="https://wfturnip.github.io/Website/">たーなっぷ</Link></td>
                         <td>2024/08/31</td>
                     </tr>
                     <tr>
                         <td><span className="phun">桜 晴葉</span></td>
                         <td><span className="serif">桜 晴葉</span></td>
-                        <td><span className="serif">Túo Zênpûa</span></td>
+                        <td><span className="serif">Túo Jênpûa</span></td>
                         <td><Link href="https://epiku.net">epikijetesantakalu Lili</Link></td>
                         <td>2024/10/24</td>
                     </tr>
@@ -123,21 +123,21 @@ const Page = () => {
                     <tr>
                         <td><span className="phun">常代 方累</span></td>
                         <td><span className="serif">常代 方累</span></td>
-                        <td><span className="serif">Xûyâo Zùngwíl</span></td>
+                        <td><span className="serif">Xûyò Zùngwíl</span></td>
                         <td><Link href="https://tktb-tess.github.io/">斗琴庭暁響</Link></td>
                         <td>2025/02/01</td>
                     </tr>
                     <tr>
                         <td><span className="phun">月 饅芋</span></td>
                         <td><span className="serif">月 饅芋</span></td>
-                        <td><span className="serif">Vò Gáongsùa</span></td>
+                        <td><span className="serif">Vò Gòngsùa</span></td>
                         <td><Link href="https://x.com/imomo_ti">いももち</Link></td>
                         <td>2025/12/06</td>
                     </tr>
                     <tr>
                         <td><span className="phun">幕 南航</span></td>
                         <td><span className="serif">幕 南航</span></td>
-                        <td><span className="serif">Làn Jîngtûm</span></td>
+                        <td><span className="serif">Làn Zîngtûm</span></td>
                         <td><Link href="https://x.com/KateOgaki">大垣藝斗</Link></td>
                         <td>2025/12/06</td>
                     </tr>

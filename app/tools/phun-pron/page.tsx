@@ -53,7 +53,7 @@ const App = (props: {data: any[]}) => {
         const converted = words.map(w => {
             switch(type) {
                 case "accent":
-                    return PhunWordToLatin(props.data, w).join("")
+                    return PhunWordToLatin(props.data, w)
                 case "accent-space":
                     return extractEntry(w, (e: any) => e.latinPron).join(" ")
                 case "numeric":

@@ -45,6 +45,7 @@
 
 .logoLink {
     text-decoration: none;
+    border: none;
     position: relative;
     padding: 0 14px 0 6px;
     z-index: 1;
@@ -159,6 +160,7 @@
 
 .langList li a {
     text-decoration: none;
+    border: none;
     color: inherit;
     width: 100%;
     height: 100%;
@@ -193,6 +195,7 @@
 .topLinks a {
     color: white;
     text-decoration: none;
+    border: none;
     font-weight: bold;
     font-size: 1.1em;
 }
