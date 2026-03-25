@@ -12,7 +12,6 @@ export default function GrammarLayout({
     children: React.ReactNode
   }) {
     const paths = usePathname().split("/").filter(l => l)
-    console.log(paths)
     
     const articleID = Number(paths[paths.length - 1])
     const nextID = articleID < numberOfArticles

@@ -69,7 +69,6 @@ const Page = () => {
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height) //背景を全部塗る
 
         if (isVert) { //縦書きならテキスト描画前にキャンバスを回転させる
-            console.log("vert")
             ctx.save()
             ctx.translate(canvas.width, 0)
             ctx.rotate(Math.PI / 2) //90°
