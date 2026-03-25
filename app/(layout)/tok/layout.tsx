@@ -1,4 +1,4 @@
-import "./tok.css"
+import "./tok.scss"
 
 export default function Layout({
     children,

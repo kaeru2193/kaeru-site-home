@@ -274,7 +274,6 @@
     position: absolute;
     left: 3px;
     top: -3px;
-    font-family: "phun-num-5px";
     font-size: 36px;
     color: #ff9b28;
     text-shadow: 0 0 5px #ff9b28;
@@ -285,6 +284,10 @@
 .clock div {
     display: flex;
     gap: 12px;
+}
+
+.clock span {
+    font-family: "phun-num-5px";
 }
 
 .clockBase {

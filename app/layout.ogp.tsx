@@ -5,7 +5,7 @@ import { langParse } from "./languages";
 import pageMap from '@/pageMap.json'
 import blogArticles from "@/(layout)/(ja)/ikenolog/articles.json"
 
-export const MetaOGP = (props: any) => {
+export const MetaOGP = (props: {url: string}) => {
     const paths = langParse()
     const fullPath = paths.pagePath.join("/")
     const siteName = paths.data.siteName
@@ -40,4 +40,10 @@ export const MetaOGP = (props: any) => {
         <meta name="twitter:site" content="@kaeru2193" />
         <meta name="twitter:creator" content="@kaeru2193" />
     </>
+}
+
+export const LangWrapper = (props: {children: React.ReactNode}) => {
+    return <html lang={langParse().lang}>
+        {props.children}
+    </html>
 }

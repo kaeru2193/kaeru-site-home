@@ -1,4 +1,4 @@
-import "./en.css"
+import "./en.scss"
 
 export default function Layout({
     children,

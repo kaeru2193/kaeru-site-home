@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap');
 
-body {
+body:lang(ja) {
     font-family: 'Kiwi Maru';
-}
-
-b, strong, .bold, .bigText, h2, h3, h4 {
-    font-weight: 700;
-    font-family: "Zen Maru Gothic";
+    b, strong, .bold, .bigText, h2, h3, h4 {
+        font-weight: 700;
+        font-family: "Zen Maru Gothic";
+    }
 }

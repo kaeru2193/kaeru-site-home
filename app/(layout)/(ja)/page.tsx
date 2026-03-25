@@ -131,7 +131,7 @@ const Page = () => {
                 <li>
                     <a href="https://epiku.net/">
                         <img src="https://epiku.net/sitelen/88x31.gif" height="70px" alt="epiku.net"/>
-                    </a><span>(epikijetesantakalu)</span>
+                    </a><span>(epikijetesantakalu Lili)</span>
                 </li>
                 <li>
                     <a href="https://www.tktb-tess.dev">
@@ -142,6 +142,11 @@ const Page = () => {
                     <a href="https://mikanixonable.github.io">
                         <img src="https://mikanixonable.github.io/banner.png" width={200} height={40} alt="月面植物園" />
                     </a><span>(みかぶる)</span>
+                </li>
+                <li>
+                    <a href="https://yuzurusofia.github.io/jpn/">
+                        <img src="https://yuzurusofia.github.io/data/banner.png" width={200} height={40} alt="ゆずるそふぃあのぺーじ" />
+                    </a><span>(yuzuru_sofia)</span>
                 </li>
             </ul>
 

@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./common.module.css"
 
+import pageMap from '@/pageMap.json'
+
 import { FetchData } from "./funcs";
 import { EikyuDate } from "eikyu-clock";
-import { useState, useEffect, useRef, use } from "react";
+import { useState, useEffect, useRef, use, Children } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { langTexts, langParse } from "./languages";
 import reactStringReplace from "react-string-replace";
@@ -29,22 +31,30 @@ export const Header = (props: {data: langTexts}) => {
                     <BsGlobe />
                     <ul className={style.langList}>
                         <li>
-                            <a href="/"><span className="marugothic">日本語</span></a>
+                            <InterLangLink lang=""><span className="marugothic">日本語</span></InterLangLink>
                         </li>
                         <li>
-                            <a href="/phun"><span className="phun">栄言</span></a>
+                            <InterLangLink lang="phun"><span className="phun">栄言</span></InterLangLink>
                         </li>
                         <li>
-                            <a href="/tok"><span className="zenMarugothic">toki pona</span></a>
+                            <InterLangLink lang="tok"><span className="zenMarugothic">toki pona</span></InterLangLink>
                         </li>
                         <li>
-                            <a href="/en"><span className="zenMarugothic">English</span></a>
+                            <InterLangLink lang="en"><span className="zenMarugothic">English</span></InterLangLink>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     )
+}
+
+const InterLangLink = (props: {children: React.ReactNode, lang: string}) => {
+    const parsed = langParse()
+    const pageLink = [props.lang, ...parsed.pagePath].filter(p => p).join("/") //あればリンクしたいページ（日本語なら言語名が空）
+    return pageMap.find(page => page.route == pageLink)
+        ? <Link href={`/${pageLink}`}>{props.children}</Link> //あればその言語版のページ
+        : <Link href={`/${props.lang}`}>{props.children}</Link> //無ければその言語のトップページ
 }
 
 export const Footer = (props: {data: langTexts}) => {

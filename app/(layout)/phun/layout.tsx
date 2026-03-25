@@ -1,4 +1,4 @@
-import "./phun.css"
+import "./phun.scss"
 
 export default function Layout({
     children,

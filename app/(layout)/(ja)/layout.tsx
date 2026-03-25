@@ -1,4 +1,4 @@
-import "./ja.css"
+import "./ja.scss"
 
 export default function Layout({
     children,

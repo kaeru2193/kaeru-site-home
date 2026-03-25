@@ -169,6 +169,13 @@ const Page = () => {
                         <td><Link href="https://x.com/saltsaltsaltaa">かばやなぎ/S.</Link></td>
                         <td>2026/01/18</td>
                     </tr>
+                    <tr>
+                        <td><span className="phun">氷 紗空</span></td>
+                        <td><span className="serif">氷 紗空</span></td>
+                        <td><span className="serif">Húa Tángmùol</span></td>
+                        <td><Link href="https://migdal.jp/kosasa_sepeto">せぺと</Link></td>
+                        <td>2026/03/20</td>
+                    </tr>
                 </tbody>
             </table></div>
             <p>*1: 音写を事実上の雰名として用いているため家名は存在しない。</p>

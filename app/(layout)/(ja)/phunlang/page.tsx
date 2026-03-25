@@ -26,7 +26,7 @@ const Page = () => {
                     <Link href="https://qo.kaeru2193.net">雰字典</Link> ― 雰語の書記に用いられる表語文字、雰字のWeb字典です。各々の雰字について詳しい情報が見られます。
                 </li>
                 <li>
-                    <Link href="https://qo.kaeru2193.net">雰界資料集</Link> ― 雰界創作の総合Wikiです。雰語の歴史的な体系など、世界観設定に関する資料が置かれています。
+                    <Link href="https://phunworld.miraheze.org">雰界資料集</Link> ― 雰界創作の総合Wikiです。雰語の歴史的な体系など、世界観設定に関する資料が置かれています。
                 </li>
             </ul>
 
@@ -36,7 +36,7 @@ const Page = () => {
                     <Link href="texts">雰語文庫</Link> ― かえるによる雰語の翻訳文や創作文の置き場です。ポップアップ辞典を用いて語義を確認しながら読めます。
                 </li>
                 <li>
-                    <Link href="https://lib.kaeru2193.net/">栄言記集</Link> ― 雰語のみで書かれたブログのような何かです。多分もう更新はしません。
+                    <Link href="https://lib.kaeru2193.net/">栄言記集</Link> ― 雰語で書かれたブログのような何かです。おそらく今後の更新はありません。
                 </li>
                 <li>
                     <Link href="/phun">之機家</Link> ― このサイトの雰語版です。
@@ -65,10 +65,10 @@ const Page = () => {
                     <Link href="/tools/phun-renderer/">雰字画像メーカー</Link> ― 雰字フォントを用いた画像をお手軽に作成できます。
                 </li>
                 <li>
-                    <Link href="https://github.com/epikijetesantakalu/PhunDict-for-Yomitan">PhunDict for Yomitan</Link> ― <Link href="https://epiku.net">epikijetesantakalu Lili</Link>さんによる、<Link href="https://yomitan.wiki">Yomitan</Link>向けの雰語辞書です。
+                    <Link href="https://github.com/kaeru2193/rime-phun">Rime Phun / 栄言印具</Link> ― <Link href="https://rime.im">Rime IME</Link>向けの雰語入力スキーマです。
                 </li>
                 <li>
-                    <Link href="https://github.com/epikijetesantakalu/tuosuafai">桜印具</Link> ― <Link href="https://epiku.net">epikijetesantakalu Lili</Link>さんによる、Windows用の雰語IMEです。
+                    <Link href="https://github.com/epikijetesantakalu/PhunDict-for-Yomitan">PhunDict for Yomitan</Link> ― <Link href="https://epiku.net">epikijetesantakalu Lili</Link>さんによる、<Link href="https://yomitan.wiki">Yomitan</Link>向けの雰語辞書です。
                 </li>
             </ul>
         </>

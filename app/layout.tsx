@@ -1,6 +1,6 @@
 import "./global.css"
 
-import { MetaOGP } from "./layout.ogp"
+import { MetaOGP, LangWrapper } from "./layout.ogp"
 
 export const dynamic = 'force-dynamic'
 
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ja">
+    <LangWrapper>
       <head prefix="og: https://ogp.me/ns#">
         <MetaOGP url={url}/>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
@@ -33,6 +33,6 @@ export default function RootLayout({
         </div>
         {children}
       </body>
-    </html>
+    </LangWrapper>
   )
 }
