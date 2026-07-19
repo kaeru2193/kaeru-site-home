@@ -32,7 +32,6 @@ const processPaths_1 = __importDefault(require("./processPaths"));
 const mapComponents_1 = require("./mapComponents");
 const mapComponents_2 = require("./mapComponents");
 const mapComponents_3 = require("./mapComponents");
-const mapComponents_4 = require("./mapComponents");
 const blogMap = (0, mapComponents_1.getBlogMap)();
 fs.writeFileSync(path_1.default.join(processPaths_1.default.blogPath, "../articles.json"), JSON.stringify(blogMap, null, 2));
 console.log("blogmap generated");
@@ -42,6 +41,8 @@ console.log("sitemap generated");
 const XMLMap = (0, mapComponents_3.getXMLMap)(siteMap);
 fs.writeFileSync("./app/sitemap.xml", XMLMap);
 console.log("xml sitemap generated");
-const galleryMap = (0, mapComponents_4.getGalleryMap)();
-fs.writeFileSync("./app/(layout)/(ja)/download/gallery/gallery.json", JSON.stringify(galleryMap, null, 2));
-console.log("gallery map generated");
+/* ギャラリーはローカル環境で手動で生成
+const galleryMap = getGalleryMap()
+fs.writeFileSync("./app/(layout)/(ja)/download/gallery/gallery.json", JSON.stringify(galleryMap, null, 2))
+console.log("gallery map generated")
+*/ 
