@@ -7,6 +7,7 @@ const path_1 = __importDefault(require("path"));
 const processPaths = {
     directoryPath: path_1.default.join(process.cwd(), './app'),
     blogPath: path_1.default.join(process.cwd(), './app/(layout)/(ja)/ikenolog/(articles)'),
-    tmpPath: path_1.default.join(process.cwd(), './tools/.tmp')
+    galleryPath: path_1.default.join(process.cwd(), './public/gallery'),
+    tmpPath: path_1.default.join(process.cwd(), './tools/.tmp'),
 };
 exports.default = processPaths;

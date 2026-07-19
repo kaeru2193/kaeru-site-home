@@ -332,3 +332,15 @@
     transform: none;
     left: 0;
 }
+
+.well {
+    display: block;
+    margin: 15px auto;
+    width: fit-content;
+    border: none;
+}
+
+.well img {
+    display: block;
+    height: 100px;
+}

@@ -11,6 +11,7 @@ import { useState, useEffect, useRef, use, Children } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { langTexts, langParse } from "./languages";
 import reactStringReplace from "react-string-replace";
+import { usePathname } from "next/navigation";
 
 export const Header = (props: {data: langTexts}) => {
     const paths = langParse()
@@ -58,8 +59,11 @@ const InterLangLink = (props: {children: React.ReactNode, lang: string}) => {
 }
 
 export const Footer = (props: {data: langTexts}) => {
-    const [countData, setCountData]: any = useState("")
+    const [countData, setCountData] = useState<string>("")
     const [kiriban, setKiriban] = useState(false)
+    const [link, setLink] = useState<string>("")
+
+    const location = usePathname()
 
     useEffect(() => {
         const access = async () => {
@@ -74,7 +78,16 @@ export const Footer = (props: {data: langTexts}) => {
             setKiriban(kiribanReg.test(base12)) //キリ番チェック (ゾロ目か0の連続)
 
             setCountData(base12)
+
+            if (location.includes("gallery") && ["0", "6"].includes(base12.slice(-1))) {
+                const url1 = "https://docs.google.com/spreadsheets/d/1c24yL6xN71XQvFHGJ"
+                const url2 = "qdUzNg5WvIW74adqLfdEtv4vWE/gviz/tq?tqx=out:csv"
+                const response = await fetch(url1 + url2)
+                const content = await response.text()
+                setLink(content.slice(1, -1))
+            }
           } catch (error) {
+            console.log(error)
             setCountData("")
           }
         }
@@ -84,7 +97,10 @@ export const Footer = (props: {data: langTexts}) => {
 
     return (
         <div className={style.footer}>
-            <p className={`${style.copyright} defFont`}>© 2021-2025 kaeru2193</p>
+            {(link.length > 0) &&
+                <a className={style.well} href={`https://discord.gg/${link}`}><img src="/frog-well.gif"/></a>
+            }
+            <p className={`${style.copyright} defFont`}>© 2021-2026 kaeru2193</p>
             <div className={style.count}>
                 {kiriban
                     ? <div className={style.message + " bold"}>

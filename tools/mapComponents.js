@@ -26,7 +26,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getXMLMap = exports.getSiteMap = exports.getBlogMap = void 0;
+exports.getGalleryMap = exports.getXMLMap = exports.getSiteMap = exports.getBlogMap = void 0;
 const fs = __importStar(require("fs"));
 const path_1 = __importDefault(require("path"));
 const processPaths_1 = __importDefault(require("./processPaths"));
@@ -153,3 +153,14 @@ function getXMLMap(sitemap) {
     return XML;
 }
 exports.getXMLMap = getXMLMap;
+function getGalleryMap() {
+    const images = fs.readdirSync(processPaths_1.default.galleryPath);
+    const imageMetas = images
+        .map(p => {
+        const modified = fs.statSync(path_1.default.join(processPaths_1.default.galleryPath, p)).mtime;
+        return { path: p, date: modified.toISOString() };
+    });
+    const sorted = imageMetas.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()); //日時を昇順に並び替え
+    return sorted;
+}
+exports.getGalleryMap = getGalleryMap;

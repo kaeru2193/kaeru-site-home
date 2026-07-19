@@ -71,9 +71,14 @@ const Page = () => {
             <p>2021/10頃から現界隈での生息が確認されており、主に人工言語・架空世界を創作する習性を持つ。</p>
             <p>サイト名は「之機 (雰語名の漢字転写) + 堂」であるが、正しい読みは不明である。</p>
             <h3>名義群</h3>
+            <p>基本的に、個人名に相当する部分は「かえる <span className="ipa">[kae̞ɾɯ]</span>」の音写、家族名に相当する部分はその言語で「もちもちの／弾力がある」を意味する語から取ったものを用いる。（贈名の場合はこの限りではない）</p>
             <ul>
-                <li>かえる / kaeru2193</li>
-                
+                <li>
+                    かえる / kaeru2193
+                    <ul>
+                        <li>便宜上、姓名の両方に相当する部分が必要な場合は「もちもち かえる」を用いる</li>
+                    </ul>
+                </li>
                 <li><span className="phun">之機</span> / Kúaèl (<a href="/phunlang">雰</a>名)
                     <ul>
                         <li><span className="ipa">[kɯa˥.ɛl˨]</span> または <span className="ipa">[kʰə˧˥.ʔel˨]</span></li>
@@ -130,7 +135,7 @@ const Page = () => {
             <ul className={style.mutualLinkList}>
                 <li>
                     <a href="https://epiku.net/">
-                        <img src="https://epiku.net/sitelen/88x31.gif" height="70px" alt="epiku.net"/>
+                        <MutualLink name="epiku.net" size={1.1}/>
                     </a><span>(epikijetesantakalu Lili)</span>
                 </li>
                 <li>

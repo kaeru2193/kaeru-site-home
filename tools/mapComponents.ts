@@ -133,3 +133,16 @@ export function getXMLMap(sitemap: any[]) { //サイトマップ(XML)生成
 
     return XML
 }
+
+export function getGalleryMap() { //ギャラリーのマップ作成
+    const images: string[] = fs.readdirSync(paths.galleryPath)
+
+    const imageMetas = images
+        .map(p => {
+            const modified: Date = fs.statSync(path.join(paths.galleryPath, p)).mtime
+            return {path: p, date: modified.toISOString()}
+        })
+
+    const sorted = imageMetas.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()) //日時を昇順に並び替え
+    return sorted
+}
