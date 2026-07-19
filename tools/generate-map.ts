@@ -20,6 +20,8 @@ const XMLMap = getXMLMap(siteMap)
 fs.writeFileSync("./app/sitemap.xml", XMLMap)
 console.log("xml sitemap generated")
 
+/* ギャラリーはローカル環境で手動で生成
 const galleryMap = getGalleryMap()
 fs.writeFileSync("./app/(layout)/(ja)/download/gallery/gallery.json", JSON.stringify(galleryMap, null, 2))
 console.log("gallery map generated")
+*/
