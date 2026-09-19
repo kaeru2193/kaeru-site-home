@@ -170,7 +170,15 @@ td {
     margin: 0 auto;
 }
 
-.youtubeEmbed > iframe {
+.pdfEmbed {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 3 / 4;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+.youtubeEmbed > iframe, .pdfEmbed > iframe {
     height: 100%;
     width: 100%;
 }

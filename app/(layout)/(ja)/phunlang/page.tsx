@@ -20,7 +20,10 @@ const Page = () => {
                     <Link href="grammar">雰文典</Link> ― 雰語の文法事項を整理した資料です。
                 </li>
                 <li>
-                    <Link href="https://dict.kaeru2193.net">雰和辞典</Link> ― 雰語のWeb辞書ツールです。モバイル端末にも対応しています。
+                    <Link href="https://dict.kaeru2193.net">Web雰和辞典</Link> ― 雰語のWeb辞書ツールで、常に最新版に保たれています。モバイル端末にも対応しています。
+                </li>
+                <li>
+                    <Link href="pdf-dict">PDF版雰和辞典</Link> ― PDF版の雰語辞書です。ダウンロードしておけばオフライン環境でも使用できます。
                 </li>
                 <li>
                     <Link href="https://qo.kaeru2193.net">雰字典</Link> ― 雰語の書記に用いられる表語文字、雰字のWeb字典です。各々の雰字について詳しい情報が見られます。

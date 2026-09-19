@@ -131,6 +131,10 @@
     "title": "雰名"
   },
   {
+    "route": "phunlang/pdf-dict",
+    "title": "PDF版雰和辞典"
+  },
+  {
     "route": "phunlang/texts",
     "title": "雰語文庫"
   },
