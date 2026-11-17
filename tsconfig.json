@@ -23,5 +23,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(layout)/phunlang/grammar/page.mdx", "app/(layout)/(ja)/phunlang/grammar/all/page.mdx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "tools"]
 }
