@@ -159,6 +159,9 @@ const Page = () => {
             <p>当サイトはリンクフリーです。リンクを貼る際には、以下のバナーを適宜ご使用下さい。</p>
             <a href="https://kaeru2193.net"><img className={style.kaeruBanner} src="/banner.png" width="200" height="40" alt="之機堂" /></a>
             <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner.png" width="200" height="40" alt="之機堂" /></a>`}</code></pre>
+            <p>縦書きのサイトにはこちらもどうぞ。</p>
+            <a href="https://kaeru2193.net"><img className={style.kaeruBanner} src="/banner_vertical.png" width="40" height="200" alt="之機堂" /></a>
+            <pre><code>{`<a href="https://kaeru2193.net"><img src="https://kaeru2193.net/banner_vertical.png" width="40" height="200" alt="之機堂" /></a>`}</code></pre>
 
             <h2>更新履歴</h2>
             <div>

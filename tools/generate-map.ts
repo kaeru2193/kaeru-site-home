@@ -8,11 +8,12 @@ import { getSiteMap } from "./mapComponents";
 import { getXMLMap } from "./mapComponents";
 import { getGalleryMap } from "./mapComponents";
 
-const blogMap = getBlogMap()
-fs.writeFileSync(path.join(paths.blogPath, "../articles.json"), JSON.stringify(blogMap, null, 2))
+const blogMaps = getBlogMap(paths.blogPaths)
+fs.writeFileSync(path.join(paths.blogPaths[0], "../articles.json"), JSON.stringify(blogMaps[0], null, 2))
+fs.writeFileSync(path.join(paths.blogPaths[1], "../articles.json"), JSON.stringify(blogMaps[1], null, 2))
 console.log("blogmap generated")
 
-const siteMap = getSiteMap(blogMap)
+const siteMap = getSiteMap(blogMaps.flat())
 fs.writeFileSync("./app/pageMap.json", JSON.stringify(siteMap, null, 2))
 console.log("sitemap generated")
 

@@ -1,0 +1,15 @@
+.title {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+.dateBox {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 0 0 5px;
+
+    span {
+        margin: 7px 0 0 0;
+    }
+}

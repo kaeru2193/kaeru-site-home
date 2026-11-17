@@ -235,6 +235,25 @@
     "title": "配信用雰時計"
   },
   {
+    "route": "cuangnem",
+    "title": "栄言記集"
+  },
+  {
+    "route": "cuangnem"
+  },
+  {
+    "route": "cuangnem/20231222",
+    "title": "使思造言内我世造万"
+  },
+  {
+    "route": "cuangnem/20250825",
+    "title": "後端然話"
+  },
+  {
+    "route": "cuangnem/xege",
+    "title": "之機然事"
+  },
+  {
     "route": "tools",
     "title": "技術棟トップ"
   },

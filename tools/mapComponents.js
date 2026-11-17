@@ -30,35 +30,39 @@ exports.getGalleryMap = exports.getXMLMap = exports.getSiteMap = exports.getBlog
 const fs = __importStar(require("fs"));
 const path_1 = __importDefault(require("path"));
 const processPaths_1 = __importDefault(require("./processPaths"));
-function getBlogMap() {
-    const articles = fs.readdirSync(processPaths_1.default.blogPath)
-        .filter(p => fs.statSync(path_1.default.join(processPaths_1.default.blogPath, p)).isDirectory());
-    const articleMetas = articles
-        .map(articleID => {
-        if (!fs.statSync(path_1.default.join(processPaths_1.default.blogPath, articleID)).isDirectory()) {
-            return "";
-        }
-        const articlePath = path_1.default.join(processPaths_1.default.blogPath, articleID, './page.mdx');
-        if (fs.existsSync(articlePath)) {
-            return metaExtractor(articlePath, articleID);
-        }
-        else {
-            throw Error(`記事が存在しません: ${articleID}`);
-        }
-    })
-        .reduce((pre, now) => pre + "\n" + now);
-    fs.mkdirSync(processPaths_1.default.tmpPath, { recursive: true });
-    fs.writeFileSync(path_1.default.join(processPaths_1.default.tmpPath, "./blogmap.ts"), articleMetas); //一時ファイルに書き出し
-    const metas = require(path_1.default.join(processPaths_1.default.tmpPath, "./blogmap.ts")); //通常のモジュールとして読み込み
-    const blogMap = articles.map(id => {
-        return {
-            id: id,
-            data: metas["meta" + id]
-        };
-    });
+function getBlogMap(basePaths) {
+    fs.mkdirSync(processPaths_1.default.tmpPath, { recursive: true }); //一時ディレクトリを作成
+    const maps = [];
+    for (const [idx, basePath] of basePaths.entries()) {
+        const articles = fs.readdirSync(basePath)
+            .filter(p => fs.statSync(path_1.default.join(basePath, p)).isDirectory());
+        const articleMetas = articles
+            .map(articleID => {
+            if (!fs.statSync(path_1.default.join(basePath, articleID)).isDirectory()) {
+                return "";
+            }
+            const articlePath = path_1.default.join(basePath, articleID, './page.mdx');
+            if (fs.existsSync(articlePath)) {
+                return metaExtractor(articlePath, articleID);
+            }
+            else {
+                throw Error(`記事が存在しません: ${articleID}`);
+            }
+        })
+            .reduce((pre, now) => pre + "\n" + now);
+        fs.writeFileSync(path_1.default.join(processPaths_1.default.tmpPath, `./blogmap${idx}.ts`), articleMetas); //export部分のみを纏めて一時ファイルに書き出し
+        const metas = require(path_1.default.join(processPaths_1.default.tmpPath, `./blogmap${idx}.ts`)); //通常のモジュールとして読み込み
+        const blogMap = articles.map(id => {
+            return {
+                id: id,
+                data: metas["meta" + id]
+            };
+        });
+        const sorted = blogMap.sort((a, b) => b.data.date - a.data.date); //日時を降順に並び替え
+        maps.push(sorted);
+    }
     fs.rmSync(processPaths_1.default.tmpPath, { recursive: true }); //一時ディレクトリを削除
-    const sorted = blogMap.sort((a, b) => b.data.date - a.data.date); //日時を降順に並び替え
-    return sorted;
+    return maps;
 }
 exports.getBlogMap = getBlogMap;
 const metaExtractor = (path, id) => {
@@ -91,7 +95,7 @@ function getSiteMap(blogmap) {
             console.log("excluded: " + p.path);
             return null;
         }
-        else if (p.path.startsWith(processPaths_1.default.blogPath.replace(/\\/g, "/"))) {
+        else if (processPaths_1.default.blogPaths.some(blog => p.path.startsWith(blog.replace(/\\/g, "/")))) {
             return {
                 route: p.route.join("/"),
                 title: blogmap.find(a => a.id == p.route[p.route.length - 1])?.data.title

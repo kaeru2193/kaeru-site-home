@@ -3,37 +3,43 @@ import path from "path";
 
 import paths from "./processPaths";
 
-export function getBlogMap() { //ブログのマップ作成
-    const articles = fs.readdirSync(paths.blogPath)
-        .filter(p => fs.statSync(path.join(paths.blogPath, p)).isDirectory())
+export function getBlogMap(basePaths: string[]) { //ブログのマップ作成
+    fs.mkdirSync(paths.tmpPath, { recursive: true }) //一時ディレクトリを作成
+    const maps = []
 
-    const articleMetas = articles
-        .map(articleID => {
-            if (!fs.statSync(path.join(paths.blogPath, articleID)).isDirectory()) {return ""}
-            const articlePath = path.join(paths.blogPath, articleID, './page.mdx')
-            if (fs.existsSync(articlePath)) {
-                return metaExtractor(articlePath, articleID)
-            } else {
-                throw Error(`記事が存在しません: ${articleID}`)
+    for (const [idx, basePath] of basePaths.entries()) {
+        const articles = fs.readdirSync(basePath)
+            .filter(p => fs.statSync(path.join(basePath, p)).isDirectory())
+
+        const articleMetas = articles
+            .map(articleID => {
+                if (!fs.statSync(path.join(basePath, articleID)).isDirectory()) {return ""}
+                const articlePath = path.join(basePath, articleID, './page.mdx')
+                if (fs.existsSync(articlePath)) {
+                    return metaExtractor(articlePath, articleID)
+                } else {
+                    throw Error(`記事が存在しません: ${articleID}`)
+                }
+            })
+            .reduce((pre, now) => pre + "\n" + now)
+        
+        fs.writeFileSync(path.join(paths.tmpPath, `./blogmap${idx}.ts`), articleMetas) //export部分のみを纏めて一時ファイルに書き出し
+
+        const metas = require(path.join(paths.tmpPath, `./blogmap${idx}.ts`)) //通常のモジュールとして読み込み
+        const blogMap = articles.map(id => {
+            return {
+                id: id,
+                data: metas["meta" + id]
             }
         })
-        .reduce((pre, now) => pre + "\n" + now)
-    
-    fs.mkdirSync(paths.tmpPath, { recursive: true })
-    fs.writeFileSync(path.join(paths.tmpPath, "./blogmap.ts"), articleMetas) //一時ファイルに書き出し
 
-    const metas = require(path.join(paths.tmpPath, "./blogmap.ts")) //通常のモジュールとして読み込み
-    const blogMap = articles.map(id => {
-        return {
-            id: id,
-            data: metas["meta" + id]
-        }
-    })
+        const sorted = blogMap.sort((a, b) => b.data.date - a.data.date) //日時を降順に並び替え
+        maps.push(sorted)
+    }
 
     fs.rmSync(paths.tmpPath, { recursive: true }) //一時ディレクトリを削除
 
-    const sorted = blogMap.sort((a, b) => b.data.date - a.data.date) //日時を降順に並び替え
-    return sorted
+    return maps
 }
 
 const metaExtractor = (path: string, id: string) => {
@@ -56,6 +62,7 @@ export function getSiteMap(blogmap: any[]) { //全ページのマップ生成
             const route = replacedP.split("app/")[1].split("/").filter(d => {
                 return !d.match(/^\(.*\)$/)
             })
+            
             return {
                 path: replacedP,
                 route: route
@@ -68,7 +75,7 @@ export function getSiteMap(blogmap: any[]) { //全ページのマップ生成
             if (p.route.some(f => f.startsWith("_"))) { //隠しディレクトリはマッピングしない
                 console.log("excluded: " + p.path)
                 return null
-            } else if (p.path.startsWith(paths.blogPath.replace(/\\/g, "/"))) {
+            } else if (paths.blogPaths.some(blog => p.path.startsWith(blog.replace(/\\/g, "/")))) {
                 return {
                     route: p.route.join("/"),
                     title: blogmap.find(a => a.id == p.route[p.route.length - 1])?.data.title

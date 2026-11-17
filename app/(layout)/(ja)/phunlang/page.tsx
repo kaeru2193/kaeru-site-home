@@ -6,7 +6,7 @@ const Page = () => {
         <>
             <h1>雰語</h1>
             <p className={`${style.phunText} bold phun`}>栄言為、現書使我然之言。</p>
-            <p><b>雰語</b>（ふんご、雰：<span className="phun">栄字</span>、雰音：fúnbùn、英：Phun Language）は、かえるにより2021/1/13から制作されている人工言語である。</p>
+            <p><b>雰語</b>（ふんご、雰：<span className="phun">栄言</span>、雰音：fúnbùn、英：Phun Language）は、かえるにより2021/1/13から制作されている人工言語である。</p>
             <h2>主要な特徴</h2>
             <ul>
                 <li>声調言語であり、1形態素は1音節からなる。</li>
@@ -39,7 +39,7 @@ const Page = () => {
                     <Link href="texts">雰語文庫</Link> ― かえるによる雰語の翻訳文や創作文の置き場です。ポップアップ辞典を用いて語義を確認しながら読めます。
                 </li>
                 <li>
-                    <Link href="https://lib.kaeru2193.net/">栄言記集</Link> ― 雰語で書かれたブログのような何かです。おそらく今後の更新はありません。
+                    <a href="/cuangnem">栄言記集</a> ― 雰語のみで書かれたブログ記事の集積所です。
                 </li>
                 <li>
                     <Link href="/phun">之機家</Link> ― このサイトの雰語版です。

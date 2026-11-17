@@ -1,0 +1,210 @@
+html {
+    line-height: 2;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 1px;
+    margin: auto 0;
+    height: 90vh;
+    box-sizing: border-box;
+    background-color: #efefef;
+    color: #202020;
+    font-family: "Phun-Sans", "PhunDot", serif;
+    font-size: 1rem;
+}
+
+* {
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: initial;
+    margin: 0;
+    
+}
+
+h2 {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: bold;
+
+    &::before, &::after {
+        content: "";
+        display: inline-block;
+        width: 1.7em;
+        height: 1em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        background-image: url("/cuangnem/bracket_top.svg");
+        margin-bottom: 3px;
+    }
+    &::after {
+        background-image: url("/cuangnem/bracket_bottom.svg");
+        margin-top: 3px;
+    }
+}
+
+h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: bold;
+    background-color: #202020;
+    color: #efefef;
+    padding: 5px 0;
+    margin: 7px;
+    box-sizing: border-box;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        bottom: -4px;
+        left: -4px;
+        right: -4px;
+        border: 3px solid #202020;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #366ad3;
+
+    &:hover {
+        color: #ee5533;
+    }
+}
+
+ul {
+    & li {
+        margin-top: 1.5rem;
+        &::before {
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            content: "◯";
+            margin-top: calc(-1rem + -5px);
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+    & > ul > li {
+        content: "●";
+    }
+    & > ul > ul > li {
+        content: "◯";
+    }
+}
+
+blockquote {
+    margin-top: 1.5rem;
+    & > p::before {
+        font-family: sans-serif;
+        font-size: 0.95rem;
+        font-weight: bold;
+        content: "▲";
+        margin-top: calc(-1rem + -5px);
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+}
+
+pre, code {
+    font-family: Consolas, 'Courier New', Courier, Monaco, monospace, sans-serif;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+pre {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 0.5rem 0;
+    border-radius: 2px;
+
+    code {
+        border: none;
+    }
+}
+
+code {
+    border: 1px #202020 solid;
+    border-radius: 2px;
+    margin: 5px 0;
+    padding: 4px 1px;
+}
+
+.mainContainer {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1rem;
+    border: #c0c0c0 1px solid;
+    border-width: 1px 0;
+}
+
+.contentContainer {
+    max-height: 100%;
+    box-sizing: border-box;
+    isolation: isolate;
+    position: relative;
+
+    &::after {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        border: #c0c0c0 1px solid;
+    }
+
+    p, ul, ol, h2 {
+        background-image: linear-gradient(90deg, #c0c0c0 1px, transparent 1px);
+        background-size: 1lh 100%;
+        padding: 0.5rem 0 0.5rem 1px;
+        margin-right: -1px;
+        background-repeat: repeat-x;
+        background-origin: border-box;
+    }
+    p + p {
+        margin-right: 2rem;
+    }
+    p, span, a {
+        text-wrap: wrap;
+        word-wrap: break-word;
+        white-space: wrap;
+    }
+}
+
+.titleBox, .footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        display: inline-block;
+    }
+    img {
+        -webkit-user-drag: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+}
+
+.titleBox {
+    margin-left: 15px;
+}
+.footerBox{
+    margin-right: 15px;
+}
